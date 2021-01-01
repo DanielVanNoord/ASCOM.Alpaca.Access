@@ -4,18 +4,18 @@ using System.Text;
 
 namespace ASCOM.Alpaca.Access
 {
-    public class CommandPayload : Payload
+    public class Payload
     {
-        public string Command
+        public uint? ClientID
         {
             get;
             set;
         }
 
-        public bool Raw
+        public uint? ClientTransactionID
         {
             get;
             set;
-        } = false;
+        }
     }
 }
