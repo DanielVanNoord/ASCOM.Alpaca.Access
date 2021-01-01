@@ -17,6 +17,8 @@ using RestSharp;
 using Xunit;
 
 using Org.OpenAPITools.Client;
+using ASCOM.Alpaca.Access;
+using ASCOM.Alpaca.Responses;
 // uncomment below to import models
 //using Org.OpenAPITools.Model;
 
@@ -31,11 +33,16 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class CoverCalibratorSpecificMethodsApiTests : IDisposable
     {
-        //private CoverCalibratorSpecificMethodsApi instance;
+        private CoverCalibrator instance;
+
+        private int deviceNumber
+        {
+            get;
+        } = 0;
 
         public CoverCalibratorSpecificMethodsApiTests()
         {
-            //instance = new CoverCalibratorSpecificMethodsApi();
+            instance = new CoverCalibrator("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
@@ -50,130 +57,130 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' CoverCalibratorSpecificMethodsApi
-            //Assert.IsType<CoverCalibratorSpecificMethodsApi>(instance);
+            Assert.IsType<CoverCalibrator>(instance);
         }
 
         /// <summary>
-        /// Test CovercalibratorDeviceNumberBrightnessGet
+        /// Test BrightnessGet
         /// </summary>
         [Fact]
-        public void CovercalibratorDeviceNumberBrightnessGetTest()
+        public void BrightnessGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CovercalibratorDeviceNumberBrightnessGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.BrightnessGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
-        /// Test CovercalibratorDeviceNumberCalibratoroffPut
+        /// Test CalibratoroffPut
         /// </summary>
         [Fact]
-        public void CovercalibratorDeviceNumberCalibratoroffPutTest()
+        public void CalibratoroffPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.CovercalibratorDeviceNumberCalibratoroffPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+
+            Payload UNKNOWN_BASE_TYPE = null;
+            var response = instance.CalibratorOffPut(deviceNumber, UNKNOWN_BASE_TYPE);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test CovercalibratorDeviceNumberCalibratoronPut
+        /// Test CalibratoronPut
         /// </summary>
         [Fact]
-        public void CovercalibratorDeviceNumberCalibratoronPutTest()
+        public void CalibratoronPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? brightness = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CovercalibratorDeviceNumberCalibratoronPut(deviceNumber, brightness, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+
+            int? brightness = null;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CalibratorOnPut(deviceNumber, brightness, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test CovercalibratorDeviceNumberCalibratorstateGet
+        /// Test CalibratorstateGet
         /// </summary>
         [Fact]
-        public void CovercalibratorDeviceNumberCalibratorstateGetTest()
+        public void CalibratorstateGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CovercalibratorDeviceNumberCalibratorstateGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CalibratorStateGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
-        /// Test CovercalibratorDeviceNumberClosecoverPut
+        /// Test ClosecoverPut
         /// </summary>
         [Fact]
-        public void CovercalibratorDeviceNumberClosecoverPutTest()
+        public void ClosecoverPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.CovercalibratorDeviceNumberClosecoverPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+
+            Payload UNKNOWN_BASE_TYPE = null;
+            var response = instance.CloseCoverPut(deviceNumber, UNKNOWN_BASE_TYPE);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test CovercalibratorDeviceNumberCoverstateGet
+        /// Test CoverstateGet
         /// </summary>
         [Fact]
-        public void CovercalibratorDeviceNumberCoverstateGetTest()
+        public void CoverstateGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CovercalibratorDeviceNumberCoverstateGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CoverStateGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
-        /// Test CovercalibratorDeviceNumberHaltcoverPut
+        /// Test HaltcoverPut
         /// </summary>
         [Fact]
-        public void CovercalibratorDeviceNumberHaltcoverPutTest()
+        public void HaltcoverPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.CovercalibratorDeviceNumberHaltcoverPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+
+            Payload UNKNOWN_BASE_TYPE = null;
+            var response = instance.HaltCoverPut(deviceNumber, UNKNOWN_BASE_TYPE);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test CovercalibratorDeviceNumberMaxbrightnessGet
+        /// Test MaxbrightnessGet
         /// </summary>
         [Fact]
-        public void CovercalibratorDeviceNumberMaxbrightnessGetTest()
+        public void MaxbrightnessGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CovercalibratorDeviceNumberMaxbrightnessGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.MaxBrightnessGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
-        /// Test CovercalibratorDeviceNumberOpencoverPut
+        /// Test OpencoverPut
         /// </summary>
         [Fact]
-        public void CovercalibratorDeviceNumberOpencoverPutTest()
+        public void OpencoverPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.CovercalibratorDeviceNumberOpencoverPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+
+            Payload UNKNOWN_BASE_TYPE = null;
+            var response = instance.OpenCoverPut(deviceNumber, UNKNOWN_BASE_TYPE);
+            Assert.IsType<Response>(response);
         }
     }
 }
