@@ -37,7 +37,7 @@ namespace Org.OpenAPITools.Test.Api
 
         public AlpacaBaseTests()
         {
-            instance = new AlpacaBase();
+            instance = new AlpacaBase("covercalibrator", "http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
@@ -62,13 +62,12 @@ namespace Org.OpenAPITools.Test.Api
         public void ActionPutTest()
         {
             //TODO uncomment below to test the method and replace null with proper value
-            string deviceType = "covercalibrator";
             int deviceNumber = 0;
             string action = "Test";
             string parameters = string.Empty;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ActionPut(deviceType, deviceNumber, action, parameters, clientID, clientTransactionID);
+            var response = instance.ActionPut(deviceNumber, action, parameters, clientID, clientTransactionID);
             Assert.IsType<StringResponse>(response);
         }
 
@@ -79,10 +78,10 @@ namespace Org.OpenAPITools.Test.Api
         public void CommandBlindPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string deviceType = null;
+            
             int deviceNumber = 0;
             CommandPayload commandPayload = null;
-            var response = instance.CommandBlindPut(deviceType, deviceNumber, commandPayload);
+            var response = instance.CommandBlindPut(deviceNumber, commandPayload);
             Assert.IsType<Response>(response);
         }
 
@@ -93,10 +92,10 @@ namespace Org.OpenAPITools.Test.Api
         public void CommandBoolPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string deviceType = null;
+            
             int deviceNumber = 0;
             CommandPayload commandPayload = null;
-            var response = instance.CommandBoolPut(deviceType, deviceNumber, commandPayload);
+            var response = instance.CommandBoolPut(deviceNumber, commandPayload);
             Assert.IsType<BoolResponse>(response);
         }
 
@@ -107,10 +106,10 @@ namespace Org.OpenAPITools.Test.Api
         public void CommandStringPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string deviceType = null;
+            
             int deviceNumber = 0;
             CommandPayload commandPayload = null;
-            var response = instance.CommandStringPut(deviceType, deviceNumber, commandPayload);
+            var response = instance.CommandStringPut(deviceNumber, commandPayload);
             Assert.IsType<StringResponse>(response);
         }
 
@@ -121,11 +120,11 @@ namespace Org.OpenAPITools.Test.Api
         public void ConnectedGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string deviceType = null;
+            
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ConnectedGet(deviceType, deviceNumber, clientID, clientTransactionID);
+            var response = instance.ConnectedGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
@@ -136,12 +135,12 @@ namespace Org.OpenAPITools.Test.Api
         public void ConnectedPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string deviceType = null;
+            
             int deviceNumber = 0;
             bool connected = true;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ConnectedPut(deviceType, deviceNumber, connected, clientID, clientTransactionID);
+            var response = instance.ConnectedPut(deviceNumber, connected, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
@@ -152,11 +151,11 @@ namespace Org.OpenAPITools.Test.Api
         public void DescriptionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string deviceType = null;
+            
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.DescriptionGet(deviceType, deviceNumber, clientID, clientTransactionID);
+            var response = instance.DescriptionGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<StringResponse>(response);
         }
 
@@ -167,11 +166,11 @@ namespace Org.OpenAPITools.Test.Api
         public void DriverInfoGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string deviceType = null;
+            
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.DriverInfoGet(deviceType, deviceNumber, clientID, clientTransactionID);
+            var response = instance.DriverInfoGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<StringResponse>(response);
         }
 
@@ -182,11 +181,11 @@ namespace Org.OpenAPITools.Test.Api
         public void DriverVersionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string deviceType = null;
+            
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.DriverVersionGet(deviceType, deviceNumber, clientID, clientTransactionID);
+            var response = instance.DriverVersionGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<StringResponse>(response);
         }
 
@@ -197,11 +196,11 @@ namespace Org.OpenAPITools.Test.Api
         public void InterfaceVersionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string deviceType = null;
+            
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.InterfaceVersionGet(deviceType, deviceNumber, clientID, clientTransactionID);
+            var response = instance.InterfaceVersionGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<IntResponse>(response);
         }
 
@@ -212,11 +211,11 @@ namespace Org.OpenAPITools.Test.Api
         public void NameGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string deviceType = null;
+            
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.NameGet(deviceType, deviceNumber, clientID, clientTransactionID);
+            var response = instance.NameGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<StringResponse>(response);
         }
 
@@ -227,11 +226,11 @@ namespace Org.OpenAPITools.Test.Api
         public void SupportedActionsGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            string deviceType = null;
+            
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.SupportedActionsGet(deviceType, deviceNumber, clientID, clientTransactionID);
+            var response = instance.SupportedActionsGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<StringListResponse>(response);
         }
     }

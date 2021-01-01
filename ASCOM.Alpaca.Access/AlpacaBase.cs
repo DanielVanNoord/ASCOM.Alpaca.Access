@@ -19,14 +19,14 @@ namespace ASCOM.Alpaca.Access
         /// Actions and SupportedActions are a standardised means for drivers to extend functionality beyond the built-in capabilities of the ASCOM device interfaces.  The key advantage of using Actions is that drivers can expose any device specific functionality required. The downside is that, in order to use these unique features, every application author would need to create bespoke code to present or exploit them.  The Action parameter and return strings are deceptively simple, but can support transmission of arbitrarily complex data structures, for example through JSON encoding.  This capability will be of primary value to  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;bespoke software and hardware configurations where a single entity controls both the consuming application software and the hardware / driver environment&lt;/span&gt;  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;a group of application and device authors to quickly formulate and try out new interface capabilities without requiring an immediate change to the ASCOM device interface, which will take a lot longer than just agreeing a name, input parameters and a standard response for an Action command.&lt;/span&gt;   The list of Action commands supported by a driver can be discovered through the SupportedActions property.  This method should return an error message and NotImplementedException error number (0x400) if the driver just implements the standard ASCOM device methods and has no bespoke, unique, functionality.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="action">A well known name that represents the action to be carried out.</param>
         /// <param name="parameters">List of required parameters or an Empty String if none are required</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <returns>StringResponse</returns>
-        StringResponse ActionPut(string deviceType, int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        StringResponse ActionPut(int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Invokes the named device-specific action.
@@ -35,14 +35,14 @@ namespace ASCOM.Alpaca.Access
         /// Actions and SupportedActions are a standardised means for drivers to extend functionality beyond the built-in capabilities of the ASCOM device interfaces.  The key advantage of using Actions is that drivers can expose any device specific functionality required. The downside is that, in order to use these unique features, every application author would need to create bespoke code to present or exploit them.  The Action parameter and return strings are deceptively simple, but can support transmission of arbitrarily complex data structures, for example through JSON encoding.  This capability will be of primary value to  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;bespoke software and hardware configurations where a single entity controls both the consuming application software and the hardware / driver environment&lt;/span&gt;  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;a group of application and device authors to quickly formulate and try out new interface capabilities without requiring an immediate change to the ASCOM device interface, which will take a lot longer than just agreeing a name, input parameters and a standard response for an Action command.&lt;/span&gt;   The list of Action commands supported by a driver can be discovered through the SupportedActions property.  This method should return an error message and NotImplementedException error number (0x400) if the driver just implements the standard ASCOM device methods and has no bespoke, unique, functionality.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="action">A well known name that represents the action to be carried out.</param>
         /// <param name="parameters">List of required parameters or an Empty String if none are required</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        ApiResponse<StringResponse> ActionPutWithHttpInfo(string deviceType, int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<StringResponse> ActionPutWithHttpInfo(int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Transmits an arbitrary string to the device
         /// </summary>
@@ -50,11 +50,11 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and does not wait for a response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>Response</returns>
-        Response CommandBlindPut(string deviceType, int deviceNumber, CommandPayload commandPayload);
+        Response CommandBlindPut(int deviceNumber, CommandPayload commandPayload);
 
         /// <summary>
         /// Transmits an arbitrary string to the device
@@ -63,11 +63,11 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and does not wait for a response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> CommandBlindPutWithHttpInfo(string deviceType, int deviceNumber, CommandPayload commandPayload);
+        ApiResponse<Response> CommandBlindPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload);
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a boolean value from the device.
         /// </summary>
@@ -75,11 +75,11 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and waits for a boolean response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse CommandBoolPut(string deviceType, int deviceNumber, CommandPayload commandPayload);
+        BoolResponse CommandBoolPut(int deviceNumber, CommandPayload commandPayload);
 
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a boolean value from the device.
@@ -88,11 +88,11 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and waits for a boolean response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> CommandBoolPutWithHttpInfo(string deviceType, int deviceNumber, CommandPayload commandPayload);
+        ApiResponse<BoolResponse> CommandBoolPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload);
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a string value from the device.
         /// </summary>
@@ -100,11 +100,11 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and waits for a string response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>StringResponse</returns>
-        StringResponse CommandStringPut(string deviceType, int deviceNumber, CommandPayload commandPayload);
+        StringResponse CommandStringPut(int deviceNumber, CommandPayload commandPayload);
 
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a string value from the device.
@@ -113,11 +113,11 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and waits for a string response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        ApiResponse<StringResponse> CommandStringPutWithHttpInfo(string deviceType, int deviceNumber, CommandPayload commandPayload);
+        ApiResponse<StringResponse> CommandStringPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload);
         /// <summary>
         /// Retrieves the connected state of the device
         /// </summary>
@@ -125,12 +125,12 @@ namespace ASCOM.Alpaca.Access
         /// Retrieves the connected state of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ConnectedGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse ConnectedGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Retrieves the connected state of the device
@@ -139,12 +139,12 @@ namespace ASCOM.Alpaca.Access
         /// Retrieves the connected state of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ConnectedGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> ConnectedGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Sets the connected state of the device
         /// </summary>
@@ -152,13 +152,13 @@ namespace ASCOM.Alpaca.Access
         /// Sets the connected state of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="connected">Set True to connect to the device hardware, set False to disconnect from the device hardware</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <returns>Response</returns>
-        Response ConnectedPut(string deviceType, int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response ConnectedPut(int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Sets the connected state of the device
@@ -167,13 +167,13 @@ namespace ASCOM.Alpaca.Access
         /// Sets the connected state of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="connected">Set True to connect to the device hardware, set False to disconnect from the device hardware</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ConnectedPutWithHttpInfo(string deviceType, int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> ConnectedPutWithHttpInfo(int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Device description
         /// </summary>
@@ -181,12 +181,12 @@ namespace ASCOM.Alpaca.Access
         /// The description of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>StringResponse</returns>
-        StringResponse DescriptionGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        StringResponse DescriptionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Device description
@@ -195,12 +195,12 @@ namespace ASCOM.Alpaca.Access
         /// The description of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        ApiResponse<StringResponse> DescriptionGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<StringResponse> DescriptionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Device driver description
         /// </summary>
@@ -208,12 +208,12 @@ namespace ASCOM.Alpaca.Access
         /// The description of the driver
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>StringResponse</returns>
-        StringResponse DriverInfoGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        StringResponse DriverInfoGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Device driver description
@@ -222,12 +222,12 @@ namespace ASCOM.Alpaca.Access
         /// The description of the driver
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        ApiResponse<StringResponse> DriverInfoGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<StringResponse> DriverInfoGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Driver Version
         /// </summary>
@@ -235,12 +235,12 @@ namespace ASCOM.Alpaca.Access
         /// A string containing only the major and minor version of the driver.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>StringResponse</returns>
-        StringResponse DriverVersionGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        StringResponse DriverVersionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Driver Version
@@ -249,12 +249,12 @@ namespace ASCOM.Alpaca.Access
         /// A string containing only the major and minor version of the driver.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        ApiResponse<StringResponse> DriverVersionGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<StringResponse> DriverVersionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// The ASCOM Device interface version number that this device supports.
         /// </summary>
@@ -262,12 +262,12 @@ namespace ASCOM.Alpaca.Access
         /// This method returns the version of the ASCOM device interface contract to which this device complies. Only one interface version is current at a moment in time and all new devices should be built to the latest interface version. Applications can choose which device interface versions they support and it is in their interest to support  previous versions as well as the current version to ensure thay can use the largest number of devices.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>IntResponse</returns>
-        IntResponse InterfaceVersionGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        IntResponse InterfaceVersionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// The ASCOM Device interface version number that this device supports.
@@ -276,12 +276,12 @@ namespace ASCOM.Alpaca.Access
         /// This method returns the version of the ASCOM device interface contract to which this device complies. Only one interface version is current at a moment in time and all new devices should be built to the latest interface version. Applications can choose which device interface versions they support and it is in their interest to support  previous versions as well as the current version to ensure thay can use the largest number of devices.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of IntResponse</returns>
-        ApiResponse<IntResponse> InterfaceVersionGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<IntResponse> InterfaceVersionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Device name
         /// </summary>
@@ -289,12 +289,12 @@ namespace ASCOM.Alpaca.Access
         /// The name of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>StringResponse</returns>
-        StringResponse NameGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        StringResponse NameGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Device name
@@ -303,12 +303,12 @@ namespace ASCOM.Alpaca.Access
         /// The name of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        ApiResponse<StringResponse> NameGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<StringResponse> NameGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Returns the list of action names supported by this driver.
         /// </summary>
@@ -316,12 +316,12 @@ namespace ASCOM.Alpaca.Access
         /// Returns the list of action names supported by this driver.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>StringListResponse</returns>
-        StringListResponse SupportedActionsGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        StringListResponse SupportedActionsGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Returns the list of action names supported by this driver.
@@ -330,12 +330,12 @@ namespace ASCOM.Alpaca.Access
         /// Returns the list of action names supported by this driver.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of StringListResponse</returns>
-        ApiResponse<StringListResponse> SupportedActionsGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<StringListResponse> SupportedActionsGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         #endregion Synchronous Operations
     }
 
@@ -352,7 +352,7 @@ namespace ASCOM.Alpaca.Access
         /// Actions and SupportedActions are a standardised means for drivers to extend functionality beyond the built-in capabilities of the ASCOM device interfaces.  The key advantage of using Actions is that drivers can expose any device specific functionality required. The downside is that, in order to use these unique features, every application author would need to create bespoke code to present or exploit them.  The Action parameter and return strings are deceptively simple, but can support transmission of arbitrarily complex data structures, for example through JSON encoding.  This capability will be of primary value to  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;bespoke software and hardware configurations where a single entity controls both the consuming application software and the hardware / driver environment&lt;/span&gt;  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;a group of application and device authors to quickly formulate and try out new interface capabilities without requiring an immediate change to the ASCOM device interface, which will take a lot longer than just agreeing a name, input parameters and a standard response for an Action command.&lt;/span&gt;   The list of Action commands supported by a driver can be discovered through the SupportedActions property.  This method should return an error message and NotImplementedException error number (0x400) if the driver just implements the standard ASCOM device methods and has no bespoke, unique, functionality.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="action">A well known name that represents the action to be carried out.</param>
         /// <param name="parameters">List of required parameters or an Empty String if none are required</param>
@@ -360,7 +360,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        System.Threading.Tasks.Task<StringResponse> ActionPutAsync(string deviceType, int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<StringResponse> ActionPutAsync(int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Invokes the named device-specific action.
@@ -369,7 +369,7 @@ namespace ASCOM.Alpaca.Access
         /// Actions and SupportedActions are a standardised means for drivers to extend functionality beyond the built-in capabilities of the ASCOM device interfaces.  The key advantage of using Actions is that drivers can expose any device specific functionality required. The downside is that, in order to use these unique features, every application author would need to create bespoke code to present or exploit them.  The Action parameter and return strings are deceptively simple, but can support transmission of arbitrarily complex data structures, for example through JSON encoding.  This capability will be of primary value to  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;bespoke software and hardware configurations where a single entity controls both the consuming application software and the hardware / driver environment&lt;/span&gt;  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;a group of application and device authors to quickly formulate and try out new interface capabilities without requiring an immediate change to the ASCOM device interface, which will take a lot longer than just agreeing a name, input parameters and a standard response for an Action command.&lt;/span&gt;   The list of Action commands supported by a driver can be discovered through the SupportedActions property.  This method should return an error message and NotImplementedException error number (0x400) if the driver just implements the standard ASCOM device methods and has no bespoke, unique, functionality.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="action">A well known name that represents the action to be carried out.</param>
         /// <param name="parameters">List of required parameters or an Empty String if none are required</param>
@@ -377,7 +377,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<StringResponse>> ActionPutWithHttpInfoAsync(string deviceType, int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<StringResponse>> ActionPutWithHttpInfoAsync(int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Transmits an arbitrary string to the device
         /// </summary>
@@ -385,12 +385,12 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and does not wait for a response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> CommandBlindPutAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> CommandBlindPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Transmits an arbitrary string to the device
@@ -399,12 +399,12 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and does not wait for a response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> CommandBlindPutWithHttpInfoAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> CommandBlindPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a boolean value from the device.
         /// </summary>
@@ -412,12 +412,12 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and waits for a boolean response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> CommandBoolPutAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> CommandBoolPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a boolean value from the device.
@@ -426,12 +426,12 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and waits for a boolean response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> CommandBoolPutWithHttpInfoAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> CommandBoolPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a string value from the device.
         /// </summary>
@@ -439,12 +439,12 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and waits for a string response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        System.Threading.Tasks.Task<StringResponse> CommandStringPutAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<StringResponse> CommandStringPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a string value from the device.
@@ -453,12 +453,12 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and waits for a string response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<StringResponse>> CommandStringPutWithHttpInfoAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<StringResponse>> CommandStringPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Retrieves the connected state of the device
         /// </summary>
@@ -466,13 +466,13 @@ namespace ASCOM.Alpaca.Access
         /// Retrieves the connected state of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ConnectedGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> ConnectedGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Retrieves the connected state of the device
@@ -481,13 +481,13 @@ namespace ASCOM.Alpaca.Access
         /// Retrieves the connected state of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ConnectedGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ConnectedGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Sets the connected state of the device
         /// </summary>
@@ -495,14 +495,14 @@ namespace ASCOM.Alpaca.Access
         /// Sets the connected state of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="connected">Set True to connect to the device hardware, set False to disconnect from the device hardware</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ConnectedPutAsync(string deviceType, int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> ConnectedPutAsync(int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Sets the connected state of the device
@@ -511,14 +511,14 @@ namespace ASCOM.Alpaca.Access
         /// Sets the connected state of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="connected">Set True to connect to the device hardware, set False to disconnect from the device hardware</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ConnectedPutWithHttpInfoAsync(string deviceType, int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> ConnectedPutWithHttpInfoAsync(int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Device description
         /// </summary>
@@ -526,13 +526,13 @@ namespace ASCOM.Alpaca.Access
         /// The description of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        System.Threading.Tasks.Task<StringResponse> DescriptionGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<StringResponse> DescriptionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Device description
@@ -541,13 +541,13 @@ namespace ASCOM.Alpaca.Access
         /// The description of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<StringResponse>> DescriptionGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<StringResponse>> DescriptionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Device driver description
         /// </summary>
@@ -555,13 +555,13 @@ namespace ASCOM.Alpaca.Access
         /// The description of the driver
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        System.Threading.Tasks.Task<StringResponse> DriverInfoGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<StringResponse> DriverInfoGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Device driver description
@@ -570,13 +570,13 @@ namespace ASCOM.Alpaca.Access
         /// The description of the driver
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<StringResponse>> DriverInfoGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<StringResponse>> DriverInfoGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Driver Version
         /// </summary>
@@ -584,13 +584,13 @@ namespace ASCOM.Alpaca.Access
         /// A string containing only the major and minor version of the driver.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        System.Threading.Tasks.Task<StringResponse> DriverVersionGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<StringResponse> DriverVersionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Driver Version
@@ -599,13 +599,13 @@ namespace ASCOM.Alpaca.Access
         /// A string containing only the major and minor version of the driver.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<StringResponse>> DriverVersionGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<StringResponse>> DriverVersionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// The ASCOM Device interface version number that this device supports.
         /// </summary>
@@ -613,13 +613,13 @@ namespace ASCOM.Alpaca.Access
         /// This method returns the version of the ASCOM device interface contract to which this device complies. Only one interface version is current at a moment in time and all new devices should be built to the latest interface version. Applications can choose which device interface versions they support and it is in their interest to support  previous versions as well as the current version to ensure thay can use the largest number of devices.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of IntResponse</returns>
-        System.Threading.Tasks.Task<IntResponse> InterfaceVersionGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<IntResponse> InterfaceVersionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// The ASCOM Device interface version number that this device supports.
@@ -628,13 +628,13 @@ namespace ASCOM.Alpaca.Access
         /// This method returns the version of the ASCOM device interface contract to which this device complies. Only one interface version is current at a moment in time and all new devices should be built to the latest interface version. Applications can choose which device interface versions they support and it is in their interest to support  previous versions as well as the current version to ensure thay can use the largest number of devices.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (IntResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<IntResponse>> InterfaceVersionGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<IntResponse>> InterfaceVersionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Device name
         /// </summary>
@@ -642,13 +642,13 @@ namespace ASCOM.Alpaca.Access
         /// The name of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        System.Threading.Tasks.Task<StringResponse> NameGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<StringResponse> NameGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Device name
@@ -657,13 +657,13 @@ namespace ASCOM.Alpaca.Access
         /// The name of the device
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<StringResponse>> NameGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<StringResponse>> NameGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Returns the list of action names supported by this driver.
         /// </summary>
@@ -671,13 +671,13 @@ namespace ASCOM.Alpaca.Access
         /// Returns the list of action names supported by this driver.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringListResponse</returns>
-        System.Threading.Tasks.Task<StringListResponse> SupportedActionsGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<StringListResponse> SupportedActionsGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Returns the list of action names supported by this driver.
@@ -686,13 +686,13 @@ namespace ASCOM.Alpaca.Access
         /// Returns the list of action names supported by this driver.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringListResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<StringListResponse>> SupportedActionsGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<StringListResponse>> SupportedActionsGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -708,11 +708,17 @@ namespace ASCOM.Alpaca.Access
     {
         private Org.OpenAPITools.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
+        private string DeviceType
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="ASCOMMethodsCommonToAllDevicesApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public AlpacaBase() : this((string)null)
+        public AlpacaBase(string deviceType) : this(deviceType, (string)null)
         {
         }
 
@@ -720,7 +726,7 @@ namespace ASCOM.Alpaca.Access
         /// Initializes a new instance of the <see cref="ASCOMMethodsCommonToAllDevicesApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public AlpacaBase(String basePath)
+        public AlpacaBase(string deviceType, string basePath)
         {
             this.Configuration = Org.OpenAPITools.Client.Configuration.MergeConfigurations(
                 Org.OpenAPITools.Client.GlobalConfiguration.Instance,
@@ -729,6 +735,8 @@ namespace ASCOM.Alpaca.Access
             this.Client = new Org.OpenAPITools.Client.ApiClient(this.Configuration.BasePath);
             this.AsynchronousClient = new Org.OpenAPITools.Client.ApiClient(this.Configuration.BasePath);
             this.ExceptionFactory = Org.OpenAPITools.Client.Configuration.DefaultExceptionFactory;
+
+            DeviceType = deviceType;
         }
 
         /// <summary>
@@ -737,7 +745,7 @@ namespace ASCOM.Alpaca.Access
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public AlpacaBase(Org.OpenAPITools.Client.Configuration configuration)
+        public AlpacaBase(string deviceType, Org.OpenAPITools.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -748,6 +756,8 @@ namespace ASCOM.Alpaca.Access
             this.Client = new Org.OpenAPITools.Client.ApiClient(this.Configuration.BasePath);
             this.AsynchronousClient = new Org.OpenAPITools.Client.ApiClient(this.Configuration.BasePath);
             ExceptionFactory = Org.OpenAPITools.Client.Configuration.DefaultExceptionFactory;
+
+            DeviceType = deviceType;
         }
 
         /// <summary>
@@ -814,16 +824,16 @@ namespace ASCOM.Alpaca.Access
         /// Invokes the named device-specific action. Actions and SupportedActions are a standardised means for drivers to extend functionality beyond the built-in capabilities of the ASCOM device interfaces.  The key advantage of using Actions is that drivers can expose any device specific functionality required. The downside is that, in order to use these unique features, every application author would need to create bespoke code to present or exploit them.  The Action parameter and return strings are deceptively simple, but can support transmission of arbitrarily complex data structures, for example through JSON encoding.  This capability will be of primary value to  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;bespoke software and hardware configurations where a single entity controls both the consuming application software and the hardware / driver environment&lt;/span&gt;  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;a group of application and device authors to quickly formulate and try out new interface capabilities without requiring an immediate change to the ASCOM device interface, which will take a lot longer than just agreeing a name, input parameters and a standard response for an Action command.&lt;/span&gt;   The list of Action commands supported by a driver can be discovered through the SupportedActions property.  This method should return an error message and NotImplementedException error number (0x400) if the driver just implements the standard ASCOM device methods and has no bespoke, unique, functionality.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="action">A well known name that represents the action to be carried out.</param>
         /// <param name="parameters">List of required parameters or an Empty String if none are required</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <returns>StringResponse</returns>
-        public StringResponse ActionPut(string deviceType, int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public StringResponse ActionPut(int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = ActionPutWithHttpInfo(deviceType, deviceNumber, action, parameters, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = ActionPutWithHttpInfo(deviceNumber, action, parameters, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -831,18 +841,18 @@ namespace ASCOM.Alpaca.Access
         /// Invokes the named device-specific action. Actions and SupportedActions are a standardised means for drivers to extend functionality beyond the built-in capabilities of the ASCOM device interfaces.  The key advantage of using Actions is that drivers can expose any device specific functionality required. The downside is that, in order to use these unique features, every application author would need to create bespoke code to present or exploit them.  The Action parameter and return strings are deceptively simple, but can support transmission of arbitrarily complex data structures, for example through JSON encoding.  This capability will be of primary value to  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;bespoke software and hardware configurations where a single entity controls both the consuming application software and the hardware / driver environment&lt;/span&gt;  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;a group of application and device authors to quickly formulate and try out new interface capabilities without requiring an immediate change to the ASCOM device interface, which will take a lot longer than just agreeing a name, input parameters and a standard response for an Action command.&lt;/span&gt;   The list of Action commands supported by a driver can be discovered through the SupportedActions property.  This method should return an error message and NotImplementedException error number (0x400) if the driver just implements the standard ASCOM device methods and has no bespoke, unique, functionality.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="action">A well known name that represents the action to be carried out.</param>
         /// <param name="parameters">List of required parameters or an Empty String if none are required</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<StringResponse> ActionPutWithHttpInfo(string deviceType, int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<StringResponse> ActionPutWithHttpInfo(int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ActionPut");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ActionPut");
 
             // verify the required parameter 'action' is set
             if (action == null)
@@ -869,7 +879,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             localVarRequestOptions.FormParameters.Add("Action", Org.OpenAPITools.Client.ClientUtils.ParameterToString(action)); // form parameter
             localVarRequestOptions.FormParameters.Add("Parameters", Org.OpenAPITools.Client.ClientUtils.ParameterToString(parameters)); // form parameter
@@ -899,7 +909,7 @@ namespace ASCOM.Alpaca.Access
         /// Invokes the named device-specific action. Actions and SupportedActions are a standardised means for drivers to extend functionality beyond the built-in capabilities of the ASCOM device interfaces.  The key advantage of using Actions is that drivers can expose any device specific functionality required. The downside is that, in order to use these unique features, every application author would need to create bespoke code to present or exploit them.  The Action parameter and return strings are deceptively simple, but can support transmission of arbitrarily complex data structures, for example through JSON encoding.  This capability will be of primary value to  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;bespoke software and hardware configurations where a single entity controls both the consuming application software and the hardware / driver environment&lt;/span&gt;  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;a group of application and device authors to quickly formulate and try out new interface capabilities without requiring an immediate change to the ASCOM device interface, which will take a lot longer than just agreeing a name, input parameters and a standard response for an Action command.&lt;/span&gt;   The list of Action commands supported by a driver can be discovered through the SupportedActions property.  This method should return an error message and NotImplementedException error number (0x400) if the driver just implements the standard ASCOM device methods and has no bespoke, unique, functionality.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="action">A well known name that represents the action to be carried out.</param>
         /// <param name="parameters">List of required parameters or an Empty String if none are required</param>
@@ -907,9 +917,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        public async System.Threading.Tasks.Task<StringResponse> ActionPutAsync(string deviceType, int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<StringResponse> ActionPutAsync(int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await ActionPutWithHttpInfoAsync(deviceType, deviceNumber, action, parameters, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await ActionPutWithHttpInfoAsync(deviceNumber, action, parameters, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -917,7 +927,7 @@ namespace ASCOM.Alpaca.Access
         /// Invokes the named device-specific action. Actions and SupportedActions are a standardised means for drivers to extend functionality beyond the built-in capabilities of the ASCOM device interfaces.  The key advantage of using Actions is that drivers can expose any device specific functionality required. The downside is that, in order to use these unique features, every application author would need to create bespoke code to present or exploit them.  The Action parameter and return strings are deceptively simple, but can support transmission of arbitrarily complex data structures, for example through JSON encoding.  This capability will be of primary value to  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;bespoke software and hardware configurations where a single entity controls both the consuming application software and the hardware / driver environment&lt;/span&gt;  * &lt;span style&#x3D;\&quot;font-size:14px;\&quot;&gt;a group of application and device authors to quickly formulate and try out new interface capabilities without requiring an immediate change to the ASCOM device interface, which will take a lot longer than just agreeing a name, input parameters and a standard response for an Action command.&lt;/span&gt;   The list of Action commands supported by a driver can be discovered through the SupportedActions property.  This method should return an error message and NotImplementedException error number (0x400) if the driver just implements the standard ASCOM device methods and has no bespoke, unique, functionality.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="action">A well known name that represents the action to be carried out.</param>
         /// <param name="parameters">List of required parameters or an Empty String if none are required</param>
@@ -925,11 +935,11 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> ActionPutWithHttpInfoAsync(string deviceType, int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> ActionPutWithHttpInfoAsync(int deviceNumber, string action, string parameters, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ActionPut");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ActionPut");
 
             // verify the required parameter 'action' is set
             if (action == null)
@@ -958,7 +968,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             localVarRequestOptions.FormParameters.Add("Action", Org.OpenAPITools.Client.ClientUtils.ParameterToString(action)); // form parameter
             localVarRequestOptions.FormParameters.Add("Parameters", Org.OpenAPITools.Client.ClientUtils.ParameterToString(parameters)); // form parameter
@@ -989,13 +999,13 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device Transmits an arbitrary string to the device and does not wait for a response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>Response</returns>
-        public Response CommandBlindPut(string deviceType, int deviceNumber, CommandPayload commandPayload)
+        public Response CommandBlindPut(int deviceNumber, CommandPayload commandPayload)
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = CommandBlindPutWithHttpInfo(deviceType, deviceNumber, commandPayload);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = CommandBlindPutWithHttpInfo(deviceNumber, commandPayload);
             return localVarResponse.Data;
         }
 
@@ -1003,15 +1013,15 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device Transmits an arbitrary string to the device and does not wait for a response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> CommandBlindPutWithHttpInfo(string deviceType, int deviceNumber, CommandPayload commandPayload)
+        public Org.OpenAPITools.Client.ApiResponse<Response> CommandBlindPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload)
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandBlindPut");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandBlindPut");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1030,7 +1040,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             localVarRequestOptions.Data = commandPayload;
 
@@ -1051,14 +1061,14 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device Transmits an arbitrary string to the device and does not wait for a response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> CommandBlindPutAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> CommandBlindPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await CommandBlindPutWithHttpInfoAsync(deviceType, deviceNumber, commandPayload, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await CommandBlindPutWithHttpInfoAsync(deviceNumber, commandPayload, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1066,16 +1076,16 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device Transmits an arbitrary string to the device and does not wait for a response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> CommandBlindPutWithHttpInfoAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> CommandBlindPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandBlindPut");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandBlindPut");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1096,7 +1106,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             localVarRequestOptions.Data = commandPayload;
 
@@ -1118,13 +1128,13 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and returns a boolean value from the device. Transmits an arbitrary string to the device and waits for a boolean response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse CommandBoolPut(string deviceType, int deviceNumber, CommandPayload commandPayload)
+        public BoolResponse CommandBoolPut(int deviceNumber, CommandPayload commandPayload)
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = CommandBoolPutWithHttpInfo(deviceType, deviceNumber, commandPayload);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = CommandBoolPutWithHttpInfo(deviceNumber, commandPayload);
             return localVarResponse.Data;
         }
 
@@ -1132,15 +1142,15 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and returns a boolean value from the device. Transmits an arbitrary string to the device and waits for a boolean response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> CommandBoolPutWithHttpInfo(string deviceType, int deviceNumber, CommandPayload commandPayload)
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> CommandBoolPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload)
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandBoolPut");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandBoolPut");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1159,7 +1169,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             localVarRequestOptions.Data = commandPayload;
 
@@ -1180,14 +1190,14 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and returns a boolean value from the device. Transmits an arbitrary string to the device and waits for a boolean response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> CommandBoolPutAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> CommandBoolPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await CommandBoolPutWithHttpInfoAsync(deviceType, deviceNumber, commandPayload, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await CommandBoolPutWithHttpInfoAsync(deviceNumber, commandPayload, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1195,16 +1205,16 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and returns a boolean value from the device. Transmits an arbitrary string to the device and waits for a boolean response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> CommandBoolPutWithHttpInfoAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> CommandBoolPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandBoolPut");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandBoolPut");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1225,7 +1235,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             localVarRequestOptions.Data = commandPayload;
 
@@ -1247,13 +1257,13 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and returns a string value from the device. Transmits an arbitrary string to the device and waits for a string response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>StringResponse</returns>
-        public StringResponse CommandStringPut(string deviceType, int deviceNumber, CommandPayload commandPayload)
+        public StringResponse CommandStringPut(int deviceNumber, CommandPayload commandPayload)
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = CommandStringPutWithHttpInfo(deviceType, deviceNumber, commandPayload);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = CommandStringPutWithHttpInfo(deviceNumber, commandPayload);
             return localVarResponse.Data;
         }
 
@@ -1261,15 +1271,15 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and returns a string value from the device. Transmits an arbitrary string to the device and waits for a string response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<StringResponse> CommandStringPutWithHttpInfo(string deviceType, int deviceNumber, CommandPayload commandPayload)
+        public Org.OpenAPITools.Client.ApiResponse<StringResponse> CommandStringPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload)
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandStringPut");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandStringPut");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1288,7 +1298,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             localVarRequestOptions.Data = commandPayload;
 
@@ -1309,14 +1319,14 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and returns a string value from the device. Transmits an arbitrary string to the device and waits for a string response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        public async System.Threading.Tasks.Task<StringResponse> CommandStringPutAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<StringResponse> CommandStringPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await CommandStringPutWithHttpInfoAsync(deviceType, deviceNumber, commandPayload, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await CommandStringPutWithHttpInfoAsync(deviceNumber, commandPayload, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1324,16 +1334,16 @@ namespace ASCOM.Alpaca.Access
         /// Transmits an arbitrary string to the device and returns a string value from the device. Transmits an arbitrary string to the device and waits for a string response. Optionally, protocol framing characters may be added to the string before transmission.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> CommandStringPutWithHttpInfoAsync(string deviceType, int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> CommandStringPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandStringPut");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->CommandStringPut");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1354,7 +1364,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             localVarRequestOptions.Data = commandPayload;
 
@@ -1376,14 +1386,14 @@ namespace ASCOM.Alpaca.Access
         /// Retrieves the connected state of the device Retrieves the connected state of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ConnectedGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse ConnectedGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ConnectedGetWithHttpInfo(deviceType, deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ConnectedGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -1391,16 +1401,16 @@ namespace ASCOM.Alpaca.Access
         /// Retrieves the connected state of the device Retrieves the connected state of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ConnectedGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ConnectedGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ConnectedGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ConnectedGet");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1418,7 +1428,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -1446,15 +1456,15 @@ namespace ASCOM.Alpaca.Access
         /// Retrieves the connected state of the device Retrieves the connected state of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ConnectedGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> ConnectedGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ConnectedGetWithHttpInfoAsync(deviceType, deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ConnectedGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1462,17 +1472,17 @@ namespace ASCOM.Alpaca.Access
         /// Retrieves the connected state of the device Retrieves the connected state of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ConnectedGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ConnectedGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ConnectedGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ConnectedGet");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1492,7 +1502,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -1521,15 +1531,15 @@ namespace ASCOM.Alpaca.Access
         /// Sets the connected state of the device Sets the connected state of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="connected">Set True to connect to the device hardware, set False to disconnect from the device hardware</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <returns>Response</returns>
-        public Response ConnectedPut(string deviceType, int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response ConnectedPut(int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ConnectedPutWithHttpInfo(deviceType, deviceNumber, connected, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ConnectedPutWithHttpInfo(deviceNumber, connected, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -1537,17 +1547,17 @@ namespace ASCOM.Alpaca.Access
         /// Sets the connected state of the device Sets the connected state of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="connected">Set True to connect to the device hardware, set False to disconnect from the device hardware</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ConnectedPutWithHttpInfo(string deviceType, int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> ConnectedPutWithHttpInfo(int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ConnectedPut");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ConnectedPut");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1566,7 +1576,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             localVarRequestOptions.FormParameters.Add("Connected", Org.OpenAPITools.Client.ClientUtils.ParameterToString(connected)); // form parameter
             if (clientID != null)
@@ -1595,16 +1605,16 @@ namespace ASCOM.Alpaca.Access
         /// Sets the connected state of the device Sets the connected state of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="connected">Set True to connect to the device hardware, set False to disconnect from the device hardware</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ConnectedPutAsync(string deviceType, int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> ConnectedPutAsync(int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ConnectedPutWithHttpInfoAsync(deviceType, deviceNumber, connected, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ConnectedPutWithHttpInfoAsync(deviceNumber, connected, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1612,18 +1622,18 @@ namespace ASCOM.Alpaca.Access
         /// Sets the connected state of the device Sets the connected state of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="connected">Set True to connect to the device hardware, set False to disconnect from the device hardware</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ConnectedPutWithHttpInfoAsync(string deviceType, int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ConnectedPutWithHttpInfoAsync(int deviceNumber, bool connected, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ConnectedPut");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->ConnectedPut");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1644,7 +1654,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             localVarRequestOptions.FormParameters.Add("Connected", Org.OpenAPITools.Client.ClientUtils.ParameterToString(connected)); // form parameter
             if (clientID != null)
@@ -1674,14 +1684,14 @@ namespace ASCOM.Alpaca.Access
         /// Device description The description of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>StringResponse</returns>
-        public StringResponse DescriptionGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public StringResponse DescriptionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = DescriptionGetWithHttpInfo(deviceType, deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = DescriptionGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -1689,16 +1699,16 @@ namespace ASCOM.Alpaca.Access
         /// Device description The description of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<StringResponse> DescriptionGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<StringResponse> DescriptionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DescriptionGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DescriptionGet");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1716,7 +1726,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -1744,15 +1754,15 @@ namespace ASCOM.Alpaca.Access
         /// Device description The description of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        public async System.Threading.Tasks.Task<StringResponse> DescriptionGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<StringResponse> DescriptionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await DescriptionGetWithHttpInfoAsync(deviceType, deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await DescriptionGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1760,17 +1770,17 @@ namespace ASCOM.Alpaca.Access
         /// Device description The description of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> DescriptionGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> DescriptionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DescriptionGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DescriptionGet");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1790,7 +1800,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -1819,14 +1829,14 @@ namespace ASCOM.Alpaca.Access
         /// Device driver description The description of the driver
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>StringResponse</returns>
-        public StringResponse DriverInfoGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public StringResponse DriverInfoGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = DriverInfoGetWithHttpInfo(deviceType, deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = DriverInfoGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -1834,16 +1844,16 @@ namespace ASCOM.Alpaca.Access
         /// Device driver description The description of the driver
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<StringResponse> DriverInfoGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<StringResponse> DriverInfoGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DriverInfoGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DriverInfoGet");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1861,7 +1871,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -1889,15 +1899,15 @@ namespace ASCOM.Alpaca.Access
         /// Device driver description The description of the driver
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        public async System.Threading.Tasks.Task<StringResponse> DriverInfoGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<StringResponse> DriverInfoGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await DriverInfoGetWithHttpInfoAsync(deviceType, deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await DriverInfoGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1905,17 +1915,17 @@ namespace ASCOM.Alpaca.Access
         /// Device driver description The description of the driver
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> DriverInfoGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> DriverInfoGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DriverInfoGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DriverInfoGet");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1935,7 +1945,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -1964,14 +1974,14 @@ namespace ASCOM.Alpaca.Access
         /// Driver Version A string containing only the major and minor version of the driver.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>StringResponse</returns>
-        public StringResponse DriverVersionGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public StringResponse DriverVersionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = DriverVersionGetWithHttpInfo(deviceType, deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = DriverVersionGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -1979,16 +1989,16 @@ namespace ASCOM.Alpaca.Access
         /// Driver Version A string containing only the major and minor version of the driver.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<StringResponse> DriverVersionGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<StringResponse> DriverVersionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DriverVersionGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DriverVersionGet");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -2006,7 +2016,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -2034,15 +2044,15 @@ namespace ASCOM.Alpaca.Access
         /// Driver Version A string containing only the major and minor version of the driver.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        public async System.Threading.Tasks.Task<StringResponse> DriverVersionGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<StringResponse> DriverVersionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await DriverVersionGetWithHttpInfoAsync(deviceType, deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await DriverVersionGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -2050,17 +2060,17 @@ namespace ASCOM.Alpaca.Access
         /// Driver Version A string containing only the major and minor version of the driver.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> DriverVersionGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> DriverVersionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DriverVersionGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->DriverVersionGet");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -2080,7 +2090,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -2109,14 +2119,14 @@ namespace ASCOM.Alpaca.Access
         /// The ASCOM Device interface version number that this device supports. This method returns the version of the ASCOM device interface contract to which this device complies. Only one interface version is current at a moment in time and all new devices should be built to the latest interface version. Applications can choose which device interface versions they support and it is in their interest to support  previous versions as well as the current version to ensure thay can use the largest number of devices.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>IntResponse</returns>
-        public IntResponse InterfaceVersionGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public IntResponse InterfaceVersionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = InterfaceVersionGetWithHttpInfo(deviceType, deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = InterfaceVersionGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -2124,16 +2134,16 @@ namespace ASCOM.Alpaca.Access
         /// The ASCOM Device interface version number that this device supports. This method returns the version of the ASCOM device interface contract to which this device complies. Only one interface version is current at a moment in time and all new devices should be built to the latest interface version. Applications can choose which device interface versions they support and it is in their interest to support  previous versions as well as the current version to ensure thay can use the largest number of devices.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of IntResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<IntResponse> InterfaceVersionGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<IntResponse> InterfaceVersionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->InterfaceVersionGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->InterfaceVersionGet");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -2151,7 +2161,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -2179,15 +2189,15 @@ namespace ASCOM.Alpaca.Access
         /// The ASCOM Device interface version number that this device supports. This method returns the version of the ASCOM device interface contract to which this device complies. Only one interface version is current at a moment in time and all new devices should be built to the latest interface version. Applications can choose which device interface versions they support and it is in their interest to support  previous versions as well as the current version to ensure thay can use the largest number of devices.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of IntResponse</returns>
-        public async System.Threading.Tasks.Task<IntResponse> InterfaceVersionGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<IntResponse> InterfaceVersionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = await InterfaceVersionGetWithHttpInfoAsync(deviceType, deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = await InterfaceVersionGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -2195,17 +2205,17 @@ namespace ASCOM.Alpaca.Access
         /// The ASCOM Device interface version number that this device supports. This method returns the version of the ASCOM device interface contract to which this device complies. Only one interface version is current at a moment in time and all new devices should be built to the latest interface version. Applications can choose which device interface versions they support and it is in their interest to support  previous versions as well as the current version to ensure thay can use the largest number of devices.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (IntResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<IntResponse>> InterfaceVersionGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<IntResponse>> InterfaceVersionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->InterfaceVersionGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->InterfaceVersionGet");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -2225,7 +2235,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -2254,14 +2264,14 @@ namespace ASCOM.Alpaca.Access
         /// Device name The name of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>StringResponse</returns>
-        public StringResponse NameGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public StringResponse NameGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = NameGetWithHttpInfo(deviceType, deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = NameGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -2269,16 +2279,16 @@ namespace ASCOM.Alpaca.Access
         /// Device name The name of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<StringResponse> NameGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<StringResponse> NameGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->NameGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->NameGet");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -2296,7 +2306,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -2324,15 +2334,15 @@ namespace ASCOM.Alpaca.Access
         /// Device name The name of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        public async System.Threading.Tasks.Task<StringResponse> NameGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<StringResponse> NameGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await NameGetWithHttpInfoAsync(deviceType, deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await NameGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -2340,17 +2350,17 @@ namespace ASCOM.Alpaca.Access
         /// Device name The name of the device
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> NameGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> NameGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->NameGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->NameGet");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -2370,7 +2380,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -2399,14 +2409,14 @@ namespace ASCOM.Alpaca.Access
         /// Returns the list of action names supported by this driver. Returns the list of action names supported by this driver.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>StringListResponse</returns>
-        public StringListResponse SupportedActionsGet(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public StringListResponse SupportedActionsGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringListResponse> localVarResponse = SupportedActionsGetWithHttpInfo(deviceType, deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<StringListResponse> localVarResponse = SupportedActionsGetWithHttpInfo( deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -2414,16 +2424,16 @@ namespace ASCOM.Alpaca.Access
         /// Returns the list of action names supported by this driver. Returns the list of action names supported by this driver.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of StringListResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<StringListResponse> SupportedActionsGetWithHttpInfo(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<StringListResponse> SupportedActionsGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->SupportedActionsGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->SupportedActionsGet");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -2441,7 +2451,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
@@ -2469,15 +2479,15 @@ namespace ASCOM.Alpaca.Access
         /// Returns the list of action names supported by this driver. Returns the list of action names supported by this driver.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringListResponse</returns>
-        public async System.Threading.Tasks.Task<StringListResponse> SupportedActionsGetAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<StringListResponse> SupportedActionsGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringListResponse> localVarResponse = await SupportedActionsGetWithHttpInfoAsync(deviceType, deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<StringListResponse> localVarResponse = await SupportedActionsGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -2485,17 +2495,17 @@ namespace ASCOM.Alpaca.Access
         /// Returns the list of action names supported by this driver. Returns the list of action names supported by this driver.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceType">One of the recognised ASCOM device types e.g. telescope (must be lower case)</param>
+        
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringListResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringListResponse>> SupportedActionsGetWithHttpInfoAsync(string deviceType, int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringListResponse>> SupportedActionsGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'deviceType' is set
-            if (deviceType == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'deviceType' when calling ASCOMMethodsCommonToAllDevicesApi->SupportedActionsGet");
+            // verify the required parameter 'DeviceType' is set
+            if (DeviceType == null)
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'DeviceType' when calling ASCOMMethodsCommonToAllDevicesApi->SupportedActionsGet");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -2515,7 +2525,7 @@ namespace ASCOM.Alpaca.Access
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (clientID != null)
             {
