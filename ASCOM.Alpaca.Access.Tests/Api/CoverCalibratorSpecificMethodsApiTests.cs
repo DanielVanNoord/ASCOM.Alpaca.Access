@@ -81,9 +81,7 @@ namespace Org.OpenAPITools.Test.Api
         public void CalibratoroffPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-
-            Payload UNKNOWN_BASE_TYPE = null;
-            var response = instance.CalibratorOffPut(deviceNumber, UNKNOWN_BASE_TYPE);
+            var response = instance.CalibratorOffPut(deviceNumber);
             Assert.IsType<Response>(response);
         }
 
@@ -123,9 +121,7 @@ namespace Org.OpenAPITools.Test.Api
         public void ClosecoverPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-
-            Payload UNKNOWN_BASE_TYPE = null;
-            var response = instance.CloseCoverPut(deviceNumber, UNKNOWN_BASE_TYPE);
+            var response = instance.CloseCoverPut(deviceNumber);
             Assert.IsType<Response>(response);
         }
 
@@ -150,9 +146,7 @@ namespace Org.OpenAPITools.Test.Api
         public void HaltcoverPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-
-            Payload UNKNOWN_BASE_TYPE = null;
-            var response = instance.HaltCoverPut(deviceNumber, UNKNOWN_BASE_TYPE);
+            var response = instance.HaltCoverPut(deviceNumber);
             Assert.IsType<Response>(response);
         }
 
@@ -177,9 +171,7 @@ namespace Org.OpenAPITools.Test.Api
         public void OpencoverPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-
-            Payload UNKNOWN_BASE_TYPE = null;
-            var response = instance.OpenCoverPut(deviceNumber, UNKNOWN_BASE_TYPE);
+            var response = instance.OpenCoverPut(deviceNumber);
             Assert.IsType<Response>(response);
         }
     }
