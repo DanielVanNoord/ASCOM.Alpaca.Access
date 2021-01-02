@@ -54,7 +54,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>Response</returns>
-        Response CommandBlindPut(int deviceNumber, CommandPayload commandPayload);
+        Response CommandBlindPut(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Transmits an arbitrary string to the device
@@ -67,7 +67,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> CommandBlindPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload);
+        ApiResponse<Response> CommandBlindPutWithHttpInfo(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a boolean value from the device.
         /// </summary>
@@ -79,7 +79,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse CommandBoolPut(int deviceNumber, CommandPayload commandPayload);
+        BoolResponse CommandBoolPut(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a boolean value from the device.
@@ -92,7 +92,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> CommandBoolPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload);
+        ApiResponse<BoolResponse> CommandBoolPutWithHttpInfo(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a string value from the device.
         /// </summary>
@@ -104,7 +104,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>StringResponse</returns>
-        StringResponse CommandStringPut(int deviceNumber, CommandPayload commandPayload);
+        StringResponse CommandStringPut(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a string value from the device.
@@ -117,7 +117,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        ApiResponse<StringResponse> CommandStringPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload);
+        ApiResponse<StringResponse> CommandStringPutWithHttpInfo(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Retrieves the connected state of the device
         /// </summary>
@@ -390,7 +390,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> CommandBlindPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> CommandBlindPutAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Transmits an arbitrary string to the device
@@ -404,7 +404,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> CommandBlindPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> CommandBlindPutWithHttpInfoAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a boolean value from the device.
         /// </summary>
@@ -417,7 +417,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> CommandBoolPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> CommandBoolPutAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a boolean value from the device.
@@ -431,7 +431,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> CommandBoolPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> CommandBoolPutWithHttpInfoAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a string value from the device.
         /// </summary>
@@ -444,7 +444,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        System.Threading.Tasks.Task<StringResponse> CommandStringPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<StringResponse> CommandStringPutAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Transmits an arbitrary string to the device and returns a string value from the device.
@@ -458,7 +458,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<StringResponse>> CommandStringPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<StringResponse>> CommandStringPutWithHttpInfoAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Retrieves the connected state of the device
         /// </summary>
@@ -1005,9 +1005,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>Response</returns>
-        public Response CommandBlindPut(int deviceNumber, CommandPayload commandPayload)
+        public Response CommandBlindPut(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = CommandBlindPutWithHttpInfo(deviceNumber, commandPayload);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = CommandBlindPutWithHttpInfo(deviceNumber, command, raw, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -1019,7 +1019,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> CommandBlindPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload)
+        public Org.OpenAPITools.Client.ApiResponse<Response> CommandBlindPutWithHttpInfo(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             // verify the required parameter 'DeviceType' is set
             if (DeviceType == null)
@@ -1044,7 +1044,22 @@ namespace ASCOM.Alpaca.Access
 
             localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
-            localVarRequestOptions.Data = commandPayload;
+            if (command != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Command", Org.OpenAPITools.Client.ClientUtils.ParameterToString(command)); // form parameter
+            }
+            if (raw != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Raw", Org.OpenAPITools.Client.ClientUtils.ParameterToString(raw)); // form parameter
+            }
+            if (clientID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientID)); // form parameter
+            }
+            if (clientTransactionID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientTransactionID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientTransactionID)); // form parameter
+            }
 
 
             // make the HTTP request
@@ -1068,9 +1083,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> CommandBlindPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> CommandBlindPutAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await CommandBlindPutWithHttpInfoAsync(deviceNumber, commandPayload, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await CommandBlindPutWithHttpInfoAsync(deviceNumber, command, raw, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1083,7 +1098,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> CommandBlindPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> CommandBlindPutWithHttpInfoAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'DeviceType' is set
             if (DeviceType == null)
@@ -1110,8 +1125,22 @@ namespace ASCOM.Alpaca.Access
 
             localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
-            localVarRequestOptions.Data = commandPayload;
-
+            if (command != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Command", Org.OpenAPITools.Client.ClientUtils.ParameterToString(command)); // form parameter
+            }
+            if (raw != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Raw", Org.OpenAPITools.Client.ClientUtils.ParameterToString(raw)); // form parameter
+            }
+            if (clientID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientID)); // form parameter
+            }
+            if (clientTransactionID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientTransactionID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientTransactionID)); // form parameter
+            }
 
             // make the HTTP request
 
@@ -1134,9 +1163,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse CommandBoolPut(int deviceNumber, CommandPayload commandPayload)
+        public BoolResponse CommandBoolPut(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = CommandBoolPutWithHttpInfo(deviceNumber, commandPayload);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = CommandBoolPutWithHttpInfo(deviceNumber, command, raw, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -1148,7 +1177,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> CommandBoolPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload)
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> CommandBoolPutWithHttpInfo(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             // verify the required parameter 'DeviceType' is set
             if (DeviceType == null)
@@ -1173,7 +1202,22 @@ namespace ASCOM.Alpaca.Access
 
             localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
-            localVarRequestOptions.Data = commandPayload;
+            if (command != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Command", Org.OpenAPITools.Client.ClientUtils.ParameterToString(command)); // form parameter
+            }
+            if (raw != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Raw", Org.OpenAPITools.Client.ClientUtils.ParameterToString(raw)); // form parameter
+            }
+            if (clientID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientID)); // form parameter
+            }
+            if (clientTransactionID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientTransactionID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientTransactionID)); // form parameter
+            }
 
 
             // make the HTTP request
@@ -1197,9 +1241,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> CommandBoolPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> CommandBoolPutAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await CommandBoolPutWithHttpInfoAsync(deviceNumber, commandPayload, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await CommandBoolPutWithHttpInfoAsync(deviceNumber, command, raw, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1212,7 +1256,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> CommandBoolPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> CommandBoolPutWithHttpInfoAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'DeviceType' is set
             if (DeviceType == null)
@@ -1239,7 +1283,22 @@ namespace ASCOM.Alpaca.Access
 
             localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
-            localVarRequestOptions.Data = commandPayload;
+            if (command != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Command", Org.OpenAPITools.Client.ClientUtils.ParameterToString(command)); // form parameter
+            }
+            if (raw != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Raw", Org.OpenAPITools.Client.ClientUtils.ParameterToString(raw)); // form parameter
+            }
+            if (clientID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientID)); // form parameter
+            }
+            if (clientTransactionID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientTransactionID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientTransactionID)); // form parameter
+            }
 
 
             // make the HTTP request
@@ -1263,9 +1322,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>StringResponse</returns>
-        public StringResponse CommandStringPut(int deviceNumber, CommandPayload commandPayload)
+        public StringResponse CommandStringPut(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = CommandStringPutWithHttpInfo(deviceNumber, commandPayload);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = CommandStringPutWithHttpInfo(deviceNumber, command, raw, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -1277,7 +1336,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of StringResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<StringResponse> CommandStringPutWithHttpInfo(int deviceNumber, CommandPayload commandPayload)
+        public Org.OpenAPITools.Client.ApiResponse<StringResponse> CommandStringPutWithHttpInfo(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             // verify the required parameter 'DeviceType' is set
             if (DeviceType == null)
@@ -1302,7 +1361,22 @@ namespace ASCOM.Alpaca.Access
 
             localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
-            localVarRequestOptions.Data = commandPayload;
+            if (command != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Command", Org.OpenAPITools.Client.ClientUtils.ParameterToString(command)); // form parameter
+            }
+            if (raw != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Raw", Org.OpenAPITools.Client.ClientUtils.ParameterToString(raw)); // form parameter
+            }
+            if (clientID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientID)); // form parameter
+            }
+            if (clientTransactionID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientTransactionID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientTransactionID)); // form parameter
+            }
 
 
             // make the HTTP request
@@ -1326,9 +1400,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of StringResponse</returns>
-        public async System.Threading.Tasks.Task<StringResponse> CommandStringPutAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<StringResponse> CommandStringPutAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await CommandStringPutWithHttpInfoAsync(deviceNumber, commandPayload, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<StringResponse> localVarResponse = await CommandStringPutWithHttpInfoAsync(deviceNumber, command, raw, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1341,7 +1415,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (StringResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> CommandStringPutWithHttpInfoAsync(int deviceNumber, CommandPayload commandPayload, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<StringResponse>> CommandStringPutWithHttpInfoAsync(int deviceNumber, string command, bool raw = false, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'DeviceType' is set
             if (DeviceType == null)
@@ -1368,7 +1442,22 @@ namespace ASCOM.Alpaca.Access
 
             localVarRequestOptions.PathParameters.Add("device_type", Org.OpenAPITools.Client.ClientUtils.ParameterToString(DeviceType)); // path parameter
             localVarRequestOptions.PathParameters.Add("device_number", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
-            localVarRequestOptions.Data = commandPayload;
+            if (command != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Command", Org.OpenAPITools.Client.ClientUtils.ParameterToString(command)); // form parameter
+            }
+            if (raw != null)
+            {
+                localVarRequestOptions.FormParameters.Add("Raw", Org.OpenAPITools.Client.ClientUtils.ParameterToString(raw)); // form parameter
+            }
+            if (clientID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientID)); // form parameter
+            }
+            if (clientTransactionID != null)
+            {
+                localVarRequestOptions.FormParameters.Add("ClientTransactionID", Org.OpenAPITools.Client.ClientUtils.ParameterToString(clientTransactionID)); // form parameter
+            }
 
 
             // make the HTTP request
