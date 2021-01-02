@@ -29,6 +29,7 @@ using RestSharp.Deserializers;
 using ErrorEventArgs = Newtonsoft.Json.Serialization.ErrorEventArgs;
 using RestSharpMethod = RestSharp.Method;
 using Polly;
+using RestSharp.Authenticators;
 
 namespace Org.OpenAPITools.Client
 {
@@ -415,6 +416,11 @@ namespace Org.OpenAPITools.Client
         private ApiResponse<T> Exec<T>(RestRequest req, IReadableConfiguration configuration)
         {
             RestClient client = new RestClient(_baseUrl);
+
+            if(configuration.Username != null && configuration.Password != null)
+            {
+                client.Authenticator = new HttpBasicAuthenticator(configuration.Username, configuration.Password);
+            }
 
             client.ClearHandlers();
             var existingDeserializer = req.JsonSerializer as IDeserializer;
