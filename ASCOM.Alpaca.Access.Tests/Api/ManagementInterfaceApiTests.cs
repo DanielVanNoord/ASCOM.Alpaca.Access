@@ -65,6 +65,8 @@ namespace Org.OpenAPITools.Test.Api
             int? clientTransactionID = null;
             var response = instance.ManagementApiversionsGet(clientID, clientTransactionID);
             Assert.IsType<IntListResponse>(response);
+            Assert.True(response.Value.Count > 0);
+            Assert.True(response.Value.Contains(1));
         }
 
         /// <summary>
@@ -78,6 +80,7 @@ namespace Org.OpenAPITools.Test.Api
             int? clientTransactionID = null;
             var response = instance.ManagementV1ConfiguredDevicesGet(clientID, clientTransactionID);
             Assert.IsType<AlpacaConfiguredDevicesResponse>(response);
+            Assert.True(response.Value.Count > 0);
         }
 
         /// <summary>
@@ -91,6 +94,10 @@ namespace Org.OpenAPITools.Test.Api
             int? clientTransactionID = null;
             var response = instance.ManagementV1DescriptionGet(clientID, clientTransactionID);
             Assert.IsType<AlpacaDescriptionResponse>(response);
+            Assert.True((response.Value.Manufacturer ?? string.Empty) != string.Empty);
+            Assert.True((response.Value.Location ?? string.Empty) != string.Empty);
+            Assert.True((response.Value.ManufacturerVersion ?? string.Empty) != string.Empty);
+            Assert.True((response.Value.ServerName ?? string.Empty) != string.Empty);
         }
     }
 }
