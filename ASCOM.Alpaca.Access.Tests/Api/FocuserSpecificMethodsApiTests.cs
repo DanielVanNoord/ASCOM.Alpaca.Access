@@ -17,6 +17,8 @@ using RestSharp;
 using Xunit;
 
 using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Api;
+using ASCOM.Alpaca.Responses;
 // uncomment below to import models
 //using Org.OpenAPITools.Model;
 
@@ -31,11 +33,11 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class FocuserSpecificMethodsApiTests : IDisposable
     {
-        //private FocuserSpecificMethodsApi instance;
+        private FocuserSpecificMethodsApi instance;
 
         public FocuserSpecificMethodsApiTests()
         {
-            //instance = new FocuserSpecificMethodsApi();
+            instance = new FocuserSpecificMethodsApi("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
@@ -50,7 +52,7 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' FocuserSpecificMethodsApi
-            //Assert.IsType<FocuserSpecificMethodsApi>(instance);
+            Assert.IsType<FocuserSpecificMethodsApi>(instance);
         }
 
         /// <summary>
@@ -60,11 +62,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberAbsoluteGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FocuserDeviceNumberAbsoluteGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FocuserDeviceNumberAbsoluteGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -74,10 +76,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberHaltPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.FocuserDeviceNumberHaltPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FocuserDeviceNumberHaltPut(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -87,11 +90,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberIsmovingGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FocuserDeviceNumberIsmovingGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FocuserDeviceNumberIsmovingGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -101,11 +104,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberMaxincrementGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FocuserDeviceNumberMaxincrementGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FocuserDeviceNumberMaxincrementGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -115,11 +118,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberMaxstepGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FocuserDeviceNumberMaxstepGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FocuserDeviceNumberMaxstepGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -129,12 +132,12 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberMovePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int position = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FocuserDeviceNumberMovePut(deviceNumber, position, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int position = 5000;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FocuserDeviceNumberMovePut(deviceNumber, position, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -144,11 +147,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberPositionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FocuserDeviceNumberPositionGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FocuserDeviceNumberPositionGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -158,11 +161,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberStepsizeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FocuserDeviceNumberStepsizeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FocuserDeviceNumberStepsizeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -172,11 +175,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberTempcompGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FocuserDeviceNumberTempcompGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FocuserDeviceNumberTempcompGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -186,12 +189,12 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberTempcompPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //bool tempComp = null;
-            //int? _client = null;
-            //int? clientTransactionIDForm = null;
-            //var response = instance.FocuserDeviceNumberTempcompPut(deviceNumber, tempComp, _client, clientTransactionIDForm);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            bool tempComp = true;
+            int? _client = null;
+            int? clientTransactionIDForm = null;
+            var response = instance.FocuserDeviceNumberTempcompPut(deviceNumber, tempComp, _client, clientTransactionIDForm);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -201,11 +204,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberTempcompavailableGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FocuserDeviceNumberTempcompavailableGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FocuserDeviceNumberTempcompavailableGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -215,11 +218,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FocuserDeviceNumberTemperatureGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FocuserDeviceNumberTemperatureGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FocuserDeviceNumberTemperatureGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
     }
 }
