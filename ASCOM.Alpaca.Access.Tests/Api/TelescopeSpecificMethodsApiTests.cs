@@ -57,419 +57,419 @@ namespace Org.OpenAPITools.Test.Api
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberAbortSlewPut
+        /// Test TelescopeAbortSlewPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberAbortSlewPutTest()
+        public void TelescopeAbortSlewPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberAbortSlewPut(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeAbortSlewPut(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberAlignmentModeGet
+        /// Test TelescopeAlignmentModeGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberAlignmentModeGetTest()
+        public void TelescopeAlignmentModeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberAlignmentModeGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeAlignmentModeGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<AlignmentModeResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberAltitudeGet
+        /// Test TelescopeAltitudeGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberAltitudeGetTest()
+        public void TelescopeAltitudeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberAltitudeGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeAltitudeGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberApertureAreaGet
+        /// Test TelescopeApertureAreaGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberApertureAreaGetTest()
+        public void TelescopeApertureAreaGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberApertureAreaGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeApertureAreaGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberApertureDiameterGet
+        /// Test TelescopeApertureDiameterGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberApertureDiameterGetTest()
+        public void TelescopeApertureDiameterGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberApertureDiameterGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeApertureDiameterGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberAtHomeGet
+        /// Test TelescopeAtHomeGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberAtHomeGetTest()
+        public void TelescopeAtHomeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberAtHomeGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeAtHomeGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberAtParkGet
+        /// Test TelescopeAtParkGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberAtParkGetTest()
+        public void TelescopeAtParkGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberAtParkGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeAtParkGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberAxisRatesGet
+        /// Test TelescopeAxisRatesGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberAxisRatesGetTest()
+        public void TelescopeAxisRatesGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             TelescopeAxis? axis = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberAxisRatesGet(deviceNumber, axis, clientID, clientTransactionID);
+            var response = instance.TelescopeAxisRatesGet(deviceNumber, axis, clientID, clientTransactionID);
             Assert.IsType<AxisRatesResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberAzimuthGet
+        /// Test TelescopeAzimuthGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberAzimuthGetTest()
+        public void TelescopeAzimuthGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberAzimuthGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeAzimuthGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanFindHomeGet
+        /// Test TelescopeCanFindHomeGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanFindHomeGetTest()
+        public void TelescopeCanFindHomeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanFindHomeGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanFindHomeGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanMoveAxisGet
+        /// Test TelescopeCanMoveAxisGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanMoveAxisGetTest()
+        public void TelescopeCanMoveAxisGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             TelescopeAxis? axis = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanMoveAxisGet(deviceNumber, axis, clientID, clientTransactionID);
+            var response = instance.TelescopeCanMoveAxisGet(deviceNumber, axis, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanParkGet
+        /// Test TelescopeCanParkGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanParkGetTest()
+        public void TelescopeCanParkGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanParkGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanParkGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanPulseGuideGet
+        /// Test TelescopeCanPulseGuideGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanPulseGuideGetTest()
+        public void TelescopeCanPulseGuideGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanPulseGuideGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanPulseGuideGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSetDeclinationRateGet
+        /// Test TelescopeCanSetDeclinationRateGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSetDeclinationRateGetTest()
+        public void TelescopeCanSetDeclinationRateGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSetDeclinationRateGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSetDeclinationRateGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSetGuideRatesGet
+        /// Test TelescopeCanSetGuideRatesGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSetGuideRatesGetTest()
+        public void TelescopeCanSetGuideRatesGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSetGuideRatesGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSetGuideRatesGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSetParkGet
+        /// Test TelescopeCanSetParkGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSetParkGetTest()
+        public void TelescopeCanSetParkGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSetParkGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSetParkGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSetPierSideGet
+        /// Test TelescopeCanSetPierSideGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSetPierSideGetTest()
+        public void TelescopeCanSetPierSideGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSetPierSideGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSetPierSideGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGet
+        /// Test TelescopeCanSetRightAscensionRateGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGetTest()
+        public void TelescopeCanSetRightAscensionRateGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSetRightAscensionRateGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSetTrackingGet
+        /// Test TelescopeCanSetTrackingGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSetTrackingGetTest()
+        public void TelescopeCanSetTrackingGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSetTrackingGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSetTrackingGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGet
+        /// Test TelescopeCanSlewAltAzAsyncGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGetTest()
+        public void TelescopeCanSlewAltAzAsyncGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSlewAltAzAsyncGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSlewAltAzGet
+        /// Test TelescopeCanSlewAltAzGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSlewAltAzGetTest()
+        public void TelescopeCanSlewAltAzGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSlewAltAzGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSlewAltAzGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSlewAsyncGet
+        /// Test TelescopeCanSlewAsyncGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSlewAsyncGetTest()
+        public void TelescopeCanSlewAsyncGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSlewAsyncGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSlewAsyncGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSlewGet
+        /// Test TelescopeCanSlewGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSlewGetTest()
+        public void TelescopeCanSlewGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSlewGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSlewGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSyncAltAzGet
+        /// Test TelescopeCanSyncAltAzGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSyncAltAzGetTest()
+        public void TelescopeCanSyncAltAzGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSyncAltAzGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSyncAltAzGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanSyncGet
+        /// Test TelescopeCanSyncGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanSyncGetTest()
+        public void TelescopeCanSyncGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanSyncGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanSyncGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCanUnparkGet
+        /// Test TelescopeCanUnparkGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberCanUnparkGetTest()
+        public void TelescopeCanUnparkGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCanUnparkGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeCanUnparkGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberDeclinationGet
+        /// Test TelescopeDeclinationGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberDeclinationGetTest()
+        public void TelescopeDeclinationGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberDeclinationGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeDeclinationGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberDeclinationRateGet
+        /// Test TelescopeDeclinationRateGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberDeclinationRateGetTest()
+        public void TelescopeDeclinationRateGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberDeclinationRateGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeDeclinationRateGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberDeclinationRatePut
+        /// Test TelescopeDeclinationRatePut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberDeclinationRatePutTest()
+        public void TelescopeDeclinationRatePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             double? declinationRate = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberDeclinationRatePut(deviceNumber, declinationRate, clientID, clientTransactionID);
+            var response = instance.TelescopeDeclinationRatePut(deviceNumber, declinationRate, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberDestinationSideOfPierGet
+        /// Test TelescopeDestinationSideOfPierGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberDestinationSideOfPierGetTest()
+        public void TelescopeDestinationSideOfPierGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
@@ -477,172 +477,172 @@ namespace Org.OpenAPITools.Test.Api
             double? declination = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberDestinationSideOfPierGet(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
+            var response = instance.TelescopeDestinationSideOfPierGet(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
             Assert.IsType<PointingStateResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberDisposePut
+        /// Test TelescopeDisposePut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberDisposePutTest()
+        public void TelescopeDisposePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberDisposePut(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeDisposePut(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberDoesRefractionGet
+        /// Test TelescopeDoesRefractionGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberDoesRefractionGetTest()
+        public void TelescopeDoesRefractionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberDoesRefractionGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeDoesRefractionGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberDoesRefractionPut
+        /// Test TelescopeDoesRefractionPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberDoesRefractionPutTest()
+        public void TelescopeDoesRefractionPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             bool? doesRefraction = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberDoesRefractionPut(deviceNumber, doesRefraction, clientID, clientTransactionID);
+            var response = instance.TelescopeDoesRefractionPut(deviceNumber, doesRefraction, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberEquatorialSystemGet
+        /// Test TelescopeEquatorialSystemGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberEquatorialSystemGetTest()
+        public void TelescopeEquatorialSystemGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberEquatorialSystemGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeEquatorialSystemGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<EquatorialCoordinateTypeResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberFindHomePut
+        /// Test TelescopeFindHomePut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberFindHomePutTest()
+        public void TelescopeFindHomePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberFindHomePut(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeFindHomePut(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberFocalLengthGet
+        /// Test TelescopeFocalLengthGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberFocalLengthGetTest()
+        public void TelescopeFocalLengthGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberFocalLengthGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeFocalLengthGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberGuideRateDeclinationGet
+        /// Test TelescopeGuideRateDeclinationGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberGuideRateDeclinationGetTest()
+        public void TelescopeGuideRateDeclinationGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberGuideRateDeclinationGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeGuideRateDeclinationGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberGuideRateDeclinationPut
+        /// Test TelescopeGuideRateDeclinationPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberGuideRateDeclinationPutTest()
+        public void TelescopeGuideRateDeclinationPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             double? guideRateDeclination = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberGuideRateDeclinationPut(deviceNumber, guideRateDeclination, clientID, clientTransactionID);
+            var response = instance.TelescopeGuideRateDeclinationPut(deviceNumber, guideRateDeclination, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberGuideRateRightAscensionGet
+        /// Test TelescopeGuideRateRightAscensionGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberGuideRateRightAscensionGetTest()
+        public void TelescopeGuideRateRightAscensionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberGuideRateRightAscensionGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeGuideRateRightAscensionGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberGuideRateRightAscensionPut
+        /// Test TelescopeGuideRateRightAscensionPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberGuideRateRightAscensionPutTest()
+        public void TelescopeGuideRateRightAscensionPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             double? guideRateRightAscension = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberGuideRateRightAscensionPut(deviceNumber, guideRateRightAscension, clientID, clientTransactionID);
+            var response = instance.TelescopeGuideRateRightAscensionPut(deviceNumber, guideRateRightAscension, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberIsPulseGuidingGet
+        /// Test TelescopeIsPulseGuidingGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberIsPulseGuidingGetTest()
+        public void TelescopeIsPulseGuidingGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberIsPulseGuidingGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeIsPulseGuidingGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberMoveAxisPut
+        /// Test TelescopeMoveAxisPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberMoveAxisPutTest()
+        public void TelescopeMoveAxisPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
@@ -650,29 +650,29 @@ namespace Org.OpenAPITools.Test.Api
             double? rate = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberMoveAxisPut(deviceNumber, axis, rate, clientID, clientTransactionID);
+            var response = instance.TelescopeMoveAxisPut(deviceNumber, axis, rate, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberParkPut
+        /// Test TelescopeParkPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberParkPutTest()
+        public void TelescopeParkPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberParkPut(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeParkPut(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberPulseGuidePut
+        /// Test TelescopePulseGuidePut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberPulseGuidePutTest()
+        public void TelescopePulseGuidePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
@@ -680,231 +680,231 @@ namespace Org.OpenAPITools.Test.Api
             int? duration = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberPulseGuidePut(deviceNumber, direction, duration, clientID, clientTransactionID);
+            var response = instance.TelescopePulseGuidePut(deviceNumber, direction, duration, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberRightAscensionGet
+        /// Test TelescopeRightAscensionGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberRightAscensionGetTest()
+        public void TelescopeRightAscensionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberRightAscensionGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeRightAscensionGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberRightAscensionRateGet
+        /// Test TelescopeRightAscensionRateGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberRightAscensionRateGetTest()
+        public void TelescopeRightAscensionRateGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberRightAscensionRateGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeRightAscensionRateGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberRightAscensionRatePut
+        /// Test TelescopeRightAscensionRatePut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberRightAscensionRatePutTest()
+        public void TelescopeRightAscensionRatePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             double? rightAscensionRate = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberRightAscensionRatePut(deviceNumber, rightAscensionRate, clientID, clientTransactionID);
+            var response = instance.TelescopeRightAscensionRatePut(deviceNumber, rightAscensionRate, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSetParkPut
+        /// Test TelescopeSetParkPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSetParkPutTest()
+        public void TelescopeSetParkPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSetParkPut(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeSetParkPut(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSideOfPierGet
+        /// Test TelescopeSideOfPierGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSideOfPierGetTest()
+        public void TelescopeSideOfPierGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSideOfPierGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeSideOfPierGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<PointingStateResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSideOfPierPut
+        /// Test TelescopeSideOfPierPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSideOfPierPutTest()
+        public void TelescopeSideOfPierPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             PointingState? sideOfPier = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSideOfPierPut(deviceNumber, sideOfPier, clientID, clientTransactionID);
+            var response = instance.TelescopeSideOfPierPut(deviceNumber, sideOfPier, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSiderealTimeGet
+        /// Test TelescopeSiderealTimeGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSiderealTimeGetTest()
+        public void TelescopeSiderealTimeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSiderealTimeGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeSiderealTimeGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSiteElevationGet
+        /// Test TelescopeSiteElevationGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSiteElevationGetTest()
+        public void TelescopeSiteElevationGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSiteElevationGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeSiteElevationGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSiteElevationPut
+        /// Test TelescopeSiteElevationPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSiteElevationPutTest()
+        public void TelescopeSiteElevationPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             double? siteElevation = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSiteElevationPut(deviceNumber, siteElevation, clientID, clientTransactionID);
+            var response = instance.TelescopeSiteElevationPut(deviceNumber, siteElevation, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSiteLatitudeGet
+        /// Test TelescopeSiteLatitudeGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSiteLatitudeGetTest()
+        public void TelescopeSiteLatitudeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSiteLatitudeGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeSiteLatitudeGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSiteLatitudePut
+        /// Test TelescopeSiteLatitudePut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSiteLatitudePutTest()
+        public void TelescopeSiteLatitudePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             double? siteLatitude = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSiteLatitudePut(deviceNumber, siteLatitude, clientID, clientTransactionID);
+            var response = instance.TelescopeSiteLatitudePut(deviceNumber, siteLatitude, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSiteLongitudeGet
+        /// Test TelescopeSiteLongitudeGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSiteLongitudeGetTest()
+        public void TelescopeSiteLongitudeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSiteLongitudeGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeSiteLongitudeGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSiteLongitudePut
+        /// Test TelescopeSiteLongitudePut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSiteLongitudePutTest()
+        public void TelescopeSiteLongitudePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             double? siteLongitude = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSiteLongitudePut(deviceNumber, siteLongitude, clientID, clientTransactionID);
+            var response = instance.TelescopeSiteLongitudePut(deviceNumber, siteLongitude, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSlewSettleTimeGet
+        /// Test TelescopeSlewSettleTimeGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSlewSettleTimeGetTest()
+        public void TelescopeSlewSettleTimeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSlewSettleTimeGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeSlewSettleTimeGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSlewSettleTimePut
+        /// Test TelescopeSlewSettleTimePut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSlewSettleTimePutTest()
+        public void TelescopeSlewSettleTimePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? slewSettleTime = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSlewSettleTimePut(deviceNumber, slewSettleTime, clientID, clientTransactionID);
+            var response = instance.TelescopeSlewSettleTimePut(deviceNumber, slewSettleTime, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPut
+        /// Test TelescopeSlewToAltAzAsyncPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPutTest()
+        public void TelescopeSlewToAltAzAsyncPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
@@ -912,15 +912,15 @@ namespace Org.OpenAPITools.Test.Api
             double? altitude = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPut(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
+            var response = instance.TelescopeSlewToAltAzAsyncPut(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSlewToAltAzPut
+        /// Test TelescopeSlewToAltAzPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSlewToAltAzPutTest()
+        public void TelescopeSlewToAltAzPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
@@ -928,15 +928,15 @@ namespace Org.OpenAPITools.Test.Api
             double? altitude = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSlewToAltAzPut(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
+            var response = instance.TelescopeSlewToAltAzPut(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPut
+        /// Test TelescopeSlewToCoordinatesAsyncPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPutTest()
+        public void TelescopeSlewToCoordinatesAsyncPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
@@ -944,15 +944,15 @@ namespace Org.OpenAPITools.Test.Api
             double? declination = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPut(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
+            var response = instance.TelescopeSlewToCoordinatesAsyncPut(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSlewToCoordinatesPut
+        /// Test TelescopeSlewToCoordinatesPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSlewToCoordinatesPutTest()
+        public void TelescopeSlewToCoordinatesPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
@@ -960,57 +960,57 @@ namespace Org.OpenAPITools.Test.Api
             double? declination = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSlewToCoordinatesPut(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
+            var response = instance.TelescopeSlewToCoordinatesPut(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSlewToTargetAsyncPut
+        /// Test TelescopeSlewToTargetAsyncPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSlewToTargetAsyncPutTest()
+        public void TelescopeSlewToTargetAsyncPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSlewToTargetAsyncPut(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeSlewToTargetAsyncPut(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSlewToTargetPut
+        /// Test TelescopeSlewToTargetPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSlewToTargetPutTest()
+        public void TelescopeSlewToTargetPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSlewToTargetPut(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeSlewToTargetPut(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSlewingGet
+        /// Test TelescopeSlewingGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSlewingGetTest()
+        public void TelescopeSlewingGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSlewingGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeSlewingGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSyncToAltAzPut
+        /// Test TelescopeSyncToAltAzPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSyncToAltAzPutTest()
+        public void TelescopeSyncToAltAzPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
@@ -1018,15 +1018,15 @@ namespace Org.OpenAPITools.Test.Api
             double? altitude = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSyncToAltAzPut(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
+            var response = instance.TelescopeSyncToAltAzPut(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSyncToCoordinatesPut
+        /// Test TelescopeSyncToCoordinatesPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSyncToCoordinatesPutTest()
+        public void TelescopeSyncToCoordinatesPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
@@ -1034,194 +1034,194 @@ namespace Org.OpenAPITools.Test.Api
             double? declination = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSyncToCoordinatesPut(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
+            var response = instance.TelescopeSyncToCoordinatesPut(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSyncToTargetPut
+        /// Test TelescopeSyncToTargetPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberSyncToTargetPutTest()
+        public void TelescopeSyncToTargetPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSyncToTargetPut(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeSyncToTargetPut(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberTargetDeclinationGet
+        /// Test TelescopeTargetDeclinationGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberTargetDeclinationGetTest()
+        public void TelescopeTargetDeclinationGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberTargetDeclinationGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeTargetDeclinationGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberTargetDeclinationPut
+        /// Test TelescopeTargetDeclinationPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberTargetDeclinationPutTest()
+        public void TelescopeTargetDeclinationPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             double? targetDeclination = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberTargetDeclinationPut(deviceNumber, targetDeclination, clientID, clientTransactionID);
+            var response = instance.TelescopeTargetDeclinationPut(deviceNumber, targetDeclination, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberTargetRightAscensionGet
+        /// Test TelescopeTargetRightAscensionGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberTargetRightAscensionGetTest()
+        public void TelescopeTargetRightAscensionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberTargetRightAscensionGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeTargetRightAscensionGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberTargetRightAscensionPut
+        /// Test TelescopeTargetRightAscensionPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberTargetRightAscensionPutTest()
+        public void TelescopeTargetRightAscensionPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             double? targetRightAscension = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberTargetRightAscensionPut(deviceNumber, targetRightAscension, clientID, clientTransactionID);
+            var response = instance.TelescopeTargetRightAscensionPut(deviceNumber, targetRightAscension, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberTrackingGet
+        /// Test TelescopeTrackingGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberTrackingGetTest()
+        public void TelescopeTrackingGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberTrackingGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeTrackingGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberTrackingPut
+        /// Test TelescopeTrackingPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberTrackingPutTest()
+        public void TelescopeTrackingPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             bool? tracking = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberTrackingPut(deviceNumber, tracking, clientID, clientTransactionID);
+            var response = instance.TelescopeTrackingPut(deviceNumber, tracking, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberTrackingRateGet
+        /// Test TelescopeTrackingRateGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberTrackingRateGetTest()
+        public void TelescopeTrackingRateGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberTrackingRateGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeTrackingRateGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DriveRateResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberTrackingRatePut
+        /// Test TelescopeTrackingRatePut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberTrackingRatePutTest()
+        public void TelescopeTrackingRatePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             DriveRate? trackingRate = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberTrackingRatePut(deviceNumber, trackingRate, clientID, clientTransactionID);
+            var response = instance.TelescopeTrackingRatePut(deviceNumber, trackingRate, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberTrackingRatesGet
+        /// Test TelescopeTrackingRatesGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberTrackingRatesGetTest()
+        public void TelescopeTrackingRatesGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberTrackingRatesGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeTrackingRatesGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DriveRatesResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberUTCDateGet
+        /// Test TelescopeUTCDateGet
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberUTCDateGetTest()
+        public void TelescopeUTCDateGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberUTCDateGet(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeUTCDateGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<DateTimeResponse>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberUTCDatePut
+        /// Test TelescopeUTCDatePut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberUTCDatePutTest()
+        public void TelescopeUTCDatePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             DateTime? uTCDate = null;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberUTCDatePut(deviceNumber, uTCDate, clientID, clientTransactionID);
+            var response = instance.TelescopeUTCDatePut(deviceNumber, uTCDate, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberUnParkPut
+        /// Test TelescopeUnParkPut
         /// </summary>
         [Fact]
-        public void ApiV1TelescopeDeviceNumberUnParkPutTest()
+        public void TelescopeUnParkPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             int? clientID = null;
             int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberUnParkPut(deviceNumber, clientID, clientTransactionID);
+            var response = instance.TelescopeUnParkPut(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
     }

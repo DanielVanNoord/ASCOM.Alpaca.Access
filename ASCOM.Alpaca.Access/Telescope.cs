@@ -35,7 +35,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberAbortSlewPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeAbortSlewPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -48,7 +48,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberAbortSlewPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeAbortSlewPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -57,7 +57,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>AlignmentModeResponse</returns>
-        AlignmentModeResponse ApiV1TelescopeDeviceNumberAlignmentModeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        AlignmentModeResponse TelescopeAlignmentModeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -70,7 +70,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of AlignmentModeResponse</returns>
-        ApiResponse<AlignmentModeResponse> ApiV1TelescopeDeviceNumberAlignmentModeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<AlignmentModeResponse> TelescopeAlignmentModeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -79,7 +79,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberAltitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeAltitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -92,7 +92,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberAltitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeAltitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -101,7 +101,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberApertureAreaGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeApertureAreaGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -114,7 +114,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberApertureAreaGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeApertureAreaGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -123,7 +123,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberApertureDiameterGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeApertureDiameterGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -136,7 +136,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberApertureDiameterGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeApertureDiameterGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -145,7 +145,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberAtHomeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeAtHomeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -158,7 +158,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberAtHomeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeAtHomeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -167,7 +167,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberAtParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeAtParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -180,7 +180,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberAtParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeAtParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -190,7 +190,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>AxisRatesResponse</returns>
-        AxisRatesResponse ApiV1TelescopeDeviceNumberAxisRatesGet(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        AxisRatesResponse TelescopeAxisRatesGet(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -204,7 +204,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of AxisRatesResponse</returns>
-        ApiResponse<AxisRatesResponse> ApiV1TelescopeDeviceNumberAxisRatesGetWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<AxisRatesResponse> TelescopeAxisRatesGetWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -213,7 +213,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberAzimuthGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeAzimuthGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -226,7 +226,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberAzimuthGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeAzimuthGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -235,7 +235,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanFindHomeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanFindHomeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -248,7 +248,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanFindHomeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanFindHomeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -258,7 +258,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanMoveAxisGet(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanMoveAxisGet(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -272,7 +272,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanMoveAxisGetWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanMoveAxisGetWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -281,7 +281,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -294,7 +294,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -303,7 +303,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanPulseGuideGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanPulseGuideGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -316,7 +316,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanPulseGuideGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanPulseGuideGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -325,7 +325,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSetDeclinationRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSetDeclinationRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -338,7 +338,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetDeclinationRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSetDeclinationRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -347,7 +347,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSetGuideRatesGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSetGuideRatesGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -360,7 +360,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetGuideRatesGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSetGuideRatesGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -369,7 +369,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSetParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSetParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -382,7 +382,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSetParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -391,7 +391,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSetPierSideGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSetPierSideGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -404,7 +404,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetPierSideGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSetPierSideGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -413,7 +413,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSetRightAscensionRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -426,7 +426,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSetRightAscensionRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -435,7 +435,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSetTrackingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSetTrackingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -448,7 +448,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetTrackingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSetTrackingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -457,7 +457,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSlewAltAzAsyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -470,7 +470,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSlewAltAzAsyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -479,7 +479,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSlewAltAzGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSlewAltAzGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -492,7 +492,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAltAzGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSlewAltAzGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -501,7 +501,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSlewAsyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSlewAsyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -514,7 +514,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAsyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSlewAsyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -523,7 +523,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSlewGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSlewGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -536,7 +536,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSlewGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -545,7 +545,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSyncAltAzGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSyncAltAzGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -558,7 +558,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSyncAltAzGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSyncAltAzGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -567,7 +567,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanSyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanSyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -580,7 +580,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanSyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -589,7 +589,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberCanUnparkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeCanUnparkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -602,7 +602,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanUnparkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeCanUnparkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -611,7 +611,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -624,7 +624,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -633,7 +633,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberDeclinationRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeDeclinationRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -646,7 +646,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberDeclinationRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeDeclinationRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -656,7 +656,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberDeclinationRatePut(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeDeclinationRatePut(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -670,7 +670,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberDeclinationRatePutWithHttpInfo(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeDeclinationRatePutWithHttpInfo(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -682,7 +682,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>PointingStateResponse</returns>
-        PointingStateResponse ApiV1TelescopeDeviceNumberDestinationSideOfPierGet(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        PointingStateResponse TelescopeDestinationSideOfPierGet(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -697,7 +697,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of PointingStateResponse</returns>
-        ApiResponse<PointingStateResponse> ApiV1TelescopeDeviceNumberDestinationSideOfPierGetWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<PointingStateResponse> TelescopeDestinationSideOfPierGetWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -706,7 +706,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberDisposePut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeDisposePut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -719,7 +719,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberDisposePutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeDisposePutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -728,7 +728,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberDoesRefractionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeDoesRefractionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -741,7 +741,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberDoesRefractionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeDoesRefractionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -751,7 +751,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberDoesRefractionPut(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeDoesRefractionPut(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -765,7 +765,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberDoesRefractionPutWithHttpInfo(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeDoesRefractionPutWithHttpInfo(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -775,7 +775,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>EquatorialCoordinateTypeResponse</returns>
-        EquatorialCoordinateTypeResponse ApiV1TelescopeDeviceNumberEquatorialSystemGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        EquatorialCoordinateTypeResponse TelescopeEquatorialSystemGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -788,7 +788,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of EquatorialCoordinateTypeResponse</returns>
-        ApiResponse<EquatorialCoordinateTypeResponse> ApiV1TelescopeDeviceNumberEquatorialSystemGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<EquatorialCoordinateTypeResponse> TelescopeEquatorialSystemGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -797,7 +797,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberFindHomePut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeFindHomePut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -810,7 +810,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberFindHomePutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeFindHomePutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -819,7 +819,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberFocalLengthGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeFocalLengthGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -832,7 +832,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberFocalLengthGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeFocalLengthGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -841,7 +841,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberGuideRateDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeGuideRateDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -854,7 +854,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberGuideRateDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeGuideRateDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -864,7 +864,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberGuideRateDeclinationPut(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeGuideRateDeclinationPut(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -878,7 +878,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberGuideRateDeclinationPutWithHttpInfo(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeGuideRateDeclinationPutWithHttpInfo(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -887,7 +887,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberGuideRateRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeGuideRateRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -900,7 +900,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberGuideRateRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeGuideRateRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -910,7 +910,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberGuideRateRightAscensionPut(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeGuideRateRightAscensionPut(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -924,7 +924,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberGuideRateRightAscensionPutWithHttpInfo(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeGuideRateRightAscensionPutWithHttpInfo(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         
         /// <summary>
         /// 
@@ -934,7 +934,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberIsPulseGuidingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeIsPulseGuidingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -947,7 +947,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberIsPulseGuidingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeIsPulseGuidingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -958,7 +958,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberMoveAxisPut(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeMoveAxisPut(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -973,7 +973,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberMoveAxisPutWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeMoveAxisPutWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         
         /// <summary>
         /// 
@@ -983,7 +983,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -996,7 +996,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1007,7 +1007,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberPulseGuidePut(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopePulseGuidePut(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1022,7 +1022,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberPulseGuidePutWithHttpInfo(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopePulseGuidePutWithHttpInfo(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1031,7 +1031,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1044,7 +1044,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1053,7 +1053,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberRightAscensionRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeRightAscensionRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1066,7 +1066,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberRightAscensionRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeRightAscensionRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1076,7 +1076,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberRightAscensionRatePut(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeRightAscensionRatePut(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1090,7 +1090,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberRightAscensionRatePutWithHttpInfo(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeRightAscensionRatePutWithHttpInfo(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1099,7 +1099,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSetParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSetParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1112,7 +1112,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSetParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSetParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1121,7 +1121,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>PointingStateResponse</returns>
-        PointingStateResponse ApiV1TelescopeDeviceNumberSideOfPierGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        PointingStateResponse TelescopeSideOfPierGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1134,7 +1134,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of PointingStateResponse</returns>
-        ApiResponse<PointingStateResponse> ApiV1TelescopeDeviceNumberSideOfPierGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<PointingStateResponse> TelescopeSideOfPierGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1144,7 +1144,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSideOfPierPut(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSideOfPierPut(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1158,7 +1158,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSideOfPierPutWithHttpInfo(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSideOfPierPutWithHttpInfo(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1167,7 +1167,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberSiderealTimeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeSiderealTimeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1180,7 +1180,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberSiderealTimeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeSiderealTimeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1189,7 +1189,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberSiteElevationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeSiteElevationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1202,7 +1202,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberSiteElevationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeSiteElevationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1212,7 +1212,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSiteElevationPut(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSiteElevationPut(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1226,7 +1226,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSiteElevationPutWithHttpInfo(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSiteElevationPutWithHttpInfo(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1235,7 +1235,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberSiteLatitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeSiteLatitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1248,7 +1248,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberSiteLatitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeSiteLatitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1258,7 +1258,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSiteLatitudePut(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSiteLatitudePut(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1272,7 +1272,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSiteLatitudePutWithHttpInfo(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSiteLatitudePutWithHttpInfo(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1281,7 +1281,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberSiteLongitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeSiteLongitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1294,7 +1294,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberSiteLongitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeSiteLongitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1304,7 +1304,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSiteLongitudePut(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSiteLongitudePut(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1318,7 +1318,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSiteLongitudePutWithHttpInfo(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSiteLongitudePutWithHttpInfo(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1327,7 +1327,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>IntResponse</returns>
-        IntResponse ApiV1TelescopeDeviceNumberSlewSettleTimeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        IntResponse TelescopeSlewSettleTimeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1340,7 +1340,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of IntResponse</returns>
-        ApiResponse<IntResponse> ApiV1TelescopeDeviceNumberSlewSettleTimeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<IntResponse> TelescopeSlewSettleTimeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1350,7 +1350,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSlewSettleTimePut(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSlewSettleTimePut(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1364,7 +1364,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewSettleTimePutWithHttpInfo(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSlewSettleTimePutWithHttpInfo(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1375,33 +1375,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceNumber"></param>
-        /// <param name="azimuth"> (optional)</param>
-        /// <param name="altitude"> (optional)</param>
-        /// <param name="clientID"> (optional, default to -1)</param>
-        /// <param name="clientTransactionID"> (optional, default to 0)</param>
-        /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceNumber"></param>
-        /// <param name="azimuth"> (optional)</param>
-        /// <param name="altitude"> (optional)</param>
-        /// <param name="clientID"> (optional, default to -1)</param>
-        /// <param name="clientTransactionID"> (optional, default to 0)</param>
-        /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSlewToAltAzPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSlewToAltAzAsyncPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1416,7 +1390,33 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToAltAzPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSlewToAltAzAsyncPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="deviceNumber"></param>
+        /// <param name="azimuth"> (optional)</param>
+        /// <param name="altitude"> (optional)</param>
+        /// <param name="clientID"> (optional, default to -1)</param>
+        /// <param name="clientTransactionID"> (optional, default to 0)</param>
+        /// <returns>Response</returns>
+        Response TelescopeSlewToAltAzPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="deviceNumber"></param>
+        /// <param name="azimuth"> (optional)</param>
+        /// <param name="altitude"> (optional)</param>
+        /// <param name="clientID"> (optional, default to -1)</param>
+        /// <param name="clientTransactionID"> (optional, default to 0)</param>
+        /// <returns>ApiResponse of Response</returns>
+        ApiResponse<Response> TelescopeSlewToAltAzPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1427,7 +1427,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSlewToCoordinatesAsyncPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1442,7 +1442,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSlewToCoordinatesAsyncPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1453,7 +1453,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSlewToCoordinatesPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSlewToCoordinatesPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1468,7 +1468,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToCoordinatesPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSlewToCoordinatesPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1477,7 +1477,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSlewToTargetAsyncPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSlewToTargetAsyncPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1490,7 +1490,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToTargetAsyncPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSlewToTargetAsyncPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1499,7 +1499,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSlewToTargetPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSlewToTargetPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1512,7 +1512,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToTargetPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSlewToTargetPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1521,7 +1521,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberSlewingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeSlewingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1534,7 +1534,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberSlewingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeSlewingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         
         /// <summary>
         /// 
@@ -1546,7 +1546,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSyncToAltAzPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSyncToAltAzPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1561,7 +1561,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSyncToAltAzPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSyncToAltAzPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1572,7 +1572,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSyncToCoordinatesPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSyncToCoordinatesPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1587,7 +1587,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSyncToCoordinatesPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSyncToCoordinatesPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1596,7 +1596,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberSyncToTargetPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeSyncToTargetPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1609,7 +1609,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberSyncToTargetPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeSyncToTargetPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1618,7 +1618,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberTargetDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeTargetDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1631,7 +1631,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberTargetDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeTargetDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1641,7 +1641,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberTargetDeclinationPut(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeTargetDeclinationPut(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1655,7 +1655,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberTargetDeclinationPutWithHttpInfo(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeTargetDeclinationPutWithHttpInfo(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1664,7 +1664,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        DoubleResponse ApiV1TelescopeDeviceNumberTargetRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DoubleResponse TelescopeTargetRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1677,7 +1677,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberTargetRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DoubleResponse> TelescopeTargetRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1687,7 +1687,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberTargetRightAscensionPut(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeTargetRightAscensionPut(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1701,7 +1701,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberTargetRightAscensionPutWithHttpInfo(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeTargetRightAscensionPutWithHttpInfo(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1710,7 +1710,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        BoolResponse ApiV1TelescopeDeviceNumberTrackingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        BoolResponse TelescopeTrackingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1723,7 +1723,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberTrackingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<BoolResponse> TelescopeTrackingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1733,7 +1733,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberTrackingPut(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeTrackingPut(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1747,7 +1747,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberTrackingPutWithHttpInfo(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeTrackingPutWithHttpInfo(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1756,7 +1756,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DriveRateResponse</returns>
-        DriveRateResponse ApiV1TelescopeDeviceNumberTrackingRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DriveRateResponse TelescopeTrackingRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1769,7 +1769,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DriveRateResponse</returns>
-        ApiResponse<DriveRateResponse> ApiV1TelescopeDeviceNumberTrackingRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DriveRateResponse> TelescopeTrackingRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1779,7 +1779,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberTrackingRatePut(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeTrackingRatePut(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1793,7 +1793,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberTrackingRatePutWithHttpInfo(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeTrackingRatePutWithHttpInfo(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1802,7 +1802,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DriveRatesResponse</returns>
-        DriveRatesResponse ApiV1TelescopeDeviceNumberTrackingRatesGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DriveRatesResponse TelescopeTrackingRatesGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1815,7 +1815,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DriveRatesResponse</returns>
-        ApiResponse<DriveRatesResponse> ApiV1TelescopeDeviceNumberTrackingRatesGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DriveRatesResponse> TelescopeTrackingRatesGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1824,7 +1824,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DateTimeResponse</returns>
-        DateTimeResponse ApiV1TelescopeDeviceNumberUTCDateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        DateTimeResponse TelescopeUTCDateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1837,7 +1837,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DateTimeResponse</returns>
-        ApiResponse<DateTimeResponse> ApiV1TelescopeDeviceNumberUTCDateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<DateTimeResponse> TelescopeUTCDateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1847,7 +1847,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberUTCDatePut(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeUTCDatePut(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1861,7 +1861,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberUTCDatePutWithHttpInfo(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeUTCDatePutWithHttpInfo(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// 
         /// </summary>
@@ -1870,7 +1870,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        Response ApiV1TelescopeDeviceNumberUnParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response TelescopeUnParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// 
@@ -1883,7 +1883,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> ApiV1TelescopeDeviceNumberUnParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> TelescopeUnParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         #endregion Synchronous Operations
     }
 
@@ -1905,7 +1905,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberAbortSlewPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeAbortSlewPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -1919,7 +1919,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberAbortSlewPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeAbortSlewPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -1932,7 +1932,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AlignmentModeResponse</returns>
-        System.Threading.Tasks.Task<AlignmentModeResponse> ApiV1TelescopeDeviceNumberAlignmentModeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<AlignmentModeResponse> TelescopeAlignmentModeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -1946,7 +1946,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AlignmentModeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AlignmentModeResponse>> ApiV1TelescopeDeviceNumberAlignmentModeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AlignmentModeResponse>> TelescopeAlignmentModeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -1959,7 +1959,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberAltitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeAltitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -1973,7 +1973,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberAltitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeAltitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -1986,7 +1986,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberApertureAreaGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeApertureAreaGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2000,7 +2000,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberApertureAreaGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeApertureAreaGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2013,7 +2013,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberApertureDiameterGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeApertureDiameterGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2027,7 +2027,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberApertureDiameterGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeApertureDiameterGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2040,7 +2040,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberAtHomeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeAtHomeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2054,7 +2054,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberAtHomeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeAtHomeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2067,7 +2067,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberAtParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeAtParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2081,7 +2081,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberAtParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeAtParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2095,7 +2095,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AxisRatesResponse</returns>
-        System.Threading.Tasks.Task<AxisRatesResponse> ApiV1TelescopeDeviceNumberAxisRatesGetAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<AxisRatesResponse> TelescopeAxisRatesGetAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2110,7 +2110,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AxisRatesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AxisRatesResponse>> ApiV1TelescopeDeviceNumberAxisRatesGetWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AxisRatesResponse>> TelescopeAxisRatesGetWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2123,7 +2123,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberAzimuthGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeAzimuthGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2137,7 +2137,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberAzimuthGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeAzimuthGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2150,7 +2150,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanFindHomeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanFindHomeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2164,7 +2164,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanFindHomeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanFindHomeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2178,7 +2178,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanMoveAxisGetAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanMoveAxisGetAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2193,7 +2193,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanMoveAxisGetWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanMoveAxisGetWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2206,7 +2206,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2220,7 +2220,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2233,7 +2233,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanPulseGuideGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanPulseGuideGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2247,7 +2247,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanPulseGuideGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanPulseGuideGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2260,7 +2260,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetDeclinationRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetDeclinationRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2274,7 +2274,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetDeclinationRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSetDeclinationRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2287,7 +2287,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetGuideRatesGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetGuideRatesGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2301,7 +2301,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetGuideRatesGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSetGuideRatesGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2314,7 +2314,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2328,7 +2328,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSetParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2341,7 +2341,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetPierSideGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetPierSideGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2355,7 +2355,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetPierSideGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSetPierSideGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2368,7 +2368,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetRightAscensionRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2382,7 +2382,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSetRightAscensionRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2395,7 +2395,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetTrackingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetTrackingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2409,7 +2409,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetTrackingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSetTrackingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2422,7 +2422,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSlewAltAzAsyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2436,7 +2436,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSlewAltAzAsyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2449,7 +2449,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAltAzGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSlewAltAzGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2463,7 +2463,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSlewAltAzGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSlewAltAzGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2476,7 +2476,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAsyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSlewAsyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2490,7 +2490,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSlewAsyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSlewAsyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2503,7 +2503,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSlewGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2517,7 +2517,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSlewGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSlewGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2530,7 +2530,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSyncAltAzGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSyncAltAzGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2544,7 +2544,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSyncAltAzGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSyncAltAzGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2557,7 +2557,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanSyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2571,7 +2571,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanSyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2584,7 +2584,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanUnparkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeCanUnparkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2598,7 +2598,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanUnparkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeCanUnparkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2611,7 +2611,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2625,7 +2625,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2638,7 +2638,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberDeclinationRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeDeclinationRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2652,7 +2652,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberDeclinationRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeDeclinationRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2666,7 +2666,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberDeclinationRatePutAsync(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeDeclinationRatePutAsync(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2681,7 +2681,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberDeclinationRatePutWithHttpInfoAsync(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeDeclinationRatePutWithHttpInfoAsync(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2696,7 +2696,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PointingStateResponse</returns>
-        System.Threading.Tasks.Task<PointingStateResponse> ApiV1TelescopeDeviceNumberDestinationSideOfPierGetAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<PointingStateResponse> TelescopeDestinationSideOfPierGetAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2712,7 +2712,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PointingStateResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PointingStateResponse>> ApiV1TelescopeDeviceNumberDestinationSideOfPierGetWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<PointingStateResponse>> TelescopeDestinationSideOfPierGetWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2725,7 +2725,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberDisposePutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeDisposePutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2739,7 +2739,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberDisposePutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeDisposePutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2752,7 +2752,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberDoesRefractionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeDoesRefractionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2766,7 +2766,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberDoesRefractionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeDoesRefractionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2780,7 +2780,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberDoesRefractionPutAsync(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeDoesRefractionPutAsync(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2795,7 +2795,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberDoesRefractionPutWithHttpInfoAsync(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeDoesRefractionPutWithHttpInfoAsync(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2809,7 +2809,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of EquatorialCoordinateTypeResponse</returns>
-        System.Threading.Tasks.Task<EquatorialCoordinateTypeResponse> ApiV1TelescopeDeviceNumberEquatorialSystemGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<EquatorialCoordinateTypeResponse> TelescopeEquatorialSystemGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2823,7 +2823,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (EquatorialCoordinateTypeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<EquatorialCoordinateTypeResponse>> ApiV1TelescopeDeviceNumberEquatorialSystemGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<EquatorialCoordinateTypeResponse>> TelescopeEquatorialSystemGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2836,7 +2836,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberFindHomePutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeFindHomePutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2850,7 +2850,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberFindHomePutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeFindHomePutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2863,7 +2863,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberFocalLengthGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeFocalLengthGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2877,7 +2877,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberFocalLengthGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeFocalLengthGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2890,7 +2890,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberGuideRateDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeGuideRateDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2904,7 +2904,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberGuideRateDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeGuideRateDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2918,7 +2918,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberGuideRateDeclinationPutAsync(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeGuideRateDeclinationPutAsync(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2933,7 +2933,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberGuideRateDeclinationPutWithHttpInfoAsync(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeGuideRateDeclinationPutWithHttpInfoAsync(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2946,7 +2946,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberGuideRateRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeGuideRateRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2960,7 +2960,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberGuideRateRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeGuideRateRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -2974,7 +2974,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberGuideRateRightAscensionPutAsync(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeGuideRateRightAscensionPutAsync(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -2989,7 +2989,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberGuideRateRightAscensionPutWithHttpInfoAsync(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeGuideRateRightAscensionPutWithHttpInfoAsync(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3002,7 +3002,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberIsPulseGuidingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeIsPulseGuidingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3016,7 +3016,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberIsPulseGuidingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeIsPulseGuidingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3031,7 +3031,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberMoveAxisPutAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeMoveAxisPutAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3047,7 +3047,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberMoveAxisPutWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeMoveAxisPutWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3060,7 +3060,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3074,7 +3074,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3089,7 +3089,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberPulseGuidePutAsync(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopePulseGuidePutAsync(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3105,7 +3105,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberPulseGuidePutWithHttpInfoAsync(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopePulseGuidePutWithHttpInfoAsync(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3118,7 +3118,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3132,7 +3132,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3145,7 +3145,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberRightAscensionRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeRightAscensionRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3159,7 +3159,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberRightAscensionRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeRightAscensionRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3173,7 +3173,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberRightAscensionRatePutAsync(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeRightAscensionRatePutAsync(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3188,7 +3188,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberRightAscensionRatePutWithHttpInfoAsync(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeRightAscensionRatePutWithHttpInfoAsync(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3201,7 +3201,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSetParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSetParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3215,7 +3215,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSetParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSetParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3228,7 +3228,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PointingStateResponse</returns>
-        System.Threading.Tasks.Task<PointingStateResponse> ApiV1TelescopeDeviceNumberSideOfPierGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<PointingStateResponse> TelescopeSideOfPierGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3242,7 +3242,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PointingStateResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PointingStateResponse>> ApiV1TelescopeDeviceNumberSideOfPierGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<PointingStateResponse>> TelescopeSideOfPierGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3256,7 +3256,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSideOfPierPutAsync(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSideOfPierPutAsync(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3271,7 +3271,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSideOfPierPutWithHttpInfoAsync(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSideOfPierPutWithHttpInfoAsync(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3284,7 +3284,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberSiderealTimeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeSiderealTimeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3298,7 +3298,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberSiderealTimeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeSiderealTimeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3311,7 +3311,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberSiteElevationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeSiteElevationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3325,7 +3325,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberSiteElevationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeSiteElevationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3339,7 +3339,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSiteElevationPutAsync(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSiteElevationPutAsync(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3354,7 +3354,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSiteElevationPutWithHttpInfoAsync(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSiteElevationPutWithHttpInfoAsync(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3367,7 +3367,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberSiteLatitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeSiteLatitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3381,7 +3381,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberSiteLatitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeSiteLatitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3395,7 +3395,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSiteLatitudePutAsync(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSiteLatitudePutAsync(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3410,7 +3410,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSiteLatitudePutWithHttpInfoAsync(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSiteLatitudePutWithHttpInfoAsync(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3423,7 +3423,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberSiteLongitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeSiteLongitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3437,7 +3437,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberSiteLongitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeSiteLongitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3451,7 +3451,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSiteLongitudePutAsync(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSiteLongitudePutAsync(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3466,7 +3466,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSiteLongitudePutWithHttpInfoAsync(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSiteLongitudePutWithHttpInfoAsync(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3479,7 +3479,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of IntResponse</returns>
-        System.Threading.Tasks.Task<IntResponse> ApiV1TelescopeDeviceNumberSlewSettleTimeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<IntResponse> TelescopeSlewSettleTimeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3493,7 +3493,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (IntResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<IntResponse>> ApiV1TelescopeDeviceNumberSlewSettleTimeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<IntResponse>> TelescopeSlewSettleTimeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3507,7 +3507,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewSettleTimePutAsync(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSlewSettleTimePutAsync(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3522,7 +3522,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewSettleTimePutWithHttpInfoAsync(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSlewSettleTimePutWithHttpInfoAsync(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3537,38 +3537,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceNumber"></param>
-        /// <param name="azimuth"> (optional)</param>
-        /// <param name="altitude"> (optional)</param>
-        /// <param name="clientID"> (optional, default to -1)</param>
-        /// <param name="clientTransactionID"> (optional, default to 0)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceNumber"></param>
-        /// <param name="azimuth"> (optional)</param>
-        /// <param name="altitude"> (optional)</param>
-        /// <param name="clientID"> (optional, default to -1)</param>
-        /// <param name="clientTransactionID"> (optional, default to 0)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToAltAzPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSlewToAltAzAsyncPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3584,7 +3553,38 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToAltAzPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSlewToAltAzAsyncPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="deviceNumber"></param>
+        /// <param name="azimuth"> (optional)</param>
+        /// <param name="altitude"> (optional)</param>
+        /// <param name="clientID"> (optional, default to -1)</param>
+        /// <param name="clientTransactionID"> (optional, default to 0)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Response</returns>
+        System.Threading.Tasks.Task<Response> TelescopeSlewToAltAzPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="deviceNumber"></param>
+        /// <param name="azimuth"> (optional)</param>
+        /// <param name="altitude"> (optional)</param>
+        /// <param name="clientID"> (optional, default to -1)</param>
+        /// <param name="clientTransactionID"> (optional, default to 0)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSlewToAltAzPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3599,7 +3599,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSlewToCoordinatesAsyncPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3615,7 +3615,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSlewToCoordinatesAsyncPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3630,7 +3630,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToCoordinatesPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSlewToCoordinatesPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3646,7 +3646,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToCoordinatesPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSlewToCoordinatesPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3659,7 +3659,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToTargetAsyncPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSlewToTargetAsyncPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3673,7 +3673,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToTargetAsyncPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSlewToTargetAsyncPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3686,7 +3686,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToTargetPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSlewToTargetPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3700,7 +3700,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToTargetPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSlewToTargetPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3713,7 +3713,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberSlewingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeSlewingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3727,7 +3727,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberSlewingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeSlewingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3742,7 +3742,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSyncToAltAzPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSyncToAltAzPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3758,7 +3758,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSyncToAltAzPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSyncToAltAzPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3773,7 +3773,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSyncToCoordinatesPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSyncToCoordinatesPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3789,7 +3789,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSyncToCoordinatesPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSyncToCoordinatesPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3802,7 +3802,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSyncToTargetPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeSyncToTargetPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3816,7 +3816,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberSyncToTargetPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeSyncToTargetPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3829,7 +3829,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberTargetDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeTargetDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3843,7 +3843,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberTargetDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeTargetDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3857,7 +3857,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberTargetDeclinationPutAsync(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeTargetDeclinationPutAsync(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3872,7 +3872,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberTargetDeclinationPutWithHttpInfoAsync(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeTargetDeclinationPutWithHttpInfoAsync(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3885,7 +3885,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberTargetRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DoubleResponse> TelescopeTargetRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3899,7 +3899,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberTargetRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DoubleResponse>> TelescopeTargetRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3913,7 +3913,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberTargetRightAscensionPutAsync(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeTargetRightAscensionPutAsync(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3928,7 +3928,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberTargetRightAscensionPutWithHttpInfoAsync(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeTargetRightAscensionPutWithHttpInfoAsync(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3941,7 +3941,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberTrackingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<BoolResponse> TelescopeTrackingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3955,7 +3955,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberTrackingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BoolResponse>> TelescopeTrackingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3969,7 +3969,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberTrackingPutAsync(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeTrackingPutAsync(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -3984,7 +3984,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberTrackingPutWithHttpInfoAsync(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeTrackingPutWithHttpInfoAsync(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -3997,7 +3997,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DriveRateResponse</returns>
-        System.Threading.Tasks.Task<DriveRateResponse> ApiV1TelescopeDeviceNumberTrackingRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DriveRateResponse> TelescopeTrackingRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -4011,7 +4011,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DriveRateResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DriveRateResponse>> ApiV1TelescopeDeviceNumberTrackingRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DriveRateResponse>> TelescopeTrackingRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -4025,7 +4025,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberTrackingRatePutAsync(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeTrackingRatePutAsync(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -4040,7 +4040,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberTrackingRatePutWithHttpInfoAsync(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeTrackingRatePutWithHttpInfoAsync(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -4053,7 +4053,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DriveRatesResponse</returns>
-        System.Threading.Tasks.Task<DriveRatesResponse> ApiV1TelescopeDeviceNumberTrackingRatesGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DriveRatesResponse> TelescopeTrackingRatesGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -4067,7 +4067,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DriveRatesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DriveRatesResponse>> ApiV1TelescopeDeviceNumberTrackingRatesGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DriveRatesResponse>> TelescopeTrackingRatesGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -4080,7 +4080,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DateTimeResponse</returns>
-        System.Threading.Tasks.Task<DateTimeResponse> ApiV1TelescopeDeviceNumberUTCDateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<DateTimeResponse> TelescopeUTCDateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -4094,7 +4094,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DateTimeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DateTimeResponse>> ApiV1TelescopeDeviceNumberUTCDateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DateTimeResponse>> TelescopeUTCDateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -4108,7 +4108,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberUTCDatePutAsync(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeUTCDatePutAsync(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -4123,7 +4123,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberUTCDatePutWithHttpInfoAsync(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeUTCDatePutWithHttpInfoAsync(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -4136,7 +4136,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberUnParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> TelescopeUnParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -4150,7 +4150,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> ApiV1TelescopeDeviceNumberUnParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> TelescopeUnParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -4238,9 +4238,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberAbortSlewPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeAbortSlewPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberAbortSlewPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeAbortSlewPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -4252,7 +4252,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberAbortSlewPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeAbortSlewPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -4289,7 +4289,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAbortSlewPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAbortSlewPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -4305,9 +4305,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberAbortSlewPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeAbortSlewPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberAbortSlewPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeAbortSlewPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -4320,7 +4320,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberAbortSlewPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeAbortSlewPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -4360,7 +4360,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAbortSlewPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAbortSlewPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -4375,9 +4375,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>AlignmentModeResponse</returns>
-        public AlignmentModeResponse ApiV1TelescopeDeviceNumberAlignmentModeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public AlignmentModeResponse TelescopeAlignmentModeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<AlignmentModeResponse> localVarResponse = ApiV1TelescopeDeviceNumberAlignmentModeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<AlignmentModeResponse> localVarResponse = TelescopeAlignmentModeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -4389,7 +4389,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of AlignmentModeResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<AlignmentModeResponse> ApiV1TelescopeDeviceNumberAlignmentModeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<AlignmentModeResponse> TelescopeAlignmentModeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -4425,7 +4425,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAlignmentModeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAlignmentModeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -4441,9 +4441,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AlignmentModeResponse</returns>
-        public async System.Threading.Tasks.Task<AlignmentModeResponse> ApiV1TelescopeDeviceNumberAlignmentModeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<AlignmentModeResponse> TelescopeAlignmentModeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<AlignmentModeResponse> localVarResponse = await ApiV1TelescopeDeviceNumberAlignmentModeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<AlignmentModeResponse> localVarResponse = await TelescopeAlignmentModeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -4456,7 +4456,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AlignmentModeResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<AlignmentModeResponse>> ApiV1TelescopeDeviceNumberAlignmentModeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<AlignmentModeResponse>> TelescopeAlignmentModeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -4495,7 +4495,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAlignmentModeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAlignmentModeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -4510,9 +4510,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberAltitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeAltitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberAltitudeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeAltitudeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -4524,7 +4524,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberAltitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeAltitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -4560,7 +4560,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAltitudeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAltitudeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -4576,9 +4576,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberAltitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeAltitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberAltitudeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeAltitudeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -4591,7 +4591,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberAltitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeAltitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -4630,7 +4630,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAltitudeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAltitudeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -4645,9 +4645,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberApertureAreaGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeApertureAreaGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberApertureAreaGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeApertureAreaGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -4659,7 +4659,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberApertureAreaGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeApertureAreaGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -4695,7 +4695,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberApertureAreaGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeApertureAreaGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -4711,9 +4711,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberApertureAreaGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeApertureAreaGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberApertureAreaGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeApertureAreaGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -4726,7 +4726,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberApertureAreaGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeApertureAreaGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -4765,7 +4765,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberApertureAreaGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeApertureAreaGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -4780,9 +4780,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberApertureDiameterGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeApertureDiameterGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberApertureDiameterGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeApertureDiameterGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -4794,7 +4794,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberApertureDiameterGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeApertureDiameterGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -4830,7 +4830,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberApertureDiameterGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeApertureDiameterGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -4846,9 +4846,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberApertureDiameterGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeApertureDiameterGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberApertureDiameterGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeApertureDiameterGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -4861,7 +4861,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberApertureDiameterGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeApertureDiameterGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -4900,7 +4900,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberApertureDiameterGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeApertureDiameterGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -4915,9 +4915,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberAtHomeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeAtHomeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberAtHomeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeAtHomeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -4929,7 +4929,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberAtHomeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeAtHomeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -4965,7 +4965,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAtHomeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAtHomeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -4981,9 +4981,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberAtHomeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeAtHomeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberAtHomeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeAtHomeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -4996,7 +4996,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberAtHomeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeAtHomeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -5035,7 +5035,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAtHomeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAtHomeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5050,9 +5050,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberAtParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeAtParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberAtParkGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeAtParkGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -5064,7 +5064,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberAtParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeAtParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -5100,7 +5100,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAtParkGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAtParkGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5116,9 +5116,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberAtParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeAtParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberAtParkGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeAtParkGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -5131,7 +5131,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberAtParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeAtParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -5170,7 +5170,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAtParkGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAtParkGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5186,9 +5186,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>AxisRatesResponse</returns>
-        public AxisRatesResponse ApiV1TelescopeDeviceNumberAxisRatesGet(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public AxisRatesResponse TelescopeAxisRatesGet(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<AxisRatesResponse> localVarResponse = ApiV1TelescopeDeviceNumberAxisRatesGetWithHttpInfo(deviceNumber, axis, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<AxisRatesResponse> localVarResponse = TelescopeAxisRatesGetWithHttpInfo(deviceNumber, axis, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -5201,7 +5201,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of AxisRatesResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<AxisRatesResponse> ApiV1TelescopeDeviceNumberAxisRatesGetWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<AxisRatesResponse> TelescopeAxisRatesGetWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -5241,7 +5241,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAxisRatesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAxisRatesGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5258,9 +5258,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AxisRatesResponse</returns>
-        public async System.Threading.Tasks.Task<AxisRatesResponse> ApiV1TelescopeDeviceNumberAxisRatesGetAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<AxisRatesResponse> TelescopeAxisRatesGetAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<AxisRatesResponse> localVarResponse = await ApiV1TelescopeDeviceNumberAxisRatesGetWithHttpInfoAsync(deviceNumber, axis, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<AxisRatesResponse> localVarResponse = await TelescopeAxisRatesGetWithHttpInfoAsync(deviceNumber, axis, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -5274,7 +5274,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AxisRatesResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<AxisRatesResponse>> ApiV1TelescopeDeviceNumberAxisRatesGetWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<AxisRatesResponse>> TelescopeAxisRatesGetWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -5317,7 +5317,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAxisRatesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAxisRatesGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5332,9 +5332,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberAzimuthGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeAzimuthGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberAzimuthGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeAzimuthGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -5346,7 +5346,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberAzimuthGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeAzimuthGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -5382,7 +5382,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAzimuthGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAzimuthGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5398,9 +5398,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberAzimuthGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeAzimuthGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberAzimuthGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeAzimuthGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -5413,7 +5413,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberAzimuthGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeAzimuthGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -5452,7 +5452,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberAzimuthGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeAzimuthGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5467,9 +5467,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanFindHomeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanFindHomeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanFindHomeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanFindHomeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -5481,7 +5481,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanFindHomeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanFindHomeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -5517,7 +5517,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanFindHomeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanFindHomeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5533,9 +5533,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanFindHomeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanFindHomeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanFindHomeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanFindHomeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -5548,7 +5548,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanFindHomeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanFindHomeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -5587,7 +5587,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanFindHomeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanFindHomeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5603,9 +5603,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanMoveAxisGet(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanMoveAxisGet(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanMoveAxisGetWithHttpInfo(deviceNumber, axis, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanMoveAxisGetWithHttpInfo(deviceNumber, axis, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -5618,7 +5618,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanMoveAxisGetWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanMoveAxisGetWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -5658,7 +5658,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanMoveAxisGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanMoveAxisGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5675,9 +5675,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanMoveAxisGetAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanMoveAxisGetAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanMoveAxisGetWithHttpInfoAsync(deviceNumber, axis, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanMoveAxisGetWithHttpInfoAsync(deviceNumber, axis, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -5691,7 +5691,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanMoveAxisGetWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanMoveAxisGetWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -5734,7 +5734,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanMoveAxisGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanMoveAxisGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5749,9 +5749,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanParkGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanParkGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -5763,7 +5763,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -5799,7 +5799,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanParkGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanParkGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5815,9 +5815,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanParkGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanParkGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -5830,7 +5830,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -5869,7 +5869,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanParkGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanParkGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5884,9 +5884,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanPulseGuideGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanPulseGuideGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanPulseGuideGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanPulseGuideGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -5898,7 +5898,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanPulseGuideGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanPulseGuideGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -5934,7 +5934,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanPulseGuideGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanPulseGuideGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -5950,9 +5950,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanPulseGuideGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanPulseGuideGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanPulseGuideGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanPulseGuideGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -5965,7 +5965,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanPulseGuideGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanPulseGuideGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -6004,7 +6004,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanPulseGuideGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanPulseGuideGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6019,9 +6019,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSetDeclinationRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSetDeclinationRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSetDeclinationRateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSetDeclinationRateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -6033,7 +6033,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetDeclinationRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSetDeclinationRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -6069,7 +6069,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetDeclinationRateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetDeclinationRateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6085,9 +6085,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetDeclinationRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetDeclinationRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSetDeclinationRateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSetDeclinationRateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -6100,7 +6100,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetDeclinationRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSetDeclinationRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -6139,7 +6139,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetDeclinationRateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetDeclinationRateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6154,9 +6154,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSetGuideRatesGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSetGuideRatesGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSetGuideRatesGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSetGuideRatesGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -6168,7 +6168,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetGuideRatesGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSetGuideRatesGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -6204,7 +6204,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetGuideRatesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetGuideRatesGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6220,9 +6220,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetGuideRatesGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetGuideRatesGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSetGuideRatesGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSetGuideRatesGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -6235,7 +6235,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetGuideRatesGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSetGuideRatesGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -6274,7 +6274,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetGuideRatesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetGuideRatesGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6289,9 +6289,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSetParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSetParkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSetParkGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSetParkGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -6303,7 +6303,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSetParkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -6339,7 +6339,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetParkGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetParkGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6355,9 +6355,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetParkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSetParkGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSetParkGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -6370,7 +6370,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSetParkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -6409,7 +6409,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetParkGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetParkGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6424,9 +6424,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSetPierSideGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSetPierSideGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSetPierSideGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSetPierSideGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -6438,7 +6438,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetPierSideGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSetPierSideGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -6474,7 +6474,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetPierSideGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetPierSideGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6490,9 +6490,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetPierSideGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetPierSideGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSetPierSideGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSetPierSideGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -6505,7 +6505,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetPierSideGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSetPierSideGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -6544,7 +6544,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetPierSideGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetPierSideGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6559,9 +6559,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSetRightAscensionRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSetRightAscensionRateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -6573,7 +6573,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSetRightAscensionRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -6609,7 +6609,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetRightAscensionRateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6625,9 +6625,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetRightAscensionRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSetRightAscensionRateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -6640,7 +6640,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSetRightAscensionRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -6679,7 +6679,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetRightAscensionRateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetRightAscensionRateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6694,9 +6694,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSetTrackingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSetTrackingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSetTrackingGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSetTrackingGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -6708,7 +6708,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSetTrackingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSetTrackingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -6744,7 +6744,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetTrackingGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetTrackingGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6760,9 +6760,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSetTrackingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSetTrackingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSetTrackingGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSetTrackingGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -6775,7 +6775,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSetTrackingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSetTrackingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -6814,7 +6814,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSetTrackingGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSetTrackingGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6829,9 +6829,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSlewAltAzAsyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSlewAltAzAsyncGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -6843,7 +6843,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSlewAltAzAsyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -6879,7 +6879,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSlewAltAzAsyncGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6895,9 +6895,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSlewAltAzAsyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSlewAltAzAsyncGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -6910,7 +6910,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSlewAltAzAsyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -6949,7 +6949,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSlewAltAzAsyncGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSlewAltAzAsyncGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -6964,9 +6964,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSlewAltAzGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSlewAltAzGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSlewAltAzGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSlewAltAzGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -6978,7 +6978,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAltAzGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSlewAltAzGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -7014,7 +7014,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSlewAltAzGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSlewAltAzGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7030,9 +7030,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAltAzGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSlewAltAzGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSlewAltAzGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSlewAltAzGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -7045,7 +7045,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSlewAltAzGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSlewAltAzGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -7084,7 +7084,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSlewAltAzGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSlewAltAzGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7099,9 +7099,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSlewAsyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSlewAsyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSlewAsyncGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSlewAsyncGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -7113,7 +7113,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAsyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSlewAsyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -7149,7 +7149,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSlewAsyncGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSlewAsyncGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7165,9 +7165,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewAsyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSlewAsyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSlewAsyncGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSlewAsyncGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -7180,7 +7180,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSlewAsyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSlewAsyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -7219,7 +7219,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSlewAsyncGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSlewAsyncGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7234,9 +7234,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSlewGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSlewGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSlewGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSlewGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -7248,7 +7248,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSlewGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -7284,7 +7284,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSlewGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSlewGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7300,9 +7300,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSlewGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSlewGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSlewGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSlewGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -7315,7 +7315,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSlewGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSlewGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -7354,7 +7354,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSlewGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSlewGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7369,9 +7369,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSyncAltAzGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSyncAltAzGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSyncAltAzGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSyncAltAzGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -7383,7 +7383,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSyncAltAzGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSyncAltAzGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -7419,7 +7419,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSyncAltAzGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSyncAltAzGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7435,9 +7435,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSyncAltAzGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSyncAltAzGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSyncAltAzGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSyncAltAzGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -7450,7 +7450,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSyncAltAzGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSyncAltAzGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -7489,7 +7489,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSyncAltAzGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSyncAltAzGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7504,9 +7504,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanSyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanSyncGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanSyncGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanSyncGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -7518,7 +7518,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanSyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanSyncGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -7554,7 +7554,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSyncGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSyncGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7570,9 +7570,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanSyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanSyncGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanSyncGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanSyncGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -7585,7 +7585,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanSyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanSyncGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -7624,7 +7624,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanSyncGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanSyncGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7639,9 +7639,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberCanUnparkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeCanUnparkGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberCanUnparkGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeCanUnparkGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -7653,7 +7653,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberCanUnparkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeCanUnparkGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -7689,7 +7689,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanUnparkGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanUnparkGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7705,9 +7705,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberCanUnparkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeCanUnparkGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberCanUnparkGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeCanUnparkGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -7720,7 +7720,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberCanUnparkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeCanUnparkGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -7759,7 +7759,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberCanUnparkGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeCanUnparkGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7774,9 +7774,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberDeclinationGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeDeclinationGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -7788,7 +7788,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -7824,7 +7824,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDeclinationGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDeclinationGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7840,9 +7840,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberDeclinationGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeDeclinationGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -7855,7 +7855,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -7894,7 +7894,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDeclinationGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDeclinationGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7909,9 +7909,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberDeclinationRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeDeclinationRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberDeclinationRateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeDeclinationRateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -7923,7 +7923,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberDeclinationRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeDeclinationRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -7959,7 +7959,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDeclinationRateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDeclinationRateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -7975,9 +7975,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberDeclinationRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeDeclinationRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberDeclinationRateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeDeclinationRateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -7990,7 +7990,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberDeclinationRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeDeclinationRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -8029,7 +8029,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDeclinationRateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDeclinationRateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8045,9 +8045,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberDeclinationRatePut(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeDeclinationRatePut(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberDeclinationRatePutWithHttpInfo(deviceNumber, declinationRate, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeDeclinationRatePutWithHttpInfo(deviceNumber, declinationRate, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -8060,7 +8060,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberDeclinationRatePutWithHttpInfo(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeDeclinationRatePutWithHttpInfo(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -8101,7 +8101,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDeclinationRatePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDeclinationRatePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8118,9 +8118,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberDeclinationRatePutAsync(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeDeclinationRatePutAsync(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberDeclinationRatePutWithHttpInfoAsync(deviceNumber, declinationRate, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeDeclinationRatePutWithHttpInfoAsync(deviceNumber, declinationRate, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -8134,7 +8134,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberDeclinationRatePutWithHttpInfoAsync(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeDeclinationRatePutWithHttpInfoAsync(int deviceNumber, double? declinationRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -8178,7 +8178,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDeclinationRatePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDeclinationRatePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8195,9 +8195,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>PointingStateResponse</returns>
-        public PointingStateResponse ApiV1TelescopeDeviceNumberDestinationSideOfPierGet(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public PointingStateResponse TelescopeDestinationSideOfPierGet(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> localVarResponse = ApiV1TelescopeDeviceNumberDestinationSideOfPierGetWithHttpInfo(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> localVarResponse = TelescopeDestinationSideOfPierGetWithHttpInfo(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -8211,7 +8211,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of PointingStateResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> ApiV1TelescopeDeviceNumberDestinationSideOfPierGetWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> TelescopeDestinationSideOfPierGetWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -8255,7 +8255,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDestinationSideOfPierGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDestinationSideOfPierGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8273,9 +8273,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PointingStateResponse</returns>
-        public async System.Threading.Tasks.Task<PointingStateResponse> ApiV1TelescopeDeviceNumberDestinationSideOfPierGetAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<PointingStateResponse> TelescopeDestinationSideOfPierGetAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> localVarResponse = await ApiV1TelescopeDeviceNumberDestinationSideOfPierGetWithHttpInfoAsync(deviceNumber, rightAscension, declination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> localVarResponse = await TelescopeDestinationSideOfPierGetWithHttpInfoAsync(deviceNumber, rightAscension, declination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -8290,7 +8290,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PointingStateResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PointingStateResponse>> ApiV1TelescopeDeviceNumberDestinationSideOfPierGetWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PointingStateResponse>> TelescopeDestinationSideOfPierGetWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -8337,7 +8337,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDestinationSideOfPierGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDestinationSideOfPierGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8352,9 +8352,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberDisposePut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeDisposePut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberDisposePutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeDisposePutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -8366,7 +8366,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberDisposePutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeDisposePutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -8403,7 +8403,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDisposePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDisposePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8419,9 +8419,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberDisposePutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeDisposePutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberDisposePutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeDisposePutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -8434,7 +8434,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberDisposePutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeDisposePutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -8474,7 +8474,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDisposePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDisposePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8489,9 +8489,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberDoesRefractionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeDoesRefractionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberDoesRefractionGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeDoesRefractionGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -8503,7 +8503,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberDoesRefractionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeDoesRefractionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -8539,7 +8539,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDoesRefractionGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDoesRefractionGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8555,9 +8555,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberDoesRefractionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeDoesRefractionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberDoesRefractionGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeDoesRefractionGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -8570,7 +8570,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberDoesRefractionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeDoesRefractionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -8609,7 +8609,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDoesRefractionGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDoesRefractionGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8625,9 +8625,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberDoesRefractionPut(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeDoesRefractionPut(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberDoesRefractionPutWithHttpInfo(deviceNumber, doesRefraction, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeDoesRefractionPutWithHttpInfo(deviceNumber, doesRefraction, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -8640,7 +8640,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberDoesRefractionPutWithHttpInfo(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeDoesRefractionPutWithHttpInfo(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -8681,7 +8681,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDoesRefractionPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDoesRefractionPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8698,9 +8698,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberDoesRefractionPutAsync(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeDoesRefractionPutAsync(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberDoesRefractionPutWithHttpInfoAsync(deviceNumber, doesRefraction, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeDoesRefractionPutWithHttpInfoAsync(deviceNumber, doesRefraction, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -8714,7 +8714,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberDoesRefractionPutWithHttpInfoAsync(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeDoesRefractionPutWithHttpInfoAsync(int deviceNumber, bool? doesRefraction = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -8758,7 +8758,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberDoesRefractionPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeDoesRefractionPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8773,9 +8773,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>EquatorialCoordinateTypeResponse</returns>
-        public EquatorialCoordinateTypeResponse ApiV1TelescopeDeviceNumberEquatorialSystemGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public EquatorialCoordinateTypeResponse TelescopeEquatorialSystemGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<EquatorialCoordinateTypeResponse> localVarResponse = ApiV1TelescopeDeviceNumberEquatorialSystemGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<EquatorialCoordinateTypeResponse> localVarResponse = TelescopeEquatorialSystemGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -8787,7 +8787,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of EquatorialCoordinateTypeResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<EquatorialCoordinateTypeResponse> ApiV1TelescopeDeviceNumberEquatorialSystemGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<EquatorialCoordinateTypeResponse> TelescopeEquatorialSystemGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -8823,7 +8823,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberEquatorialSystemGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeEquatorialSystemGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8839,9 +8839,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of EquatorialCoordinateTypeResponse</returns>
-        public async System.Threading.Tasks.Task<EquatorialCoordinateTypeResponse> ApiV1TelescopeDeviceNumberEquatorialSystemGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<EquatorialCoordinateTypeResponse> TelescopeEquatorialSystemGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<EquatorialCoordinateTypeResponse> localVarResponse = await ApiV1TelescopeDeviceNumberEquatorialSystemGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<EquatorialCoordinateTypeResponse> localVarResponse = await TelescopeEquatorialSystemGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -8854,7 +8854,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (EquatorialCoordinateTypeResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<EquatorialCoordinateTypeResponse>> ApiV1TelescopeDeviceNumberEquatorialSystemGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<EquatorialCoordinateTypeResponse>> TelescopeEquatorialSystemGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -8893,7 +8893,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberEquatorialSystemGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeEquatorialSystemGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8908,9 +8908,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberFindHomePut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeFindHomePut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberFindHomePutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeFindHomePutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -8922,7 +8922,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberFindHomePutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeFindHomePutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -8959,7 +8959,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberFindHomePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeFindHomePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -8975,9 +8975,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberFindHomePutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeFindHomePutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberFindHomePutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeFindHomePutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -8990,7 +8990,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberFindHomePutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeFindHomePutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -9030,7 +9030,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberFindHomePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeFindHomePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9045,9 +9045,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberFocalLengthGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeFocalLengthGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberFocalLengthGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeFocalLengthGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -9059,7 +9059,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberFocalLengthGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeFocalLengthGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -9095,7 +9095,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberFocalLengthGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeFocalLengthGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9111,9 +9111,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberFocalLengthGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeFocalLengthGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberFocalLengthGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeFocalLengthGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -9126,7 +9126,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberFocalLengthGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeFocalLengthGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -9165,7 +9165,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberFocalLengthGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeFocalLengthGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9180,9 +9180,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberGuideRateDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeGuideRateDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberGuideRateDeclinationGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeGuideRateDeclinationGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -9194,7 +9194,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberGuideRateDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeGuideRateDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -9230,7 +9230,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberGuideRateDeclinationGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeGuideRateDeclinationGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9246,9 +9246,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberGuideRateDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeGuideRateDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberGuideRateDeclinationGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeGuideRateDeclinationGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -9261,7 +9261,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberGuideRateDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeGuideRateDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -9300,7 +9300,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberGuideRateDeclinationGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeGuideRateDeclinationGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9316,9 +9316,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberGuideRateDeclinationPut(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeGuideRateDeclinationPut(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberGuideRateDeclinationPutWithHttpInfo(deviceNumber, guideRateDeclination, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeGuideRateDeclinationPutWithHttpInfo(deviceNumber, guideRateDeclination, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -9331,7 +9331,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberGuideRateDeclinationPutWithHttpInfo(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeGuideRateDeclinationPutWithHttpInfo(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -9372,7 +9372,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberGuideRateDeclinationPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeGuideRateDeclinationPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9389,9 +9389,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberGuideRateDeclinationPutAsync(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeGuideRateDeclinationPutAsync(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberGuideRateDeclinationPutWithHttpInfoAsync(deviceNumber, guideRateDeclination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeGuideRateDeclinationPutWithHttpInfoAsync(deviceNumber, guideRateDeclination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -9405,7 +9405,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberGuideRateDeclinationPutWithHttpInfoAsync(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeGuideRateDeclinationPutWithHttpInfoAsync(int deviceNumber, double? guideRateDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -9449,7 +9449,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberGuideRateDeclinationPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeGuideRateDeclinationPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9464,9 +9464,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberGuideRateRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeGuideRateRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberGuideRateRightAscensionGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeGuideRateRightAscensionGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -9478,7 +9478,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberGuideRateRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeGuideRateRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -9514,7 +9514,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberGuideRateRightAscensionGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeGuideRateRightAscensionGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9530,9 +9530,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberGuideRateRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeGuideRateRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberGuideRateRightAscensionGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeGuideRateRightAscensionGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -9545,7 +9545,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberGuideRateRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeGuideRateRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -9584,7 +9584,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberGuideRateRightAscensionGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeGuideRateRightAscensionGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9600,9 +9600,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberGuideRateRightAscensionPut(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeGuideRateRightAscensionPut(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberGuideRateRightAscensionPutWithHttpInfo(deviceNumber, guideRateRightAscension, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeGuideRateRightAscensionPutWithHttpInfo(deviceNumber, guideRateRightAscension, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -9615,7 +9615,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberGuideRateRightAscensionPutWithHttpInfo(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeGuideRateRightAscensionPutWithHttpInfo(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -9656,7 +9656,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberGuideRateRightAscensionPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeGuideRateRightAscensionPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9673,9 +9673,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberGuideRateRightAscensionPutAsync(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeGuideRateRightAscensionPutAsync(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberGuideRateRightAscensionPutWithHttpInfoAsync(deviceNumber, guideRateRightAscension, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeGuideRateRightAscensionPutWithHttpInfoAsync(deviceNumber, guideRateRightAscension, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -9689,7 +9689,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberGuideRateRightAscensionPutWithHttpInfoAsync(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeGuideRateRightAscensionPutWithHttpInfoAsync(int deviceNumber, double? guideRateRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -9733,7 +9733,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberGuideRateRightAscensionPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeGuideRateRightAscensionPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9748,9 +9748,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberIsPulseGuidingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeIsPulseGuidingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberIsPulseGuidingGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeIsPulseGuidingGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -9762,7 +9762,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberIsPulseGuidingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeIsPulseGuidingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -9798,7 +9798,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberIsPulseGuidingGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeIsPulseGuidingGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9814,9 +9814,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberIsPulseGuidingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeIsPulseGuidingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberIsPulseGuidingGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeIsPulseGuidingGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -9829,7 +9829,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberIsPulseGuidingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeIsPulseGuidingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -9868,7 +9868,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberIsPulseGuidingGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeIsPulseGuidingGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9885,9 +9885,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberMoveAxisPut(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeMoveAxisPut(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberMoveAxisPutWithHttpInfo(deviceNumber, axis, rate, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeMoveAxisPutWithHttpInfo(deviceNumber, axis, rate, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -9901,7 +9901,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberMoveAxisPutWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeMoveAxisPutWithHttpInfo(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -9946,7 +9946,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberMoveAxisPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeMoveAxisPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -9964,9 +9964,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberMoveAxisPutAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeMoveAxisPutAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberMoveAxisPutWithHttpInfoAsync(deviceNumber, axis, rate, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeMoveAxisPutWithHttpInfoAsync(deviceNumber, axis, rate, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -9981,7 +9981,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberMoveAxisPutWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeMoveAxisPutWithHttpInfoAsync(int deviceNumber, TelescopeAxis? axis = default(TelescopeAxis?), double? rate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -10029,7 +10029,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberMoveAxisPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeMoveAxisPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10044,9 +10044,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberParkPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeParkPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -10058,7 +10058,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -10095,7 +10095,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberParkPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeParkPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10111,9 +10111,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberParkPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeParkPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -10126,7 +10126,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -10166,7 +10166,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberParkPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeParkPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10183,9 +10183,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberPulseGuidePut(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopePulseGuidePut(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberPulseGuidePutWithHttpInfo(deviceNumber, direction, duration, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopePulseGuidePutWithHttpInfo(deviceNumber, direction, duration, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -10199,7 +10199,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberPulseGuidePutWithHttpInfo(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopePulseGuidePutWithHttpInfo(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -10244,7 +10244,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberPulseGuidePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopePulseGuidePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10262,9 +10262,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberPulseGuidePutAsync(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopePulseGuidePutAsync(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberPulseGuidePutWithHttpInfoAsync(deviceNumber, direction, duration, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopePulseGuidePutWithHttpInfoAsync(deviceNumber, direction, duration, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -10279,7 +10279,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberPulseGuidePutWithHttpInfoAsync(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopePulseGuidePutWithHttpInfoAsync(int deviceNumber, GuideDirection direction = default(GuideDirection), int? duration = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -10327,7 +10327,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberPulseGuidePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopePulseGuidePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10342,9 +10342,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberRightAscensionGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeRightAscensionGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -10356,7 +10356,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -10392,7 +10392,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberRightAscensionGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeRightAscensionGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10408,9 +10408,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberRightAscensionGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeRightAscensionGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -10423,7 +10423,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -10462,7 +10462,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberRightAscensionGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeRightAscensionGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10477,9 +10477,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberRightAscensionRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeRightAscensionRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberRightAscensionRateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeRightAscensionRateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -10491,7 +10491,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberRightAscensionRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeRightAscensionRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -10527,7 +10527,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberRightAscensionRateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeRightAscensionRateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10543,9 +10543,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberRightAscensionRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeRightAscensionRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberRightAscensionRateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeRightAscensionRateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -10558,7 +10558,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberRightAscensionRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeRightAscensionRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -10597,7 +10597,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberRightAscensionRateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeRightAscensionRateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10613,9 +10613,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberRightAscensionRatePut(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeRightAscensionRatePut(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberRightAscensionRatePutWithHttpInfo(deviceNumber, rightAscensionRate, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeRightAscensionRatePutWithHttpInfo(deviceNumber, rightAscensionRate, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -10628,7 +10628,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberRightAscensionRatePutWithHttpInfo(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeRightAscensionRatePutWithHttpInfo(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -10669,7 +10669,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberRightAscensionRatePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeRightAscensionRatePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10686,9 +10686,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberRightAscensionRatePutAsync(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeRightAscensionRatePutAsync(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberRightAscensionRatePutWithHttpInfoAsync(deviceNumber, rightAscensionRate, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeRightAscensionRatePutWithHttpInfoAsync(deviceNumber, rightAscensionRate, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -10702,7 +10702,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberRightAscensionRatePutWithHttpInfoAsync(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeRightAscensionRatePutWithHttpInfoAsync(int deviceNumber, double? rightAscensionRate = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -10746,7 +10746,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberRightAscensionRatePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeRightAscensionRatePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10761,9 +10761,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSetParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSetParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSetParkPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSetParkPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -10775,7 +10775,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSetParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSetParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -10812,7 +10812,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSetParkPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSetParkPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10828,9 +10828,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSetParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSetParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSetParkPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSetParkPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -10843,7 +10843,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSetParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSetParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -10883,7 +10883,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSetParkPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSetParkPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10898,9 +10898,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>PointingStateResponse</returns>
-        public PointingStateResponse ApiV1TelescopeDeviceNumberSideOfPierGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public PointingStateResponse TelescopeSideOfPierGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> localVarResponse = ApiV1TelescopeDeviceNumberSideOfPierGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> localVarResponse = TelescopeSideOfPierGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -10912,7 +10912,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of PointingStateResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> ApiV1TelescopeDeviceNumberSideOfPierGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> TelescopeSideOfPierGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -10948,7 +10948,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSideOfPierGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSideOfPierGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -10964,9 +10964,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PointingStateResponse</returns>
-        public async System.Threading.Tasks.Task<PointingStateResponse> ApiV1TelescopeDeviceNumberSideOfPierGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<PointingStateResponse> TelescopeSideOfPierGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> localVarResponse = await ApiV1TelescopeDeviceNumberSideOfPierGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<PointingStateResponse> localVarResponse = await TelescopeSideOfPierGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -10979,7 +10979,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PointingStateResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PointingStateResponse>> ApiV1TelescopeDeviceNumberSideOfPierGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PointingStateResponse>> TelescopeSideOfPierGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -11018,7 +11018,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSideOfPierGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSideOfPierGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11034,9 +11034,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSideOfPierPut(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSideOfPierPut(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSideOfPierPutWithHttpInfo(deviceNumber, sideOfPier, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSideOfPierPutWithHttpInfo(deviceNumber, sideOfPier, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -11049,7 +11049,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSideOfPierPutWithHttpInfo(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSideOfPierPutWithHttpInfo(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -11090,7 +11090,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSideOfPierPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSideOfPierPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11107,9 +11107,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSideOfPierPutAsync(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSideOfPierPutAsync(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSideOfPierPutWithHttpInfoAsync(deviceNumber, sideOfPier, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSideOfPierPutWithHttpInfoAsync(deviceNumber, sideOfPier, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -11123,7 +11123,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSideOfPierPutWithHttpInfoAsync(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSideOfPierPutWithHttpInfoAsync(int deviceNumber, PointingState? sideOfPier = default(PointingState?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -11167,7 +11167,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSideOfPierPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSideOfPierPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11182,9 +11182,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberSiderealTimeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeSiderealTimeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberSiderealTimeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeSiderealTimeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -11196,7 +11196,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberSiderealTimeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeSiderealTimeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -11232,7 +11232,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiderealTimeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiderealTimeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11248,9 +11248,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberSiderealTimeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeSiderealTimeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberSiderealTimeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeSiderealTimeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -11263,7 +11263,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberSiderealTimeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeSiderealTimeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -11302,7 +11302,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiderealTimeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiderealTimeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11317,9 +11317,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberSiteElevationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeSiteElevationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberSiteElevationGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeSiteElevationGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -11331,7 +11331,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberSiteElevationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeSiteElevationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -11367,7 +11367,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteElevationGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteElevationGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11383,9 +11383,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberSiteElevationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeSiteElevationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberSiteElevationGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeSiteElevationGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -11398,7 +11398,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberSiteElevationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeSiteElevationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -11437,7 +11437,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteElevationGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteElevationGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11453,9 +11453,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSiteElevationPut(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSiteElevationPut(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSiteElevationPutWithHttpInfo(deviceNumber, siteElevation, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSiteElevationPutWithHttpInfo(deviceNumber, siteElevation, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -11468,7 +11468,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSiteElevationPutWithHttpInfo(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSiteElevationPutWithHttpInfo(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -11509,7 +11509,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteElevationPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteElevationPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11526,9 +11526,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSiteElevationPutAsync(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSiteElevationPutAsync(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSiteElevationPutWithHttpInfoAsync(deviceNumber, siteElevation, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSiteElevationPutWithHttpInfoAsync(deviceNumber, siteElevation, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -11542,7 +11542,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSiteElevationPutWithHttpInfoAsync(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSiteElevationPutWithHttpInfoAsync(int deviceNumber, double? siteElevation = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -11586,7 +11586,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteElevationPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteElevationPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11601,9 +11601,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberSiteLatitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeSiteLatitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberSiteLatitudeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeSiteLatitudeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -11615,7 +11615,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberSiteLatitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeSiteLatitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -11651,7 +11651,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteLatitudeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteLatitudeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11667,9 +11667,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberSiteLatitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeSiteLatitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberSiteLatitudeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeSiteLatitudeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -11682,7 +11682,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberSiteLatitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeSiteLatitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -11721,7 +11721,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteLatitudeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteLatitudeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11737,9 +11737,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSiteLatitudePut(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSiteLatitudePut(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSiteLatitudePutWithHttpInfo(deviceNumber, siteLatitude, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSiteLatitudePutWithHttpInfo(deviceNumber, siteLatitude, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -11752,7 +11752,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSiteLatitudePutWithHttpInfo(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSiteLatitudePutWithHttpInfo(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -11793,7 +11793,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteLatitudePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteLatitudePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11810,9 +11810,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSiteLatitudePutAsync(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSiteLatitudePutAsync(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSiteLatitudePutWithHttpInfoAsync(deviceNumber, siteLatitude, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSiteLatitudePutWithHttpInfoAsync(deviceNumber, siteLatitude, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -11826,7 +11826,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSiteLatitudePutWithHttpInfoAsync(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSiteLatitudePutWithHttpInfoAsync(int deviceNumber, double? siteLatitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -11870,7 +11870,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteLatitudePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteLatitudePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11885,9 +11885,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberSiteLongitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeSiteLongitudeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberSiteLongitudeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeSiteLongitudeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -11899,7 +11899,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberSiteLongitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeSiteLongitudeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -11935,7 +11935,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteLongitudeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteLongitudeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -11951,9 +11951,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberSiteLongitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeSiteLongitudeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberSiteLongitudeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeSiteLongitudeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -11966,7 +11966,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberSiteLongitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeSiteLongitudeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -12005,7 +12005,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteLongitudeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteLongitudeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12021,9 +12021,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSiteLongitudePut(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSiteLongitudePut(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSiteLongitudePutWithHttpInfo(deviceNumber, siteLongitude, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSiteLongitudePutWithHttpInfo(deviceNumber, siteLongitude, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -12036,7 +12036,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSiteLongitudePutWithHttpInfo(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSiteLongitudePutWithHttpInfo(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -12077,7 +12077,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteLongitudePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteLongitudePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12094,9 +12094,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSiteLongitudePutAsync(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSiteLongitudePutAsync(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSiteLongitudePutWithHttpInfoAsync(deviceNumber, siteLongitude, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSiteLongitudePutWithHttpInfoAsync(deviceNumber, siteLongitude, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -12110,7 +12110,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSiteLongitudePutWithHttpInfoAsync(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSiteLongitudePutWithHttpInfoAsync(int deviceNumber, double? siteLongitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -12154,7 +12154,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSiteLongitudePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSiteLongitudePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12169,9 +12169,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>IntResponse</returns>
-        public IntResponse ApiV1TelescopeDeviceNumberSlewSettleTimeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public IntResponse TelescopeSlewSettleTimeGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = ApiV1TelescopeDeviceNumberSlewSettleTimeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = TelescopeSlewSettleTimeGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -12183,7 +12183,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of IntResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<IntResponse> ApiV1TelescopeDeviceNumberSlewSettleTimeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<IntResponse> TelescopeSlewSettleTimeGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -12219,7 +12219,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewSettleTimeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewSettleTimeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12235,9 +12235,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of IntResponse</returns>
-        public async System.Threading.Tasks.Task<IntResponse> ApiV1TelescopeDeviceNumberSlewSettleTimeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<IntResponse> TelescopeSlewSettleTimeGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = await ApiV1TelescopeDeviceNumberSlewSettleTimeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = await TelescopeSlewSettleTimeGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -12250,7 +12250,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (IntResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<IntResponse>> ApiV1TelescopeDeviceNumberSlewSettleTimeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<IntResponse>> TelescopeSlewSettleTimeGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -12289,7 +12289,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewSettleTimeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewSettleTimeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12305,9 +12305,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSlewSettleTimePut(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSlewSettleTimePut(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSlewSettleTimePutWithHttpInfo(deviceNumber, slewSettleTime, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSlewSettleTimePutWithHttpInfo(deviceNumber, slewSettleTime, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -12320,7 +12320,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewSettleTimePutWithHttpInfo(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSlewSettleTimePutWithHttpInfo(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -12361,7 +12361,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewSettleTimePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewSettleTimePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12378,9 +12378,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewSettleTimePutAsync(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSlewSettleTimePutAsync(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSlewSettleTimePutWithHttpInfoAsync(deviceNumber, slewSettleTime, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSlewSettleTimePutWithHttpInfoAsync(deviceNumber, slewSettleTime, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -12394,7 +12394,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewSettleTimePutWithHttpInfoAsync(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSlewSettleTimePutWithHttpInfoAsync(int deviceNumber, int? slewSettleTime = default(int?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -12438,7 +12438,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewSettleTimePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewSettleTimePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12455,9 +12455,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSlewToAltAzAsyncPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPutWithHttpInfo(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSlewToAltAzAsyncPutWithHttpInfo(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -12471,7 +12471,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSlewToAltAzAsyncPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -12516,7 +12516,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToAltAzAsyncPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12534,9 +12534,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSlewToAltAzAsyncPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPutWithHttpInfoAsync(deviceNumber, azimuth, altitude, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSlewToAltAzAsyncPutWithHttpInfoAsync(deviceNumber, azimuth, altitude, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -12551,7 +12551,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSlewToAltAzAsyncPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -12599,7 +12599,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToAltAzAsyncPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToAltAzAsyncPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12616,9 +12616,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSlewToAltAzPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSlewToAltAzPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSlewToAltAzPutWithHttpInfo(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSlewToAltAzPutWithHttpInfo(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -12632,7 +12632,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToAltAzPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSlewToAltAzPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -12677,7 +12677,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToAltAzPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToAltAzPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12695,9 +12695,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToAltAzPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSlewToAltAzPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSlewToAltAzPutWithHttpInfoAsync(deviceNumber, azimuth, altitude, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSlewToAltAzPutWithHttpInfoAsync(deviceNumber, azimuth, altitude, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -12712,7 +12712,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToAltAzPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSlewToAltAzPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -12760,7 +12760,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToAltAzPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToAltAzPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12777,9 +12777,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSlewToCoordinatesAsyncPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPutWithHttpInfo(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSlewToCoordinatesAsyncPutWithHttpInfo(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -12793,7 +12793,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSlewToCoordinatesAsyncPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -12838,7 +12838,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToCoordinatesAsyncPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12856,9 +12856,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSlewToCoordinatesAsyncPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPutWithHttpInfoAsync(deviceNumber, rightAscension, declination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSlewToCoordinatesAsyncPutWithHttpInfoAsync(deviceNumber, rightAscension, declination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -12873,7 +12873,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSlewToCoordinatesAsyncPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -12921,7 +12921,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToCoordinatesAsyncPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToCoordinatesAsyncPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -12938,9 +12938,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSlewToCoordinatesPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSlewToCoordinatesPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSlewToCoordinatesPutWithHttpInfo(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSlewToCoordinatesPutWithHttpInfo(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -12954,7 +12954,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToCoordinatesPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSlewToCoordinatesPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -12999,7 +12999,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToCoordinatesPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToCoordinatesPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13017,9 +13017,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToCoordinatesPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSlewToCoordinatesPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSlewToCoordinatesPutWithHttpInfoAsync(deviceNumber, rightAscension, declination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSlewToCoordinatesPutWithHttpInfoAsync(deviceNumber, rightAscension, declination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -13034,7 +13034,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToCoordinatesPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSlewToCoordinatesPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -13082,7 +13082,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToCoordinatesPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToCoordinatesPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13097,9 +13097,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSlewToTargetAsyncPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSlewToTargetAsyncPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSlewToTargetAsyncPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSlewToTargetAsyncPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -13111,7 +13111,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToTargetAsyncPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSlewToTargetAsyncPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -13148,7 +13148,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToTargetAsyncPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToTargetAsyncPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13164,9 +13164,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToTargetAsyncPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSlewToTargetAsyncPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSlewToTargetAsyncPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSlewToTargetAsyncPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -13179,7 +13179,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToTargetAsyncPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSlewToTargetAsyncPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -13219,7 +13219,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToTargetAsyncPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToTargetAsyncPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13234,9 +13234,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSlewToTargetPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSlewToTargetPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSlewToTargetPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSlewToTargetPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -13248,7 +13248,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSlewToTargetPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSlewToTargetPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -13285,7 +13285,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToTargetPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToTargetPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13301,9 +13301,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSlewToTargetPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSlewToTargetPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSlewToTargetPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSlewToTargetPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -13316,7 +13316,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSlewToTargetPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSlewToTargetPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -13356,7 +13356,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewToTargetPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewToTargetPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13371,9 +13371,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberSlewingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeSlewingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberSlewingGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeSlewingGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -13385,7 +13385,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberSlewingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeSlewingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -13421,7 +13421,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewingGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewingGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13437,9 +13437,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberSlewingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeSlewingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberSlewingGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeSlewingGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -13452,7 +13452,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberSlewingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeSlewingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -13491,7 +13491,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSlewingGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSlewingGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13508,9 +13508,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSyncToAltAzPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSyncToAltAzPut(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSyncToAltAzPutWithHttpInfo(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSyncToAltAzPutWithHttpInfo(deviceNumber, azimuth, altitude, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -13524,7 +13524,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSyncToAltAzPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSyncToAltAzPutWithHttpInfo(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -13569,7 +13569,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSyncToAltAzPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSyncToAltAzPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13587,9 +13587,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSyncToAltAzPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSyncToAltAzPutAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSyncToAltAzPutWithHttpInfoAsync(deviceNumber, azimuth, altitude, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSyncToAltAzPutWithHttpInfoAsync(deviceNumber, azimuth, altitude, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -13604,7 +13604,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSyncToAltAzPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSyncToAltAzPutWithHttpInfoAsync(int deviceNumber, double? azimuth = default(double?), double? altitude = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -13652,7 +13652,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSyncToAltAzPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSyncToAltAzPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13669,9 +13669,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSyncToCoordinatesPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSyncToCoordinatesPut(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSyncToCoordinatesPutWithHttpInfo(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSyncToCoordinatesPutWithHttpInfo(deviceNumber, rightAscension, declination, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -13685,7 +13685,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSyncToCoordinatesPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSyncToCoordinatesPutWithHttpInfo(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -13730,7 +13730,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSyncToCoordinatesPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSyncToCoordinatesPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13748,9 +13748,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSyncToCoordinatesPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSyncToCoordinatesPutAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSyncToCoordinatesPutWithHttpInfoAsync(deviceNumber, rightAscension, declination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSyncToCoordinatesPutWithHttpInfoAsync(deviceNumber, rightAscension, declination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -13765,7 +13765,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSyncToCoordinatesPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSyncToCoordinatesPutWithHttpInfoAsync(int deviceNumber, double? rightAscension = default(double?), double? declination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -13813,7 +13813,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSyncToCoordinatesPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSyncToCoordinatesPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13828,9 +13828,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberSyncToTargetPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeSyncToTargetPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberSyncToTargetPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeSyncToTargetPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -13842,7 +13842,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberSyncToTargetPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeSyncToTargetPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -13879,7 +13879,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSyncToTargetPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSyncToTargetPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13895,9 +13895,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberSyncToTargetPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeSyncToTargetPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberSyncToTargetPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeSyncToTargetPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -13910,7 +13910,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberSyncToTargetPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeSyncToTargetPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -13950,7 +13950,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberSyncToTargetPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeSyncToTargetPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -13965,9 +13965,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberTargetDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeTargetDeclinationGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberTargetDeclinationGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeTargetDeclinationGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -13979,7 +13979,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberTargetDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeTargetDeclinationGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -14015,7 +14015,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTargetDeclinationGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTargetDeclinationGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14031,9 +14031,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberTargetDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeTargetDeclinationGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberTargetDeclinationGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeTargetDeclinationGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -14046,7 +14046,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberTargetDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeTargetDeclinationGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -14085,7 +14085,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTargetDeclinationGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTargetDeclinationGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14101,9 +14101,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberTargetDeclinationPut(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeTargetDeclinationPut(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberTargetDeclinationPutWithHttpInfo(deviceNumber, targetDeclination, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeTargetDeclinationPutWithHttpInfo(deviceNumber, targetDeclination, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -14116,7 +14116,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberTargetDeclinationPutWithHttpInfo(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeTargetDeclinationPutWithHttpInfo(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -14157,7 +14157,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTargetDeclinationPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTargetDeclinationPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14174,9 +14174,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberTargetDeclinationPutAsync(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeTargetDeclinationPutAsync(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberTargetDeclinationPutWithHttpInfoAsync(deviceNumber, targetDeclination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeTargetDeclinationPutWithHttpInfoAsync(deviceNumber, targetDeclination, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -14190,7 +14190,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberTargetDeclinationPutWithHttpInfoAsync(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeTargetDeclinationPutWithHttpInfoAsync(int deviceNumber, double? targetDeclination = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -14234,7 +14234,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTargetDeclinationPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTargetDeclinationPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14249,9 +14249,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DoubleResponse</returns>
-        public DoubleResponse ApiV1TelescopeDeviceNumberTargetRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DoubleResponse TelescopeTargetRightAscensionGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = ApiV1TelescopeDeviceNumberTargetRightAscensionGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = TelescopeTargetRightAscensionGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -14263,7 +14263,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DoubleResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> ApiV1TelescopeDeviceNumberTargetRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DoubleResponse> TelescopeTargetRightAscensionGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -14299,7 +14299,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTargetRightAscensionGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTargetRightAscensionGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14315,9 +14315,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DoubleResponse</returns>
-        public async System.Threading.Tasks.Task<DoubleResponse> ApiV1TelescopeDeviceNumberTargetRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DoubleResponse> TelescopeTargetRightAscensionGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await ApiV1TelescopeDeviceNumberTargetRightAscensionGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DoubleResponse> localVarResponse = await TelescopeTargetRightAscensionGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -14330,7 +14330,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DoubleResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> ApiV1TelescopeDeviceNumberTargetRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DoubleResponse>> TelescopeTargetRightAscensionGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -14369,7 +14369,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTargetRightAscensionGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTargetRightAscensionGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14385,9 +14385,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberTargetRightAscensionPut(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeTargetRightAscensionPut(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberTargetRightAscensionPutWithHttpInfo(deviceNumber, targetRightAscension, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeTargetRightAscensionPutWithHttpInfo(deviceNumber, targetRightAscension, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -14400,7 +14400,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberTargetRightAscensionPutWithHttpInfo(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeTargetRightAscensionPutWithHttpInfo(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -14441,7 +14441,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTargetRightAscensionPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTargetRightAscensionPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14458,9 +14458,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberTargetRightAscensionPutAsync(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeTargetRightAscensionPutAsync(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberTargetRightAscensionPutWithHttpInfoAsync(deviceNumber, targetRightAscension, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeTargetRightAscensionPutWithHttpInfoAsync(deviceNumber, targetRightAscension, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -14474,7 +14474,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberTargetRightAscensionPutWithHttpInfoAsync(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeTargetRightAscensionPutWithHttpInfoAsync(int deviceNumber, double? targetRightAscension = default(double?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -14518,7 +14518,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTargetRightAscensionPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTargetRightAscensionPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14533,9 +14533,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>BoolResponse</returns>
-        public BoolResponse ApiV1TelescopeDeviceNumberTrackingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public BoolResponse TelescopeTrackingGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = ApiV1TelescopeDeviceNumberTrackingGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = TelescopeTrackingGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -14547,7 +14547,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of BoolResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> ApiV1TelescopeDeviceNumberTrackingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<BoolResponse> TelescopeTrackingGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -14583,7 +14583,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTrackingGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTrackingGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14599,9 +14599,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of BoolResponse</returns>
-        public async System.Threading.Tasks.Task<BoolResponse> ApiV1TelescopeDeviceNumberTrackingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<BoolResponse> TelescopeTrackingGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await ApiV1TelescopeDeviceNumberTrackingGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<BoolResponse> localVarResponse = await TelescopeTrackingGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -14614,7 +14614,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (BoolResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> ApiV1TelescopeDeviceNumberTrackingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<BoolResponse>> TelescopeTrackingGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -14653,7 +14653,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTrackingGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTrackingGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14669,9 +14669,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberTrackingPut(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeTrackingPut(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberTrackingPutWithHttpInfo(deviceNumber, tracking, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeTrackingPutWithHttpInfo(deviceNumber, tracking, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -14684,7 +14684,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberTrackingPutWithHttpInfo(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeTrackingPutWithHttpInfo(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -14725,7 +14725,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTrackingPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTrackingPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14742,9 +14742,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberTrackingPutAsync(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeTrackingPutAsync(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberTrackingPutWithHttpInfoAsync(deviceNumber, tracking, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeTrackingPutWithHttpInfoAsync(deviceNumber, tracking, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -14758,7 +14758,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberTrackingPutWithHttpInfoAsync(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeTrackingPutWithHttpInfoAsync(int deviceNumber, bool? tracking = default(bool?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -14802,7 +14802,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTrackingPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTrackingPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14817,9 +14817,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DriveRateResponse</returns>
-        public DriveRateResponse ApiV1TelescopeDeviceNumberTrackingRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DriveRateResponse TelescopeTrackingRateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DriveRateResponse> localVarResponse = ApiV1TelescopeDeviceNumberTrackingRateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DriveRateResponse> localVarResponse = TelescopeTrackingRateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -14831,7 +14831,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DriveRateResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DriveRateResponse> ApiV1TelescopeDeviceNumberTrackingRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DriveRateResponse> TelescopeTrackingRateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -14867,7 +14867,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTrackingRateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTrackingRateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14883,9 +14883,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DriveRateResponse</returns>
-        public async System.Threading.Tasks.Task<DriveRateResponse> ApiV1TelescopeDeviceNumberTrackingRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DriveRateResponse> TelescopeTrackingRateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DriveRateResponse> localVarResponse = await ApiV1TelescopeDeviceNumberTrackingRateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DriveRateResponse> localVarResponse = await TelescopeTrackingRateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -14898,7 +14898,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DriveRateResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DriveRateResponse>> ApiV1TelescopeDeviceNumberTrackingRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DriveRateResponse>> TelescopeTrackingRateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -14937,7 +14937,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTrackingRateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTrackingRateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -14953,9 +14953,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberTrackingRatePut(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeTrackingRatePut(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberTrackingRatePutWithHttpInfo(deviceNumber, trackingRate, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeTrackingRatePutWithHttpInfo(deviceNumber, trackingRate, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -14968,7 +14968,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberTrackingRatePutWithHttpInfo(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeTrackingRatePutWithHttpInfo(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -15009,7 +15009,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTrackingRatePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTrackingRatePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -15026,9 +15026,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberTrackingRatePutAsync(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeTrackingRatePutAsync(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberTrackingRatePutWithHttpInfoAsync(deviceNumber, trackingRate, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeTrackingRatePutWithHttpInfoAsync(deviceNumber, trackingRate, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -15042,7 +15042,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberTrackingRatePutWithHttpInfoAsync(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeTrackingRatePutWithHttpInfoAsync(int deviceNumber, DriveRate? trackingRate = default(DriveRate?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -15086,7 +15086,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTrackingRatePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTrackingRatePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -15101,9 +15101,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DriveRatesResponse</returns>
-        public DriveRatesResponse ApiV1TelescopeDeviceNumberTrackingRatesGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DriveRatesResponse TelescopeTrackingRatesGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DriveRatesResponse> localVarResponse = ApiV1TelescopeDeviceNumberTrackingRatesGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DriveRatesResponse> localVarResponse = TelescopeTrackingRatesGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -15115,7 +15115,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DriveRatesResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DriveRatesResponse> ApiV1TelescopeDeviceNumberTrackingRatesGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DriveRatesResponse> TelescopeTrackingRatesGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -15151,7 +15151,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTrackingRatesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTrackingRatesGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -15167,9 +15167,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DriveRatesResponse</returns>
-        public async System.Threading.Tasks.Task<DriveRatesResponse> ApiV1TelescopeDeviceNumberTrackingRatesGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DriveRatesResponse> TelescopeTrackingRatesGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DriveRatesResponse> localVarResponse = await ApiV1TelescopeDeviceNumberTrackingRatesGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DriveRatesResponse> localVarResponse = await TelescopeTrackingRatesGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -15182,7 +15182,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DriveRatesResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DriveRatesResponse>> ApiV1TelescopeDeviceNumberTrackingRatesGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DriveRatesResponse>> TelescopeTrackingRatesGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -15221,7 +15221,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberTrackingRatesGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeTrackingRatesGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -15236,9 +15236,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>DateTimeResponse</returns>
-        public DateTimeResponse ApiV1TelescopeDeviceNumberUTCDateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public DateTimeResponse TelescopeUTCDateGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<DateTimeResponse> localVarResponse = ApiV1TelescopeDeviceNumberUTCDateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<DateTimeResponse> localVarResponse = TelescopeUTCDateGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -15250,7 +15250,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of DateTimeResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<DateTimeResponse> ApiV1TelescopeDeviceNumberUTCDateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<DateTimeResponse> TelescopeUTCDateGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -15286,7 +15286,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberUTCDateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeUTCDateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -15302,9 +15302,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of DateTimeResponse</returns>
-        public async System.Threading.Tasks.Task<DateTimeResponse> ApiV1TelescopeDeviceNumberUTCDateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<DateTimeResponse> TelescopeUTCDateGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<DateTimeResponse> localVarResponse = await ApiV1TelescopeDeviceNumberUTCDateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<DateTimeResponse> localVarResponse = await TelescopeUTCDateGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -15317,7 +15317,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (DateTimeResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DateTimeResponse>> ApiV1TelescopeDeviceNumberUTCDateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<DateTimeResponse>> TelescopeUTCDateGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -15356,7 +15356,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberUTCDateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeUTCDateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -15372,9 +15372,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberUTCDatePut(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeUTCDatePut(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberUTCDatePutWithHttpInfo(deviceNumber, uTCDate, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeUTCDatePutWithHttpInfo(deviceNumber, uTCDate, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -15387,7 +15387,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberUTCDatePutWithHttpInfo(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeUTCDatePutWithHttpInfo(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -15428,7 +15428,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberUTCDatePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeUTCDatePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -15445,9 +15445,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberUTCDatePutAsync(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeUTCDatePutAsync(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberUTCDatePutWithHttpInfoAsync(deviceNumber, uTCDate, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeUTCDatePutWithHttpInfoAsync(deviceNumber, uTCDate, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -15461,7 +15461,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberUTCDatePutWithHttpInfoAsync(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeUTCDatePutWithHttpInfoAsync(int deviceNumber, DateTime? uTCDate = default(DateTime?), int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -15505,7 +15505,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberUTCDatePut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeUTCDatePut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -15520,9 +15520,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>Response</returns>
-        public Response ApiV1TelescopeDeviceNumberUnParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Response TelescopeUnParkPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = ApiV1TelescopeDeviceNumberUnParkPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = TelescopeUnParkPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -15534,7 +15534,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID"> (optional, default to -1)</param>
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> ApiV1TelescopeDeviceNumberUnParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> TelescopeUnParkPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -15571,7 +15571,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberUnParkPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeUnParkPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -15587,9 +15587,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> ApiV1TelescopeDeviceNumberUnParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> TelescopeUnParkPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await ApiV1TelescopeDeviceNumberUnParkPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await TelescopeUnParkPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -15602,7 +15602,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID"> (optional, default to 0)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> ApiV1TelescopeDeviceNumberUnParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> TelescopeUnParkPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -15642,7 +15642,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV1TelescopeDeviceNumberUnParkPut", localVarResponse);
+                Exception _exception = this.ExceptionFactory("TelescopeUnParkPut", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
