@@ -17,6 +17,8 @@ using RestSharp;
 using Xunit;
 
 using Org.OpenAPITools.Client;
+using ASCOM.Alpaca.Responses;
+using Org.OpenAPITools.Api;
 // uncomment below to import models
 //using Org.OpenAPITools.Model;
 
@@ -31,11 +33,11 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class RotatorSpecificMethodsApiTests : IDisposable
     {
-        //private RotatorSpecificMethodsApi instance;
+        private Rotator instance;
 
         public RotatorSpecificMethodsApiTests()
         {
-            //instance = new RotatorSpecificMethodsApi();
+            instance = new Rotator("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
@@ -50,7 +52,7 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' RotatorSpecificMethodsApi
-            //Assert.IsType<RotatorSpecificMethodsApi>(instance);
+            Assert.IsType<Rotator>(instance);
         }
 
         /// <summary>
@@ -60,11 +62,11 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberCanreverseGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberCanreverseGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberCanreverseGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -74,10 +76,11 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberHaltPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.RotatorDeviceNumberHaltPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberHaltPut(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -87,11 +90,11 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberIsmovingGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberIsmovingGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberIsmovingGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -101,11 +104,11 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberMechanicalpositionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberMechanicalpositionGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberMechanicalpositionGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -115,12 +118,12 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberMovePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //double position = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberMovePut(deviceNumber, position, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            double position = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberMovePut(deviceNumber, position, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -130,12 +133,12 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberMoveabsolutePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //double position = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberMoveabsolutePut(deviceNumber, position, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            double position = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberMoveabsolutePut(deviceNumber, position, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -145,12 +148,12 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberMovemechanicalPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //double position = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberMovemechanicalPut(deviceNumber, position, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            double position = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberMovemechanicalPut(deviceNumber, position, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -160,11 +163,11 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberPositionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberPositionGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberPositionGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -174,11 +177,11 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberReverseGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberReverseGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberReverseGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -188,12 +191,12 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberReversePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //bool reverse = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberReversePut(deviceNumber, reverse, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            bool reverse = true;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberReversePut(deviceNumber, reverse, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -203,11 +206,11 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberStepsizeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberStepsizeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberStepsizeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -217,12 +220,12 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberSyncPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //double position = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberSyncPut(deviceNumber, position, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            double position = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberSyncPut(deviceNumber, position, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -232,11 +235,11 @@ namespace Org.OpenAPITools.Test.Api
         public void RotatorDeviceNumberTargetpositionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.RotatorDeviceNumberTargetpositionGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.RotatorDeviceNumberTargetpositionGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
     }
 }
