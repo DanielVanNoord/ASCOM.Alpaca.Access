@@ -170,7 +170,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>Response</returns>
-        Response HaltcoverPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response HaltCoverPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Stops any cover movement that may be in progress
@@ -182,7 +182,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> HaltcoverPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> HaltCoverPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Returns the calibrator&#39;s maximum Brightness value.
         /// </summary>
@@ -194,7 +194,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>IntResponse</returns>
-        IntResponse MaxbrightnessGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        IntResponse MaxBrightnessGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Returns the calibrator&#39;s maximum Brightness value.
@@ -207,7 +207,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of IntResponse</returns>
-        ApiResponse<IntResponse> MaxbrightnessGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<IntResponse> MaxBrightnessGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         /// <summary>
         /// Initiates cover opening
         /// </summary>
@@ -218,7 +218,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>Response</returns>
-        Response OpencoverPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        Response OpenCoverPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
 
         /// <summary>
         /// Initiates cover opening
@@ -230,7 +230,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of Response</returns>
-        ApiResponse<Response> OpencoverPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
+        ApiResponse<Response> OpenCoverPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?));
         #endregion Synchronous Operations
     }
 
@@ -411,7 +411,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> HaltcoverPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> HaltCoverPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Stops any cover movement that may be in progress
@@ -424,7 +424,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> HaltcoverPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> HaltCoverPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Returns the calibrator&#39;s maximum Brightness value.
         /// </summary>
@@ -437,7 +437,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of IntResponse</returns>
-        System.Threading.Tasks.Task<IntResponse> MaxbrightnessGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<IntResponse> MaxBrightnessGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Returns the calibrator&#39;s maximum Brightness value.
@@ -451,7 +451,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (IntResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<IntResponse>> MaxbrightnessGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<IntResponse>> MaxBrightnessGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Initiates cover opening
         /// </summary>
@@ -463,7 +463,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        System.Threading.Tasks.Task<Response> OpencoverPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Response> OpenCoverPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Initiates cover opening
@@ -476,7 +476,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Response>> OpencoverPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Response>> OpenCoverPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -488,7 +488,7 @@ namespace ASCOM.Alpaca.Access
 
     }
 
-    public class CoverCalibrator : AlpacaBase, IAlpacaBase
+    public class CoverCalibrator : AlpacaBase, IAlpacaBase, ICoverCalibratorSpecificMethodsApi
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CoverCalibratorSpecificMethodsApi"/> class.
@@ -1335,7 +1335,7 @@ namespace ASCOM.Alpaca.Access
         /// <returns>Response</returns>
         public Response HaltCoverPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = HaltcoverPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = HaltCoverPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -1346,7 +1346,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> HaltcoverPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> HaltCoverPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1396,9 +1396,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> HaltcoverPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> HaltCoverPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await HaltcoverPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await HaltCoverPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1410,7 +1410,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> HaltcoverPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> HaltCoverPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1465,7 +1465,7 @@ namespace ASCOM.Alpaca.Access
         /// <returns>IntResponse</returns>
         public IntResponse MaxBrightnessGet(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = MaxbrightnessGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = MaxBrightnessGetWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -1477,7 +1477,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientID">Client&#39;s unique ID. (0 to 4294967295). The client should choose a value at start-up, e.g. a random value between 0 and 65535, and send this value on every transaction to help associate entries in device logs with this particular client. (optional, default to 1)</param>
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <returns>ApiResponse of IntResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<IntResponse> MaxbrightnessGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<IntResponse> MaxBrightnessGetWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1511,7 +1511,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("MaxbrightnessGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("MaxBrightnessGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1527,9 +1527,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of IntResponse</returns>
-        public async System.Threading.Tasks.Task<IntResponse> MaxbrightnessGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<IntResponse> MaxBrightnessGetAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = await MaxbrightnessGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<IntResponse> localVarResponse = await MaxBrightnessGetWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1542,7 +1542,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="clientTransactionID">Client&#39;s transaction ID. (0 to 4294967295). The client should start this count at 1 and increment by one on each successive transaction. This will aid associating entries in device logs with corresponding entries in client side logs. (optional, default to 1234)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (IntResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<IntResponse>> MaxbrightnessGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<IntResponse>> MaxBrightnessGetWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1579,7 +1579,7 @@ namespace ASCOM.Alpaca.Access
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("MaxbrightnessGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("MaxBrightnessGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1595,7 +1595,7 @@ namespace ASCOM.Alpaca.Access
         /// <returns>Response</returns>
         public Response OpenCoverPut(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = OpencoverPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = OpenCoverPutWithHttpInfo(deviceNumber, clientID, clientTransactionID);
             return localVarResponse.Data;
         }
 
@@ -1606,7 +1606,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="deviceNumber">Zero based device number as set on the server (0 to 4294967295)</param>
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <returns>ApiResponse of Response</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Response> OpencoverPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
+        public Org.OpenAPITools.Client.ApiResponse<Response> OpenCoverPutWithHttpInfo(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1656,9 +1656,9 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Response</returns>
-        public async System.Threading.Tasks.Task<Response> OpencoverPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Response> OpenCoverPutAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await OpencoverPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<Response> localVarResponse = await OpenCoverPutWithHttpInfoAsync(deviceNumber, clientID, clientTransactionID, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1670,7 +1670,7 @@ namespace ASCOM.Alpaca.Access
         /// <param name="UNKNOWN_BASE_TYPE"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Response)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> OpencoverPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Response>> OpenCoverPutWithHttpInfoAsync(int deviceNumber, int? clientID = default(int?), int? clientTransactionID = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
