@@ -71,22 +71,6 @@ namespace Org.OpenAPITools.Test.Api
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberActionPut
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberActionPutTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            string action = null;
-            string parameters = null;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberActionPut(deviceNumber, action, parameters, clientID, clientTransactionID);
-            Assert.IsType<StringResponse>(response);
-        }
-
-        /// <summary>
         /// Test ApiV1TelescopeDeviceNumberAlignmentModeGet
         /// </summary>
         [Fact]
@@ -439,83 +423,6 @@ namespace Org.OpenAPITools.Test.Api
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCommandBlindPut
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberCommandBlindPutTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            string command = null;
-            bool? raw = null;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCommandBlindPut(deviceNumber, command, raw, clientID, clientTransactionID);
-            Assert.IsType<Response>(response);
-        }
-
-        /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCommandBoolPut
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberCommandBoolPutTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            string command = null;
-            bool? raw = null;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCommandBoolPut(deviceNumber, command, raw, clientID, clientTransactionID);
-            Assert.IsType<BoolResponse>(response);
-        }
-
-        /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberCommandStringPut
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberCommandStringPutTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            string command = null;
-            bool? raw = null;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberCommandStringPut(deviceNumber, command, raw, clientID, clientTransactionID);
-            Assert.IsType<StringResponse>(response);
-        }
-
-        /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberConnectedGet
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberConnectedGetTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberConnectedGet(deviceNumber, clientID, clientTransactionID);
-            Assert.IsType<BoolResponse>(response);
-        }
-
-        /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberConnectedPut
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberConnectedPutTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            bool? connected = null;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberConnectedPut(deviceNumber, connected, clientID, clientTransactionID);
-            Assert.IsType<Response>(response);
-        }
-
-        /// <summary>
         /// Test ApiV1TelescopeDeviceNumberDeclinationGet
         /// </summary>
         [Fact]
@@ -556,20 +463,6 @@ namespace Org.OpenAPITools.Test.Api
             int? clientTransactionID = null;
             var response = instance.ApiV1TelescopeDeviceNumberDeclinationRatePut(deviceNumber, declinationRate, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
-        }
-
-        /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberDescriptionGet
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberDescriptionGetTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberDescriptionGet(deviceNumber, clientID, clientTransactionID);
-            Assert.IsType<StringResponse>(response);
         }
 
         /// <summary>
@@ -629,34 +522,6 @@ namespace Org.OpenAPITools.Test.Api
             int? clientTransactionID = null;
             var response = instance.ApiV1TelescopeDeviceNumberDoesRefractionPut(deviceNumber, doesRefraction, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
-        }
-
-        /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberDriverInfoGet
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberDriverInfoGetTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberDriverInfoGet(deviceNumber, clientID, clientTransactionID);
-            Assert.IsType<StringResponse>(response);
-        }
-
-        /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberDriverVersionGet
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberDriverVersionGetTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberDriverVersionGet(deviceNumber, clientID, clientTransactionID);
-            Assert.IsType<StringResponse>(response);
         }
 
         /// <summary>
@@ -760,20 +625,6 @@ namespace Org.OpenAPITools.Test.Api
         }
 
         /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberInterfaceVersionGet
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberInterfaceVersionGetTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberInterfaceVersionGet(deviceNumber, clientID, clientTransactionID);
-            Assert.IsType<IntResponse>(response);
-        }
-
-        /// <summary>
         /// Test ApiV1TelescopeDeviceNumberIsPulseGuidingGet
         /// </summary>
         [Fact]
@@ -801,20 +652,6 @@ namespace Org.OpenAPITools.Test.Api
             int? clientTransactionID = null;
             var response = instance.ApiV1TelescopeDeviceNumberMoveAxisPut(deviceNumber, axis, rate, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
-        }
-
-        /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberNameGet
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberNameGetTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberNameGet(deviceNumber, clientID, clientTransactionID);
-            Assert.IsType<StringResponse>(response);
         }
 
         /// <summary>
@@ -1167,20 +1004,6 @@ namespace Org.OpenAPITools.Test.Api
             int? clientTransactionID = null;
             var response = instance.ApiV1TelescopeDeviceNumberSlewingGet(deviceNumber, clientID, clientTransactionID);
             Assert.IsType<BoolResponse>(response);
-        }
-
-        /// <summary>
-        /// Test ApiV1TelescopeDeviceNumberSupportedActionsGet
-        /// </summary>
-        [Fact]
-        public void ApiV1TelescopeDeviceNumberSupportedActionsGetTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            int deviceNumber = 0;
-            int? clientID = null;
-            int? clientTransactionID = null;
-            var response = instance.ApiV1TelescopeDeviceNumberSupportedActionsGet(deviceNumber, clientID, clientTransactionID);
-            Assert.IsType<StringListResponse>(response);
         }
 
         /// <summary>
