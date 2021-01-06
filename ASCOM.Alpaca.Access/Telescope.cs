@@ -4165,10 +4165,8 @@ namespace ASCOM.Alpaca.Access
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class Telescope : AlpacaBase, ITelescopeApi
+    public partial class Telescope : AlpacaBase, IAlpacaBase, ITelescopeApi
     {
-        private Org.OpenAPITools.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="Telescope"/> class.
         /// </summary>
