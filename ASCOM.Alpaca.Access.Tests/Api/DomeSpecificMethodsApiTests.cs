@@ -17,6 +17,8 @@ using RestSharp;
 using Xunit;
 
 using Org.OpenAPITools.Client;
+using ASCOM.Alpaca.Responses;
+using Org.OpenAPITools.Api;
 // uncomment below to import models
 //using Org.OpenAPITools.Model;
 
@@ -31,11 +33,11 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class DomeSpecificMethodsApiTests : IDisposable
     {
-        //private DomeSpecificMethodsApi instance;
+        private Dome instance;
 
         public DomeSpecificMethodsApiTests()
         {
-            //instance = new DomeSpecificMethodsApi();
+            instance = new Dome("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
@@ -50,351 +52,359 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' DomeSpecificMethodsApi
-            //Assert.IsType<DomeSpecificMethodsApi>(instance);
+            Assert.IsType<Dome>(instance);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberAbortslewPut
+        /// Test DomeAbortslewPut
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberAbortslewPutTest()
+        public void DomeAbortslewPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.DomeDeviceNumberAbortslewPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeAbortslewPut(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberAltitudeGet
+        /// Test DomeAltitudeGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberAltitudeGetTest()
+        public void DomeAltitudeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberAltitudeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeAltitudeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberAthomeGet
+        /// Test DomeAthomeGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberAthomeGetTest()
+        public void DomeAthomeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberAthomeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeAthomeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberAtparkGet
+        /// Test DomeAtparkGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberAtparkGetTest()
+        public void DomeAtparkGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberAtparkGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeAtparkGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberAzimuthGet
+        /// Test DomeAzimuthGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberAzimuthGetTest()
+        public void DomeAzimuthGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberAzimuthGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeAzimuthGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberCanfindhomeGet
+        /// Test DomeCanfindhomeGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberCanfindhomeGetTest()
+        public void DomeCanfindhomeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberCanfindhomeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeCanfindhomeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberCanparkGet
+        /// Test DomeCanparkGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberCanparkGetTest()
+        public void DomeCanparkGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberCanparkGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeCanparkGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberCansetaltitudeGet
+        /// Test DomeCansetaltitudeGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberCansetaltitudeGetTest()
+        public void DomeCansetaltitudeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberCansetaltitudeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeCansetaltitudeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberCansetazimuthGet
+        /// Test DomeCansetazimuthGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberCansetazimuthGetTest()
+        public void DomeCansetazimuthGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberCansetazimuthGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeCansetazimuthGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberCansetparkGet
+        /// Test DomeCansetparkGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberCansetparkGetTest()
+        public void DomeCansetparkGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberCansetparkGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeCansetparkGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberCansetshutterGet
+        /// Test DomeCansetshutterGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberCansetshutterGetTest()
+        public void DomeCansetshutterGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberCansetshutterGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeCansetshutterGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberCanslaveGet
+        /// Test DomeCanslaveGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberCanslaveGetTest()
+        public void DomeCanslaveGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberCanslaveGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeCanslaveGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberCansyncazimuthGet
+        /// Test DomeCansyncazimuthGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberCansyncazimuthGetTest()
+        public void DomeCansyncazimuthGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberCansyncazimuthGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeCansyncazimuthGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberCloseshutterPut
+        /// Test DomeCloseshutterPut
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberCloseshutterPutTest()
+        public void DomeCloseshutterPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.DomeDeviceNumberCloseshutterPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeCloseshutterPut(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberFindhomePut
+        /// Test DomeFindhomePut
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberFindhomePutTest()
+        public void DomeFindhomePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.DomeDeviceNumberFindhomePut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeFindhomePut(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberOpenshutterPut
+        /// Test DomeOpenshutterPut
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberOpenshutterPutTest()
+        public void DomeOpenshutterPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.DomeDeviceNumberOpenshutterPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeOpenshutterPut(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberParkPut
+        /// Test DomeParkPut
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberParkPutTest()
+        public void DomeParkPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.DomeDeviceNumberParkPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeParkPut(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberSetparkPut
+        /// Test DomeSetparkPut
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberSetparkPutTest()
+        public void DomeSetparkPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.DomeDeviceNumberSetparkPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeSetparkPut(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberShutterstatusGet
+        /// Test DomeShutterstatusGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberShutterstatusGetTest()
+        public void DomeShutterstatusGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberShutterstatusGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeShutterstatusGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberSlavedGet
+        /// Test DomeSlavedGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberSlavedGetTest()
+        public void DomeSlavedGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberSlavedGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeSlavedGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberSlavedPut
+        /// Test DomeSlavedPut
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberSlavedPutTest()
+        public void DomeSlavedPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //bool slaved = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberSlavedPut(deviceNumber, slaved, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            bool slaved = false;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeSlavedPut(deviceNumber, slaved, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberSlewingGet
+        /// Test DomeSlewingGet
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberSlewingGetTest()
+        public void DomeSlewingGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberSlewingGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeSlewingGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberSlewtoaltitudePut
+        /// Test DomeSlewtoaltitudePut
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberSlewtoaltitudePutTest()
+        public void DomeSlewtoaltitudePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //decimal altitude = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.DomeDeviceNumberSlewtoaltitudePut(deviceNumber, altitude, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            decimal altitude = 9;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeSlewtoaltitudePut(deviceNumber, altitude, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberSlewtoazimuthPut
+        /// Test DomeSlewtoazimuthPut
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberSlewtoazimuthPutTest()
+        public void DomeSlewtoazimuthPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.DomeDeviceNumberSlewtoazimuthPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeSlewtoazimuthPut(deviceNumber, 0, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
-        /// Test DomeDeviceNumberSynctoazimuthPut
+        /// Test DomeSynctoazimuthPut
         /// </summary>
         [Fact]
-        public void DomeDeviceNumberSynctoazimuthPutTest()
+        public void DomeSynctoazimuthPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.DomeDeviceNumberSynctoazimuthPut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.DomeSynctoazimuthPut(deviceNumber, 0, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
     }
 }
