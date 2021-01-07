@@ -17,6 +17,8 @@ using RestSharp;
 using Xunit;
 
 using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Api;
+using ASCOM.Alpaca.Responses;
 // uncomment below to import models
 //using Org.OpenAPITools.Model;
 
@@ -31,11 +33,11 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class SafetyMonitorSpecificMethodsApiTests : IDisposable
     {
-        //private SafetyMonitorSpecificMethodsApi instance;
+        private SafetyMonitorSpecificMethodsApi instance;
 
         public SafetyMonitorSpecificMethodsApiTests()
         {
-            //instance = new SafetyMonitorSpecificMethodsApi();
+            instance = new SafetyMonitorSpecificMethodsApi("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
@@ -50,7 +52,7 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' SafetyMonitorSpecificMethodsApi
-            //Assert.IsType<SafetyMonitorSpecificMethodsApi>(instance);
+            Assert.IsType<SafetyMonitorSpecificMethodsApi>(instance);
         }
 
         /// <summary>
@@ -60,11 +62,11 @@ namespace Org.OpenAPITools.Test.Api
         public void SafetymonitorDeviceNumberIssafeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SafetymonitorDeviceNumberIssafeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SafetymonitorIssafeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
     }
 }
