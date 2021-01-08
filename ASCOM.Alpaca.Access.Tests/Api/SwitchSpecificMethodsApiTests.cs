@@ -17,6 +17,8 @@ using RestSharp;
 using Xunit;
 
 using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Api;
+using ASCOM.Alpaca.Responses;
 // uncomment below to import models
 //using Org.OpenAPITools.Model;
 
@@ -31,16 +33,16 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class SwitchSpecificMethodsApiTests : IDisposable
     {
-        //private SwitchSpecificMethodsApi instance;
+        private SwitchSpecificMethodsApi instance;
 
         public SwitchSpecificMethodsApiTests()
         {
-            //instance = new SwitchSpecificMethodsApi();
+            instance = new SwitchSpecificMethodsApi("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
         {
-            // Cleanup when everything is done.
+            //Cleanup when everything is done.
         }
 
         /// <summary>
@@ -50,7 +52,7 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' SwitchSpecificMethodsApi
-            //Assert.IsType<SwitchSpecificMethodsApi>(instance);
+            Assert.IsType<SwitchSpecificMethodsApi>(instance);
         }
 
         /// <summary>
@@ -60,12 +62,12 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberCanwriteGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int id = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberCanwriteGet(deviceNumber, id, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int id = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberCanwriteGet(deviceNumber, id, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -75,12 +77,12 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberGetswitchGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int id = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberGetswitchGet(deviceNumber, id, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int id = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberGetswitchGet(deviceNumber, id, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -90,12 +92,12 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberGetswitchdescriptionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int id = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberGetswitchdescriptionGet(deviceNumber, id, clientID, clientTransactionID);
-            //Assert.IsType<StringResponse>(response);
+            int deviceNumber = 0;
+            int id = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberGetswitchdescriptionGet(deviceNumber, id, clientID, clientTransactionID);
+            Assert.IsType<StringResponse>(response);
         }
 
         /// <summary>
@@ -105,12 +107,12 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberGetswitchnameGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int id = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberGetswitchnameGet(deviceNumber, id, clientID, clientTransactionID);
-            //Assert.IsType<StringResponse>(response);
+            int deviceNumber = 0;
+            int id = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberGetswitchnameGet(deviceNumber, id, clientID, clientTransactionID);
+            Assert.IsType<StringResponse>(response);
         }
 
         /// <summary>
@@ -120,12 +122,12 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberGetswitchvalueGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int id = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberGetswitchvalueGet(deviceNumber, id, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int id = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberGetswitchvalueGet(deviceNumber, id, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -135,11 +137,11 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberMaxswitchGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberMaxswitchGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberMaxswitchGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -149,12 +151,12 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberMaxswitchvalueGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int id = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberMaxswitchvalueGet(deviceNumber, id, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int id = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberMaxswitchvalueGet(deviceNumber, id, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -164,12 +166,12 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberMinswitchvalueGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int id = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberMinswitchvalueGet(deviceNumber, id, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int id = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberMinswitchvalueGet(deviceNumber, id, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -179,13 +181,13 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberSetswitchPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int id = null;
-            //bool state = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberSetswitchPut(deviceNumber, id, state, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int id = 0;
+            bool state = true;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberSetswitchPut(deviceNumber, id, state, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -195,13 +197,13 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberSetswitchnamePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int id = null;
-            //string name = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberSetswitchnamePut(deviceNumber, id, name, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int id = 0;
+            string name = "blah";
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberSetswitchnamePut(deviceNumber, id, name, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -211,13 +213,13 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberSetswitchvaluePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int id = null;
-            //decimal value = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberSetswitchvaluePut(deviceNumber, id, value, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int id = 0;
+            decimal value = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberSetswitchvaluePut(deviceNumber, id, value, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -227,12 +229,12 @@ namespace Org.OpenAPITools.Test.Api
         public void SwitchDeviceNumberSwitchstepGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int id = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.SwitchDeviceNumberSwitchstepGet(deviceNumber, id, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int id = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.SwitchDeviceNumberSwitchstepGet(deviceNumber, id, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
     }
 }
