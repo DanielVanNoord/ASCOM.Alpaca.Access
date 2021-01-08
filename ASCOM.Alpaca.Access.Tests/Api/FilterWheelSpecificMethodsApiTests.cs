@@ -17,6 +17,8 @@ using RestSharp;
 using Xunit;
 
 using Org.OpenAPITools.Client;
+using ASCOM.Alpaca.Responses;
+using Org.OpenAPITools.Api;
 // uncomment below to import models
 //using Org.OpenAPITools.Model;
 
@@ -31,11 +33,11 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class FilterWheelSpecificMethodsApiTests : IDisposable
     {
-        //private FilterWheelSpecificMethodsApi instance;
+        private FilterWheelSpecificMethodsApi instance;
 
         public FilterWheelSpecificMethodsApiTests()
         {
-            //instance = new FilterWheelSpecificMethodsApi();
+            instance = new FilterWheelSpecificMethodsApi("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
@@ -50,7 +52,7 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' FilterWheelSpecificMethodsApi
-            //Assert.IsType<FilterWheelSpecificMethodsApi>(instance);
+            Assert.IsType<FilterWheelSpecificMethodsApi>(instance);
         }
 
         /// <summary>
@@ -60,11 +62,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FilterwheelDeviceNumberFocusoffsetsGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FilterwheelDeviceNumberFocusoffsetsGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntArrayResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FilterwheelDeviceNumberFocusoffsetsGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntListResponse>(response);
         }
 
         /// <summary>
@@ -74,11 +76,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FilterwheelDeviceNumberNamesGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FilterwheelDeviceNumberNamesGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<StringArrayResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FilterwheelDeviceNumberNamesGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<StringListResponse>(response);
         }
 
         /// <summary>
@@ -88,11 +90,11 @@ namespace Org.OpenAPITools.Test.Api
         public void FilterwheelDeviceNumberPositionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FilterwheelDeviceNumberPositionGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientid = null;
+            int? clienttransactionid = null;
+            var response = instance.FilterwheelDeviceNumberPositionGet(deviceNumber, clientid, clienttransactionid);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -102,12 +104,12 @@ namespace Org.OpenAPITools.Test.Api
         public void FilterwheelDeviceNumberPositionPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int position = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.FilterwheelDeviceNumberPositionPut(deviceNumber, position, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int position = 1;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.FilterwheelDeviceNumberPositionPut(deviceNumber, position, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
     }
 }
