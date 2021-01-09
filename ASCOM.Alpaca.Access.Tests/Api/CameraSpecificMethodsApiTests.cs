@@ -1,29 +1,21 @@
 /*
  * ASCOM Alpaca Device API
  *
- * The Alpaca API uses RESTful techniques and TCP/IP to enable ASCOM applications and devices to communicate across modern network environments.  ## Interface Behaviour The ASCOM Interface behavioural requirements for Alpaca drivers are the same as for COM based drivers and are documented in the <a href=\"https://ascom-standards.org/Help/Developer/html/N_ASCOM_DeviceInterface.htm\">API Interface Definitions</a> e.g. the <a href=\"https://ascom-standards.org/Help/Developer/html/M_ASCOM_DeviceInterface_ITelescopeV3_SlewToCoordinates.htm\">Telescope.SlewToCoordinates</a> method.       This document focuses on how to use the ASCOM Interface standards in their RESTful Alpaca form. ## Alpaca URLs, Case Sensitivity, Parameters and Returned values **Alpaca Device API URLs** are of the form **http(s)://host:port/path** where path comprises **\"/api/v1/\"** followed by one of the method names below. e.g. for an Alpaca interface running on port 7843 of a device with IP address 192.168.1.89: * A telescope \"Interface Version\" method URL would be **http://192.168.1.89:7843/api/v1/telescope/0/InterfaceVersion**      * A first focuser \"Position\" method URL would be  **http://192.168.1.89:7843/api/v1/focuser/0/position**      * A second focuser \"StepSize\" method URL would be  **http://192.168.1.89:7843/api/v1/focuser/1/stepsize** * A rotator \"Halt\" method URL would be  **http://192.168.1.89:7843/api/v1/rotator/0/halt**   URLs are case sensitive and all elements must be in lower case. This means that both the device type and command name must always be in lower case. Parameter names are not case sensitive, so clients and drivers should be prepared for parameter names to be supplied and returned with any casing. Parameter values can be in mixed case as required.  For GET operations, parameters should be placed in the URL query string and for PUT operations they should be placed in the body of the message.  Responses, as described below, are returned in JSON format and always include a common set of values including the client's transaction number,  the server's transaction number together with any error message and error number. If the transaction completes successfully, the ErrorMessage field will be an empty string and the ErrorNumber field will be zero.  ## HTTP Status Codes and ASCOM Error codes The returned HTTP status code gives a high level view of whether the device understood the request and whether it attempted to process it.  Under most circumstances the returned status will be `200`, indicating that the request was correctly formatted and that it was passed to the device's handler to execute. A `200` status does not necessarily mean that the operation completed as expected, without error, and you must always check the ErrorMessage and ErrorNumber fields to confirm whether the returned result is valid. The `200` status simply means that the transaction was successfully managed by the device's transaction management layer.  An HTTP status code of `400` indicates that the device could not interpret the request e.g. an invalid device number or misspelt device type was supplied. Check the body of the response for a text error message.  An HTTP status code of `500` indicates an unexpected error within the device from which it could not recover. Check the body of the response for a text error message. ## SetupDialog and Alpaca Device Configuration The SetupDialog method has been omitted from the Alpaca Device API because it presents a user interface rather than returning data. Alpaca device configuration is covered in the \"ASCOM Alpaca Management API\" specification, which can be selected through the drop-down box at the head of this page. 
+ * The Alpaca API uses RESTful techniques and TCP/IP to enable ASCOM applications and devices to communicate across modern network environments.  ////// Interface Behaviour The ASCOM Interface behavioural requirements for Alpaca drivers are the same as for COM based drivers and are documented in the <a href=\"https://ascom-standards.org/Help/Developer/html/N_ASCOM_DeviceInterface.htm\">API Interface Definitions</a> e.g. the <a href=\"https://ascom-standards.org/Help/Developer/html/M_ASCOM_DeviceInterface_ITelescopeV3_SlewToCoordinates.htm\">Telescope.SlewToCoordinates</a> method.       This document focuses on how to use the ASCOM Interface standards in their RESTful Alpaca form. ////// Alpaca URLs, Case Sensitivity, Parameters and Returned values **Alpaca Device API URLs** are of the form **http(s)://host:port/path** where path comprises **\"/api/v1/\"** followed by one of the method names below. e.g. for an Alpaca interface running on port 7843 of a device with IP address 192.168.1.89: * A telescope \"Interface Version\" method URL would be **http://192.168.1.89:7843/api/v1/telescope/0/InterfaceVersion**      * A first focuser \"Position\" method URL would be  **http://192.168.1.89:7843/api/v1/focuser/0/position**      * A second focuser \"StepSize\" method URL would be  **http://192.168.1.89:7843/api/v1/focuser/1/stepsize** * A rotator \"Halt\" method URL would be  **http://192.168.1.89:7843/api/v1/rotator/0/halt**   URLs are case sensitive and all elements must be in lower case. This means that both the device type and command name must always be in lower case. Parameter names are not case sensitive, so clients and drivers should be prepared for parameter names to be supplied and returned with any casing. Parameter values can be in mixed case as required.  For GET operations, parameters should be placed in the URL query string and for PUT operations they should be placed in the body of the message.  Responses, as described below, are returned in JSON format and always include a common set of values including the client's transaction number,  the server's transaction number together with any error message and error number. If the transaction completes successfully, the ErrorMessage field will be an empty string and the ErrorNumber field will be zero.  ////// HTTP Status Codes and ASCOM Error codes The returned HTTP status code gives a high level view of whether the device understood the request and whether it attempted to process it.  Under most circumstances the returned status will be `200`, indicating that the request was correctly formatted and that it was passed to the device's handler to execute. A `200` status does not necessarily mean that the operation completed as expected, without error, and you must always check the ErrorMessage and ErrorNumber fields to confirm whether the returned result is valid. The `200` status simply means that the transaction was successfully managed by the device's transaction management layer.  An HTTP status code of `400` indicates that the device could not interpret the request e.g. an invalid device number or misspelt device type was supplied. Check the body of the response for a text error message.  An HTTP status code of `500` indicates an unexpected error within the device from which it could not recover. Check the body of the response for a text error message. ////// SetupDialog and Alpaca Device Configuration The SetupDialog method has been omitted from the Alpaca Device API because it presents a user interface rather than returning data. Alpaca device configuration is covered in the \"ASCOM Alpaca Management API\" specification, which can be selected through the drop-down box at the head of this page.
  *
  * The version of the OpenAPI document: v1
  * Generated by: https://github.com/openapitools/openapi-generator.git
  */
 
+using ASCOM.Alpaca.Responses;
+using Org.OpenAPITools.Api;
 using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Reflection;
-using RestSharp;
 using Xunit;
-
-using Org.OpenAPITools.Client;
-// uncomment below to import models
-//using Org.OpenAPITools.Model;
 
 namespace Org.OpenAPITools.Test.Api
 {
     /// <summary>
-    ///  Class for testing CameraSpecificMethodsApi
+    /// Class for testing CameraSpecificMethodsApi
     /// </summary>
     /// <remarks>
     /// This file is automatically generated by OpenAPI Generator (https://openapi-generator.tech).
@@ -31,16 +23,16 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class CameraSpecificMethodsApiTests : IDisposable
     {
-        //private CameraSpecificMethodsApi instance;
+        private CameraSpecificMethodsApi instance;
 
         public CameraSpecificMethodsApiTests()
         {
-            //instance = new CameraSpecificMethodsApi();
+            instance = new CameraSpecificMethodsApi("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
         {
-            // Cleanup when everything is done.
+            //Cleanup when everything is done.
         }
 
         /// <summary>
@@ -50,7 +42,7 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' CameraSpecificMethodsApi
-            //Assert.IsType<CameraSpecificMethodsApi>(instance);
+            Assert.IsType<CameraSpecificMethodsApi>(instance);
         }
 
         /// <summary>
@@ -60,10 +52,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberAbortexposurePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.CameraDeviceNumberAbortexposurePut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberAbortexposurePut(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -73,11 +66,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberBayeroffsetxGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberBayeroffsetxGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberBayeroffsetxGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -87,11 +80,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberBayeroffsetyGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberBayeroffsetyGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberBayeroffsetyGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -101,11 +94,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberBinxGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberBinxGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberBinxGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -115,12 +108,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberBinxPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int binX = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberBinxPut(deviceNumber, binX, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int binX = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberBinxPut(deviceNumber, binX, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -130,11 +123,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberBinyGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberBinyGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberBinyGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -144,12 +137,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberBinyPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int binY = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberBinyPut(deviceNumber, binY, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int binY = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberBinyPut(deviceNumber, binY, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -159,11 +152,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCamerastateGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCamerastateGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCamerastateGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -173,11 +166,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCameraxsizeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCameraxsizeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCameraxsizeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -187,11 +180,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCameraysizeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCameraysizeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCameraysizeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -201,11 +194,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCanabortexposureGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCanabortexposureGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCanabortexposureGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -215,11 +208,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCanasymmetricbinGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCanasymmetricbinGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCanasymmetricbinGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -229,11 +222,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCanfastreadoutGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCanfastreadoutGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCanfastreadoutGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -243,11 +236,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCangetcoolerpowerGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCangetcoolerpowerGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCangetcoolerpowerGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -257,11 +250,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCanpulseguideGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCanpulseguideGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCanpulseguideGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -271,11 +264,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCansetccdtemperatureGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCansetccdtemperatureGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCansetccdtemperatureGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -285,11 +278,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCanstopexposureGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCanstopexposureGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCanstopexposureGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -299,11 +292,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCcdtemperatureGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCcdtemperatureGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCcdtemperatureGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -313,11 +306,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCooleronGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCooleronGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCooleronGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -327,12 +320,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCooleronPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //bool coolerOn = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCooleronPut(deviceNumber, coolerOn, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            bool coolerOn = true;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCooleronPut(deviceNumber, coolerOn, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -342,11 +335,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberCoolerpowerGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberCoolerpowerGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberCoolerpowerGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -356,11 +349,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberElectronsperaduGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberElectronsperaduGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberElectronsperaduGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -370,11 +363,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberExposuremaxGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberExposuremaxGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberExposuremaxGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -384,11 +377,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberExposureminGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberExposureminGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberExposureminGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -398,11 +391,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberExposureresolutionGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberExposureresolutionGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberExposureresolutionGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -412,11 +405,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberFastreadoutGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberFastreadoutGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberFastreadoutGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -426,12 +419,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberFastreadoutPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //bool fastReadout = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberFastreadoutPut(deviceNumber, fastReadout, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            bool fastReadout = true;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberFastreadoutPut(deviceNumber, fastReadout, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -441,11 +434,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberFullwellcapacityGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberFullwellcapacityGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberFullwellcapacityGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -455,11 +448,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberGainGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberGainGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberGainGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -469,12 +462,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberGainPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int gain = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberGainPut(deviceNumber, gain, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int gain = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberGainPut(deviceNumber, gain, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -484,11 +477,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberGainmaxGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberGainmaxGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberGainmaxGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -498,11 +491,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberGainminGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberGainminGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberGainminGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -512,11 +505,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberGainsGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberGainsGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<StringArrayResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberGainsGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<StringListResponse>(response);
         }
 
         /// <summary>
@@ -526,11 +519,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberHasshutterGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberHasshutterGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberHasshutterGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -540,25 +533,25 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberHeatsinktemperatureGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberHeatsinktemperatureGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberHeatsinktemperatureGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
-        /// <summary>
+        /*/// <summary>
         /// Test CameraDeviceNumberImagearrayGet
         /// </summary>
         [Fact]
         public void CameraDeviceNumberImagearrayGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberImagearrayGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<ImageArrayResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberImagearrayGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<ImageArrayResponse>(response);
         }
 
         /// <summary>
@@ -568,13 +561,13 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberImagearrayvariantGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberImagearrayvariantGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<ImageArrayResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberImagearrayvariantGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<ImageArrayResponse>(response);
         }
-
+        */
         /// <summary>
         /// Test CameraDeviceNumberImagereadyGet
         /// </summary>
@@ -582,11 +575,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberImagereadyGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberImagereadyGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberImagereadyGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -596,11 +589,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberIspulseguidingGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberIspulseguidingGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<BoolResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberIspulseguidingGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<BoolResponse>(response);
         }
 
         /// <summary>
@@ -610,11 +603,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberLastexposuredurationGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberLastexposuredurationGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberLastexposuredurationGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -624,11 +617,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberLastexposurestarttimeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberLastexposurestarttimeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<StringResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberLastexposurestarttimeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<StringResponse>(response);
         }
 
         /// <summary>
@@ -638,11 +631,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberMaxaduGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberMaxaduGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberMaxaduGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -652,11 +645,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberMaxbinxGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberMaxbinxGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberMaxbinxGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -666,11 +659,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberMaxbinyGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberMaxbinyGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberMaxbinyGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -680,11 +673,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberNumxGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberNumxGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberNumxGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -694,12 +687,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberNumxPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int numX = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberNumxPut(deviceNumber, numX, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int numX = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberNumxPut(deviceNumber, numX, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -709,11 +702,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberNumyGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberNumyGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberNumyGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -723,12 +716,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberNumyPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int numY = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberNumyPut(deviceNumber, numY, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int numY = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberNumyPut(deviceNumber, numY, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -738,11 +731,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberOffsetGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberOffsetGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberOffsetGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -752,12 +745,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberOffsetPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int offset = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberOffsetPut(deviceNumber, offset, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int offset = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberOffsetPut(deviceNumber, offset, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -767,11 +760,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberOffsetmaxGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberOffsetmaxGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberOffsetmaxGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -781,11 +774,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberOffsetminGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberOffsetminGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberOffsetminGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -795,11 +788,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberOffsetsGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberOffsetsGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<StringArrayResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberOffsetsGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<StringListResponse>(response);
         }
 
         /// <summary>
@@ -809,11 +802,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberPercentcompletedGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberPercentcompletedGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberPercentcompletedGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -823,11 +816,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberPixelsizexGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberPixelsizexGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberPixelsizexGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -837,11 +830,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberPixelsizeyGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberPixelsizeyGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberPixelsizeyGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -851,13 +844,13 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberPulseguidePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int direction = null;
-            //int duration = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberPulseguidePut(deviceNumber, direction, duration, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int direction = 0;
+            int duration = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberPulseguidePut(deviceNumber, direction, duration, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -867,11 +860,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberReadoutmodeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberReadoutmodeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberReadoutmodeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -881,12 +874,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberReadoutmodePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int readoutMode = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberReadoutmodePut(deviceNumber, readoutMode, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int readoutMode = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberReadoutmodePut(deviceNumber, readoutMode, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -896,11 +889,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberReadoutmodesGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberReadoutmodesGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<StringArrayResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberReadoutmodesGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<StringListResponse>(response);
         }
 
         /// <summary>
@@ -910,11 +903,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberSensornameGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberSensornameGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<StringResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberSensornameGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<StringResponse>(response);
         }
 
         /// <summary>
@@ -924,11 +917,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberSensortypeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberSensortypeGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberSensortypeGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -938,11 +931,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberSetccdtemperatureGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberSetccdtemperatureGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<DoubleResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberSetccdtemperatureGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<DoubleResponse>(response);
         }
 
         /// <summary>
@@ -952,12 +945,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberSetccdtemperaturePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //decimal setCCDTemperature = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberSetccdtemperaturePut(deviceNumber, setCCDTemperature, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            decimal setCCDTemperature = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberSetccdtemperaturePut(deviceNumber, setCCDTemperature, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -967,13 +960,13 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberStartexposurePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //decimal duration = null;
-            //bool light = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberStartexposurePut(deviceNumber, duration, light, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            decimal duration = 1;
+            bool light = true;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberStartexposurePut(deviceNumber, duration, light, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -983,11 +976,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberStartxGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberStartxGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberStartxGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -997,12 +990,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberStartxPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int startX = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberStartxPut(deviceNumber, startX, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int startX = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberStartxPut(deviceNumber, startX, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -1012,11 +1005,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberStartyGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberStartyGet(deviceNumber, clientID, clientTransactionID);
-            //Assert.IsType<IntResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberStartyGet(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<IntResponse>(response);
         }
 
         /// <summary>
@@ -1026,12 +1019,12 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberStartyPutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //int startY = null;
-            //int? clientID = null;
-            //int? clientTransactionID = null;
-            //var response = instance.CameraDeviceNumberStartyPut(deviceNumber, startY, clientID, clientTransactionID);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int startY = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberStartyPut(deviceNumber, startY, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
 
         /// <summary>
@@ -1041,10 +1034,11 @@ namespace Org.OpenAPITools.Test.Api
         public void CameraDeviceNumberStopexposurePutTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int deviceNumber = null;
-            //UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = null;
-            //var response = instance.CameraDeviceNumberStopexposurePut(deviceNumber, UNKNOWN_BASE_TYPE);
-            //Assert.IsType<MethodResponse>(response);
+            int deviceNumber = 0;
+            int? clientID = null;
+            int? clientTransactionID = null;
+            var response = instance.CameraDeviceNumberStopexposurePut(deviceNumber, clientID, clientTransactionID);
+            Assert.IsType<Response>(response);
         }
     }
 }
