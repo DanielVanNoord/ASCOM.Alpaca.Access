@@ -4255,14 +4255,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -4324,14 +4324,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -4396,9 +4396,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -4464,9 +4464,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -4531,9 +4531,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -4599,9 +4599,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -4666,9 +4666,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -4734,9 +4734,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -4801,9 +4801,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -4869,9 +4869,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -4936,9 +4936,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -5004,9 +5004,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -5071,9 +5071,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -5139,9 +5139,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -5208,9 +5208,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -5282,9 +5282,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -5353,9 +5353,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -5421,9 +5421,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -5488,9 +5488,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -5556,9 +5556,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -5625,9 +5625,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -5699,9 +5699,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -5770,9 +5770,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -5838,9 +5838,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -5905,9 +5905,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -5973,9 +5973,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -6040,9 +6040,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -6108,9 +6108,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -6175,9 +6175,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -6243,9 +6243,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -6310,9 +6310,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -6378,9 +6378,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -6445,9 +6445,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -6513,9 +6513,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -6580,9 +6580,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -6648,9 +6648,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -6715,9 +6715,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -6783,9 +6783,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -6850,9 +6850,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -6918,9 +6918,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -6985,9 +6985,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -7053,9 +7053,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -7120,9 +7120,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -7188,9 +7188,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -7255,9 +7255,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -7323,9 +7323,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -7390,9 +7390,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -7458,9 +7458,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -7525,9 +7525,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -7593,9 +7593,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -7660,9 +7660,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -7728,9 +7728,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -7795,9 +7795,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -7863,9 +7863,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -7930,9 +7930,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -7998,9 +7998,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -8063,14 +8063,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -8138,14 +8138,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -8218,9 +8218,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -8298,9 +8298,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -8369,14 +8369,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -8438,14 +8438,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -8510,9 +8510,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -8578,9 +8578,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -8643,14 +8643,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -8718,14 +8718,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -8794,9 +8794,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -8862,9 +8862,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -8925,14 +8925,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -8994,14 +8994,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -9066,9 +9066,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -9134,9 +9134,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -9201,9 +9201,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -9269,9 +9269,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -9334,14 +9334,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -9409,14 +9409,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -9485,9 +9485,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -9553,9 +9553,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -9618,14 +9618,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -9693,14 +9693,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -9769,9 +9769,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -9837,9 +9837,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -9904,14 +9904,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -9985,14 +9985,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -10061,14 +10061,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -10130,14 +10130,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -10202,14 +10202,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -10221,7 +10221,7 @@ namespace ASCOM.Alpaca.Access
             localVarRequestOptions.PathParameters.Add("DeviceNumber", Org.OpenAPITools.Client.ClientUtils.ParameterToString(deviceNumber)); // path parameter
             if (direction != null)
             {
-                localVarRequestOptions.FormParameters.Add("Direction", Org.OpenAPITools.Client.ClientUtils.ParameterToString(direction)); // form parameter
+                localVarRequestOptions.FormParameters.Add("Direction", Org.OpenAPITools.Client.ClientUtils.ParameterToString(0)); // form parameter
             }
             if (duration != null)
             {
@@ -10283,14 +10283,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -10363,9 +10363,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -10431,9 +10431,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -10498,9 +10498,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -10566,9 +10566,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -10631,14 +10631,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -10706,14 +10706,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -10778,14 +10778,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -10847,14 +10847,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -10919,9 +10919,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -10987,9 +10987,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -11052,14 +11052,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -11127,14 +11127,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -11203,9 +11203,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -11271,9 +11271,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -11338,9 +11338,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -11406,9 +11406,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -11471,14 +11471,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -11546,14 +11546,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -11622,9 +11622,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -11690,9 +11690,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -11755,14 +11755,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -11830,14 +11830,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -11906,9 +11906,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -11974,9 +11974,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -12039,14 +12039,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -12114,14 +12114,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -12190,9 +12190,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -12258,9 +12258,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -12323,14 +12323,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -12398,14 +12398,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -12474,14 +12474,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -12555,14 +12555,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -12635,14 +12635,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -12716,14 +12716,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -12796,14 +12796,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -12877,14 +12877,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -12957,14 +12957,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -13038,14 +13038,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -13114,14 +13114,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -13183,14 +13183,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -13251,14 +13251,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -13320,14 +13320,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -13392,9 +13392,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -13460,9 +13460,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -13527,14 +13527,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -13608,14 +13608,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -13688,14 +13688,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -13769,14 +13769,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -13845,14 +13845,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -13914,14 +13914,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -13986,9 +13986,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -14054,9 +14054,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -14119,14 +14119,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -14194,14 +14194,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -14270,9 +14270,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -14338,9 +14338,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -14403,14 +14403,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -14478,14 +14478,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -14554,9 +14554,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -14622,9 +14622,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -14687,14 +14687,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -14762,14 +14762,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -14838,9 +14838,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -14906,9 +14906,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -14971,14 +14971,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -15046,14 +15046,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -15122,9 +15122,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -15190,9 +15190,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -15257,9 +15257,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -15325,9 +15325,9 @@ namespace ASCOM.Alpaca.Access
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -15390,14 +15390,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -15465,14 +15465,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
@@ -15537,14 +15537,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -15606,14 +15606,14 @@ namespace ASCOM.Alpaca.Access
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
+                
+                "application/json"
+                
             };
 
 
