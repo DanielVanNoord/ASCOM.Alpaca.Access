@@ -33,11 +33,11 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class FilterWheelSpecificMethodsApiTests : IDisposable
     {
-        private FilterWheelSpecificMethodsApi instance;
+        private FilterWheel instance;
 
         public FilterWheelSpecificMethodsApiTests()
         {
-            instance = new FilterWheelSpecificMethodsApi("http://localhost:5000/api/v1/");
+            instance = new FilterWheel("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
@@ -52,7 +52,7 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' FilterWheelSpecificMethodsApi
-            Assert.IsType<FilterWheelSpecificMethodsApi>(instance);
+            Assert.IsType<FilterWheel>(instance);
         }
 
         /// <summary>

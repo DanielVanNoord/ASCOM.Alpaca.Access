@@ -33,11 +33,11 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class SwitchSpecificMethodsApiTests : IDisposable
     {
-        private SwitchSpecificMethodsApi instance;
+        private Switch instance;
 
         public SwitchSpecificMethodsApiTests()
         {
-            instance = new SwitchSpecificMethodsApi("http://localhost:5000/api/v1/");
+            instance = new Switch("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
@@ -52,7 +52,7 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' SwitchSpecificMethodsApi
-            Assert.IsType<SwitchSpecificMethodsApi>(instance);
+            Assert.IsType<Switch>(instance);
         }
 
         /// <summary>

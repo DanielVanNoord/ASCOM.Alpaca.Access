@@ -102,21 +102,21 @@ namespace Org.OpenAPITools.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class SafetyMonitorSpecificMethodsApi : AlpacaBase, IAlpacaBase, ISafetyMonitorSpecificMethodsApi
+    public partial class SafetyMonitor : AlpacaBase, IAlpacaBase, ISafetyMonitorSpecificMethodsApi
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SafetyMonitorSpecificMethodsApi"/> class.
+        /// Initializes a new instance of the <see cref="SafetyMonitor"/> class.
         /// </summary>
         /// <returns></returns>
-        public SafetyMonitorSpecificMethodsApi() : this((string)null)
+        public SafetyMonitor() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SafetyMonitorSpecificMethodsApi"/> class.
+        /// Initializes a new instance of the <see cref="SafetyMonitor"/> class.
         /// </summary>
         /// <returns></returns>
-        public SafetyMonitorSpecificMethodsApi(String basePath) : base("safetymonitor", basePath)
+        public SafetyMonitor(String basePath) : base("safetymonitor", basePath)
         {
             this.Configuration = Org.OpenAPITools.Client.Configuration.MergeConfigurations(
                 Org.OpenAPITools.Client.GlobalConfiguration.Instance,
@@ -128,12 +128,12 @@ namespace Org.OpenAPITools.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SafetyMonitorSpecificMethodsApi"/> class
+        /// Initializes a new instance of the <see cref="SafetyMonitor"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public SafetyMonitorSpecificMethodsApi(Org.OpenAPITools.Client.Configuration configuration) : base("safetymonitor", configuration)
+        public SafetyMonitor(Org.OpenAPITools.Client.Configuration configuration) : base("safetymonitor", configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -147,13 +147,13 @@ namespace Org.OpenAPITools.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SafetyMonitorSpecificMethodsApi"/> class
+        /// Initializes a new instance of the <see cref="SafetyMonitor"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public SafetyMonitorSpecificMethodsApi(Org.OpenAPITools.Client.ISynchronousClient client, Org.OpenAPITools.Client.IAsynchronousClient asyncClient, Org.OpenAPITools.Client.IReadableConfiguration configuration) : base("safetymonitor", client, asyncClient, configuration)
+        public SafetyMonitor(Org.OpenAPITools.Client.ISynchronousClient client, Org.OpenAPITools.Client.IAsynchronousClient asyncClient, Org.OpenAPITools.Client.IReadableConfiguration configuration) : base("safetymonitor", client, asyncClient, configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");

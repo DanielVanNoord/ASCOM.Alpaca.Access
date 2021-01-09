@@ -33,11 +33,11 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class SafetyMonitorSpecificMethodsApiTests : IDisposable
     {
-        private SafetyMonitorSpecificMethodsApi instance;
+        private SafetyMonitor instance;
 
         public SafetyMonitorSpecificMethodsApiTests()
         {
-            instance = new SafetyMonitorSpecificMethodsApi("http://localhost:5000/api/v1/");
+            instance = new SafetyMonitor("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
@@ -52,7 +52,7 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' SafetyMonitorSpecificMethodsApi
-            Assert.IsType<SafetyMonitorSpecificMethodsApi>(instance);
+            Assert.IsType<SafetyMonitor>(instance);
         }
 
         /// <summary>

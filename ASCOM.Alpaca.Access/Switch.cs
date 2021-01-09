@@ -730,21 +730,21 @@ namespace Org.OpenAPITools.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class SwitchSpecificMethodsApi : AlpacaBase, IAlpacaBase, ISwitchSpecificMethodsApi
+    public partial class Switch : AlpacaBase, IAlpacaBase, ISwitchSpecificMethodsApi
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SwitchSpecificMethodsApi"/> class.
+        /// Initializes a new instance of the <see cref="Switch"/> class.
         /// </summary>
         /// <returns></returns>
-        public SwitchSpecificMethodsApi() : this((string)null)
+        public Switch() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SwitchSpecificMethodsApi"/> class.
+        /// Initializes a new instance of the <see cref="Switch"/> class.
         /// </summary>
         /// <returns></returns>
-        public SwitchSpecificMethodsApi(String basePath) : base("switch")
+        public Switch(String basePath) : base("switch")
         {
             this.Configuration = Org.OpenAPITools.Client.Configuration.MergeConfigurations(
                 Org.OpenAPITools.Client.GlobalConfiguration.Instance,
@@ -756,12 +756,12 @@ namespace Org.OpenAPITools.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SwitchSpecificMethodsApi"/> class
+        /// Initializes a new instance of the <see cref="Switch"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public SwitchSpecificMethodsApi(Org.OpenAPITools.Client.Configuration configuration) : base("switch", configuration)
+        public Switch(Org.OpenAPITools.Client.Configuration configuration) : base("switch", configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -775,13 +775,13 @@ namespace Org.OpenAPITools.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SwitchSpecificMethodsApi"/> class
+        /// Initializes a new instance of the <see cref="Switch"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public SwitchSpecificMethodsApi(Org.OpenAPITools.Client.ISynchronousClient client, Org.OpenAPITools.Client.IAsynchronousClient asyncClient, Org.OpenAPITools.Client.IReadableConfiguration configuration) : base("switch", client, asyncClient, configuration)
+        public Switch(Org.OpenAPITools.Client.ISynchronousClient client, Org.OpenAPITools.Client.IAsynchronousClient asyncClient, Org.OpenAPITools.Client.IReadableConfiguration configuration) : base("switch", client, asyncClient, configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");

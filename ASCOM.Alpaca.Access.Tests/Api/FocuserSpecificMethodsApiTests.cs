@@ -33,11 +33,11 @@ namespace Org.OpenAPITools.Test.Api
     /// </remarks>
     public class FocuserSpecificMethodsApiTests : IDisposable
     {
-        private FocuserSpecificMethodsApi instance;
+        private Focuser instance;
 
         public FocuserSpecificMethodsApiTests()
         {
-            instance = new FocuserSpecificMethodsApi("http://localhost:5000/api/v1/");
+            instance = new Focuser("http://localhost:5000/api/v1/");
         }
 
         public void Dispose()
@@ -52,7 +52,7 @@ namespace Org.OpenAPITools.Test.Api
         public void InstanceTest()
         {
             // TODO uncomment below to test 'IsType' FocuserSpecificMethodsApi
-            Assert.IsType<FocuserSpecificMethodsApi>(instance);
+            Assert.IsType<Focuser>(instance);
         }
 
         /// <summary>

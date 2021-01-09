@@ -678,21 +678,21 @@ namespace Org.OpenAPITools.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class FocuserSpecificMethodsApi : AlpacaBase, IAlpacaBase, IFocuserSpecificMethodsApi
+    public partial class Focuser : AlpacaBase, IAlpacaBase, IFocuserSpecificMethodsApi
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="FocuserSpecificMethodsApi"/> class.
+        /// Initializes a new instance of the <see cref="Focuser"/> class.
         /// </summary>
         /// <returns></returns>
-        public FocuserSpecificMethodsApi() : this((string)null)
+        public Focuser() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FocuserSpecificMethodsApi"/> class.
+        /// Initializes a new instance of the <see cref="Focuser"/> class.
         /// </summary>
         /// <returns></returns>
-        public FocuserSpecificMethodsApi(String basePath) : base("focuser", basePath)
+        public Focuser(String basePath) : base("focuser", basePath)
         {
             this.Configuration = Org.OpenAPITools.Client.Configuration.MergeConfigurations(
                 Org.OpenAPITools.Client.GlobalConfiguration.Instance,
@@ -704,12 +704,12 @@ namespace Org.OpenAPITools.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FocuserSpecificMethodsApi"/> class
+        /// Initializes a new instance of the <see cref="Focuser"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public FocuserSpecificMethodsApi(Org.OpenAPITools.Client.Configuration configuration) : base("focuser", configuration)
+        public Focuser(Org.OpenAPITools.Client.Configuration configuration) : base("focuser", configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -723,13 +723,13 @@ namespace Org.OpenAPITools.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FocuserSpecificMethodsApi"/> class
+        /// Initializes a new instance of the <see cref="Focuser"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public FocuserSpecificMethodsApi(Org.OpenAPITools.Client.ISynchronousClient client, Org.OpenAPITools.Client.IAsynchronousClient asyncClient, Org.OpenAPITools.Client.IReadableConfiguration configuration) : base("focuser", client, asyncClient, configuration)
+        public Focuser(Org.OpenAPITools.Client.ISynchronousClient client, Org.OpenAPITools.Client.IAsynchronousClient asyncClient, Org.OpenAPITools.Client.IReadableConfiguration configuration) : base("focuser", client, asyncClient, configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
