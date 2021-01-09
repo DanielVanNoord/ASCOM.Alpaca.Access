@@ -677,9 +677,9 @@ namespace Org.OpenAPITools.Test.Api
             // TODO uncomment below to test the method and replace null with proper value
             int deviceNumber = 0;
             GuideDirection direction = GuideDirection.North;
-            int? duration = null;
-            int? clientID = null;
-            int? clientTransactionID = null;
+            int duration = 1;
+            int? clientID = 1;
+            int? clientTransactionID = 1;
             var response = instance.TelescopePulseGuidePut(deviceNumber, direction, duration, clientID, clientTransactionID);
             Assert.IsType<Response>(response);
         }
