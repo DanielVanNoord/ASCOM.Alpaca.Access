@@ -80,7 +80,7 @@ namespace Org.OpenAPITools.Test.Api
             // TODO uncomment below to test the method and replace null with proper value
             
             int deviceNumber = 0;
-            var response = instance.CommandBlindPut(deviceNumber, string.Empty);
+            var response = instance.CommandBlindPut(deviceNumber, "Test");
             Assert.IsType<Response>(response);
         }
 
@@ -93,7 +93,7 @@ namespace Org.OpenAPITools.Test.Api
             // TODO uncomment below to test the method and replace null with proper value
             
             int deviceNumber = 0;
-            var response = instance.CommandBoolPut(deviceNumber, string.Empty);
+            var response = instance.CommandBoolPut(deviceNumber, "Test");
             Assert.IsType<BoolResponse>(response);
         }
 
@@ -106,7 +106,7 @@ namespace Org.OpenAPITools.Test.Api
             // TODO uncomment below to test the method and replace null with proper value
             
             int deviceNumber = 0;
-            var response = instance.CommandStringPut(deviceNumber, string.Empty);
+            var response = instance.CommandStringPut(deviceNumber, "Test");
             Assert.IsType<StringResponse>(response);
         }
 

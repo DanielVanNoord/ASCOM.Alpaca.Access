@@ -93,7 +93,7 @@ namespace Org.OpenAPITools.Test.Api
         {
             // TODO uncomment below to test the method and replace null with proper value
 
-            int? brightness = null;
+            int? brightness = 0;
             int? clientID = null;
             int? clientTransactionID = null;
             var response = instance.CalibratorOnPut(deviceNumber, brightness, clientID, clientTransactionID);
