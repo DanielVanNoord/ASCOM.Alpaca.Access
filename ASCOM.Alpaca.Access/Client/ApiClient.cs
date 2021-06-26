@@ -22,14 +22,12 @@ using System.Text;
 using System.Threading;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 using RestSharp;
 using RestSharp.Deserializers;
-using ErrorEventArgs = Newtonsoft.Json.Serialization.ErrorEventArgs;
 using RestSharpMethod = RestSharp.Method;
 using Polly;
 using RestSharp.Authenticators;
+using System.Text.Json;
 
 namespace Org.OpenAPITools.Client
 {
@@ -40,27 +38,8 @@ namespace Org.OpenAPITools.Client
     {
         private readonly IReadableConfiguration _configuration;
         private static readonly string _contentType = "application/json";
-        private readonly JsonSerializerSettings _serializerSettings = new JsonSerializerSettings
-        {
-            // OpenAPI generated types generally hide default constructors.
-            ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor,
-            ContractResolver = new DefaultContractResolver
-            {
-                NamingStrategy = new CamelCaseNamingStrategy
-                {
-                    OverrideSpecifiedNames = false
-                }
-            }
-        };
-
         public CustomJsonCodec(IReadableConfiguration configuration)
         {
-            _configuration = configuration;
-        }
-
-        public CustomJsonCodec(JsonSerializerSettings serializerSettings, IReadableConfiguration configuration)
-        {
-            _serializerSettings = serializerSettings;
             _configuration = configuration;
         }
 
@@ -71,16 +50,7 @@ namespace Org.OpenAPITools.Client
         /// <returns>A JSON string.</returns>
         public string Serialize(object obj)
         {
-            //ToDo
-            /*if (obj != null && obj is Org.OpenAPITools.Model.AbstractOpenAPISchema)
-            {
-                // the object to be serialized is an oneOf/anyOf schema
-                return ((Org.OpenAPITools.Model.AbstractOpenAPISchema)obj).ToJson();
-            }
-            else
-            {*/
-                return JsonConvert.SerializeObject(obj, _serializerSettings);
-            //}
+                return JsonSerializer.Serialize(obj);
         }
 
         public T Deserialize<T>(IRestResponse response)
@@ -140,7 +110,11 @@ namespace Org.OpenAPITools.Client
             // at this point, it must be a model (json)
             try
             {
-                return JsonConvert.DeserializeObject(response.Content, type, _serializerSettings);
+                var data = JsonSerializer.Deserialize<Dictionary<string, object>>(response.Content);
+
+                ValidateKeys(data.Keys.ToList(), type);
+
+                return JsonSerializer.Deserialize(response.Content, type);
             }
             catch (Exception e)
             {
@@ -157,6 +131,23 @@ namespace Org.OpenAPITools.Client
             get { return _contentType; }
             set { throw new InvalidOperationException("Not allowed to set content type."); }
         }
+
+        private void ValidateKeys(List<string> keys, Type type)
+        {
+            var data = JsonSerializer.Deserialize<Dictionary<string, object>>(JsonSerializer.Serialize(Activator.CreateInstance(type)));
+
+            foreach(var key in data.Keys)
+            {
+                if (!keys.Contains(key))
+                {
+                    if (keys.Any(s => s.Equals(key, StringComparison.OrdinalIgnoreCase)))
+                    {
+                        throw new Exception($"A Json key did not match the required capitalization. Found {keys.First(s => s.Equals(key, StringComparison.OrdinalIgnoreCase))} when {key} was expected.");
+                    }
+                    throw new Exception($"The required Json key {key} was missing from the response.");
+                }
+            }
+        }
     }
     /// <summary>
     /// Provides a default implementation of an Api client (both synchronous and asynchronous implementatios),
@@ -165,23 +156,6 @@ namespace Org.OpenAPITools.Client
     public partial class ApiClient : ISynchronousClient, IAsynchronousClient
     {
         private readonly String _baseUrl;
-
-        /// <summary>
-        /// Specifies the settings on a <see cref="JsonSerializer" /> object. 
-        /// These settings can be adjusted to accomodate custom serialization rules.
-        /// </summary>
-        public JsonSerializerSettings SerializerSettings { get; set; } = new JsonSerializerSettings
-        {
-            // OpenAPI generated types generally hide default constructors.
-            ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor,
-            ContractResolver = new DefaultContractResolver
-            {
-                NamingStrategy = new CamelCaseNamingStrategy
-                {
-                    OverrideSpecifiedNames = false
-                }
-            }
-        };
 
         /// <summary>
         /// Allows for extending request processing for <see cref="ApiClient"/> generated code.
@@ -281,7 +255,7 @@ namespace Org.OpenAPITools.Client
             RestRequest request = new RestRequest(Method(method))
             {
                 Resource = path,
-                JsonSerializer = new CustomJsonCodec(SerializerSettings, configuration)
+                JsonSerializer = new CustomJsonCodec(configuration)
             };
 
             if (options.PathParameters != null)
@@ -382,6 +356,11 @@ namespace Org.OpenAPITools.Client
             T result = response.Data;
             string rawContent = response.Content;
 
+            if(response.ErrorException != null)
+            {
+                throw response.ErrorException;
+            }
+
             var transformed = new ApiResponse<T>(response.StatusCode, new Multimap<string, string>(), result, rawContent)
             {
                 ErrorText = response.ErrorMessage,
@@ -434,7 +413,7 @@ namespace Org.OpenAPITools.Client
             }
             else
             {
-                var customDeserializer = new CustomJsonCodec(SerializerSettings, configuration);
+                var customDeserializer = new CustomJsonCodec(configuration);
                 client.AddHandler("application/json", () => customDeserializer);
                 client.AddHandler("text/json", () => customDeserializer);
                 client.AddHandler("text/x-json", () => customDeserializer);
@@ -536,7 +515,7 @@ namespace Org.OpenAPITools.Client
             }
             else
             {
-                var customDeserializer = new CustomJsonCodec(SerializerSettings, configuration);
+                var customDeserializer = new CustomJsonCodec(configuration);
                 client.AddHandler("application/json", () => customDeserializer);
                 client.AddHandler("text/json", () => customDeserializer);
                 client.AddHandler("text/x-json", () => customDeserializer);
@@ -584,18 +563,6 @@ namespace Org.OpenAPITools.Client
             {
                 response = await client.ExecuteAsync<T>(req, cancellationToken).ConfigureAwait(false);
             }
-
-            // if the response type is oneOf/anyOf, call FromJSON to deserialize the data
-            //ToDo
-            /*
-            if (typeof(Org.OpenAPITools.Model.AbstractOpenAPISchema).IsAssignableFrom(typeof(T)))
-            {
-                T instance = (T)Activator.CreateInstance(typeof(T));
-                MethodInfo method = typeof(T).GetMethod("FromJson");
-                method.Invoke(instance, new object[] { response.Content });
-                response.Data = instance;
-            }
-            */
 
             InterceptResponse(req, response);
 
