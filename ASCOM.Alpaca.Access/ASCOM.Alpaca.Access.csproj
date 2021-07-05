@@ -6,7 +6,7 @@
 
   <ItemGroup>
 
-    <PackageReference Include="ASCOM.Standard.Types" Version="1.0.0-alpha15" />
+    <PackageReference Include="ASCOM.Standard.Types" Version="1.0.0-alpha16" />
     <PackageReference Include="RestSharp" Version="106.11.7" />
     <PackageReference Include="Polly" Version="7.2.2" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
